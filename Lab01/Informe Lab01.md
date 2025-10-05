@@ -3,6 +3,10 @@
 ## Descripción detallada de la solución planteada.
 ## Diagrama de flujo de acciones del robot.
 ### Diagrama de flujo principal:
+
+![Diagrama de flujo principal](Lab01/Diagrama de flujo general.png)
+
+
 ### Diagramas de flujo de los paths: 
 **Proceso escritura**
 
