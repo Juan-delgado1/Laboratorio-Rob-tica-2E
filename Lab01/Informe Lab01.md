@@ -4,7 +4,7 @@
 ## Diagrama de flujo de acciones del robot.
 ### Diagrama de flujo principal:
 
-![Diagrama de flujo principal](Lab01/Diagrama de flujo general.png)
+![Diagrama de flujo principal](Diagrama de flujo general.png)
 
 
 ### Diagramas de flujo de los paths: 
