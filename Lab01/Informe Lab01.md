@@ -54,8 +54,15 @@ En la etapa inicial de la práctica se realizó el reconocimiento del entorno de
 
 El diseño de la herramienta se realizó con base en las especificaciones del flanche encontradas en el manual de producto del robot IRB 140 y teniendo en cuenta la posición del marcador debería tener cierta inclinación para evitar que se presentaran singularidades en las articulaciones del manipulador y se debía colocar cierta tolerancia mediante un resorte que se contraía de acuerdo a la presión con la que el marcador hiciera contacto con la superficie de trabajo. De acuerdo a esto se realizó el siguiente diseño:
 
+<p align="center">
+  <img src="herramienta.png" alt="Diagrama de flujo principal" width="400">
+</p>
 
 Debido a que el marcador se debía poder colocar y retirar de la herramienta que lo acopla al flanche se optó por un diseño en dos partes, la parte inferior actúa como el soporte del marcador y como la base que se une al flanche, mientras que la parte superior sella el marcador con la herramienta y aporta seguridad para evitar movimientos no deseados respecto a la parte inferior. 
+
+Otra consideración de la herramienta de acople del marcador son las dimensinones del marcador que se iba a utilizar, para ello se realizó el diseño 3D también del marcador mediante las medidas del objeto físico por medio de un calibrador pie de rey, para así con base a las dimensiones poder acoplarlo en la herramienta de soporte de forma óptima.
+
+
 
 
 ### Planos de la herramienta
