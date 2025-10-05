@@ -79,10 +79,10 @@ Otra consideración de la herramienta de acople del marcador son las dimensinone
 Con base al diseño CAD se realizó la manufactura de la herramienta mediante impresión 3D y el resultado fue el siguiente:
 
 
-Después de tener la herramienta ya fabricada se procedió con el montaje en el robot y la calibración del TCP que correspondía al punto final de la herramienta y será el contacto con la superficie. Para esto se calibró con una referencia la cuál debía ser alcanzada desde 4 posiciones diferentes del robot, logrando el menor error posible, después de varios intentos se logró un error de 4mm.
+Después de tener la herramienta ya fabricada se procedió con el montaje en el robot y la calibración del TCP que correspondía al punto final de la herramienta y será el contacto con la superficie. Para esto se calibró con una referencia (como se muestra en la siguiente imagen) la cuál debía ser alcanzada desde 4 posiciones diferentes del robot, logrando el menor error posible, después de varios intentos se logró un error de 4mm.
 
 <p align="center">
-  <img src="marcador.png" alt="Marcador" width="400">
+  <img src="calibración.jpeg" alt="Marcador" width="400">
 </p>
 
 Desp
@@ -463,5 +463,9 @@ ENDMODULE
 ## Video de la simulación
 
 ## Video de la implementación física
+
+<p align="center">
+  <img src="decorado.jpeg" alt="Diseño CAD de la herrameinta" width="400">
+</p>
 
 ## Conclusiones
