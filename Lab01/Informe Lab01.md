@@ -21,7 +21,7 @@
 
 **Path Config**
 <p align="center">
-  <img src="Diagrama_de_flujo_3.png" alt="Diagrama de flujo principal" width="400">
+  <img src="Diagrama_de _flujo_3.png" alt="Diagrama de flujo principal" width="400">
 </p>
 
 ## Plano de planta de la ubicación de cada uno de los elementos.
