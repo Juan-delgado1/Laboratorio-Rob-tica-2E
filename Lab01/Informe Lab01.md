@@ -2,6 +2,13 @@
 
 ## Descripción detallada de la solución planteada.
 ## Diagrama de flujo de acciones del robot.
+### Diagrama de flujo principal:
+### Diagramas de flujo de los paths: 
+**Proceso escritura**
+
+**Path Home**
+
+**Path Config**
 ## Plano de planta de la ubicación de cada uno de los elementos.
 ## Descripción de las funciones utilizadas.
 ## Diseño de la herramienta detallado.
