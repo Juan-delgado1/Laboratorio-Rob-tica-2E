@@ -427,14 +427,3 @@ ENDMODULE
 ## Video de la implementación física
 
 ## Conclusiones
-
-
-
-
-
-
-
-
-
-### Video Simulación en Robot Studio
-### Video implementación con robots reales.
