@@ -50,6 +50,10 @@ En la etapa inicial de la práctica se realizó el reconocimiento del entorno de
 
 ### Diseño de la herramienta
 
+<p align="center">
+  <img src="esoecificaciones.png" alt="Diagrama de flujo principal" width="400">
+</p>
+
 ## Diagrama de flujo de acciones del robot.
 ### Diagrama de flujo principal:
 
