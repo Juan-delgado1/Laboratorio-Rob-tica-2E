@@ -52,6 +52,14 @@ En la etapa inicial de la práctica se realizó el reconocimiento del entorno de
 
 ![Dimensiones Flanche](especificaciones_flanche.png)
 
+El diseño de la herramienta se realizó con base en las especificaciones del flanche encontradas en el manual de producto del robot IRB 140 y teniendo en cuenta la posición del marcador debería tener cierta inclinación para evitar que se presentaran singularidades en las articulaciones del manipulador y se debía colocar cierta tolerancia mediante un resorte que se contraía de acuerdo a la presión con la que el marcador hiciera contacto con la superficie de trabajo. De acuerdo a esto se realizó el siguiente diseño:
+
+
+Debido a que el marcador se debía poder colocar y retirar de la herramienta que lo acopla al flanche se optó por un diseño en dos partes, la parte inferior actúa como el soporte del marcador y como la base que se une al flanche, mientras que la parte superior sella el marcador con la herramienta y aporta seguridad para evitar movimientos no deseados respecto a la parte inferior. 
+
+
+### Planos de la herramienta
+
 ## Diagrama de flujo de acciones del robot.
 ### Diagrama de flujo principal:
 
