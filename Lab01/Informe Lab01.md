@@ -58,7 +58,7 @@ El diseño de la herramienta se realizó con base en las especificaciones del fl
   <img src="herramienta.png" alt="Diseño CAD de la herrameinta" width="400">
 </p>
 
-La inclinación seleccionada fue de 45° y la herramienta se une al flanche mediante tornillos M6.
+La inclinación seleccionada fue de 45°, 2cm de espacio para un resorte de este largo; la unión de la herramienta al flanche se hace mediante tornillos M6.
 
 Debido a que el marcador se debía poder colocar y retirar de la herramienta que lo acopla al flanche se optó por un diseño en dos partes, la parte inferior actúa como el soporte del marcador y como la base que se une al flanche, mientras que la parte superior sella el marcador con la herramienta y aporta seguridad para evitar movimientos no deseados respecto a la parte inferior. 
 
@@ -76,7 +76,16 @@ Otra consideración de la herramienta de acople del marcador son las dimensinone
   <img src="marcador.png" alt="Marcador" width="400">
 </p>
 
+Con base al diseño CAD se realizó la manufactura de la herramienta mediante impresión 3D y el resultado fue el siguiente:
 
+
+Después de tener la herramienta ya fabricada se procedió con el montaje en el robot y la calibración del TCP que correspondía al punto final de la herramienta y será el contacto con la superficie. Para esto se calibró con una referencia la cuál debía ser alcanzada desde 4 posiciones diferentes del robot, logrando el menor error posible, después de varios intentos se logró un error de 4mm.
+
+<p align="center">
+  <img src="marcador.png" alt="Marcador" width="400">
+</p>
+
+Desp
 ### Planos de la herramienta
 
 ## Diagrama de flujo de acciones del robot.
