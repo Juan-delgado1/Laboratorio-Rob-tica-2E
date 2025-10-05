@@ -45,7 +45,9 @@ posición de home en la que se inició.
 
 ◦Utilizar el módulo de entradas y salidas digitales dispuesto en el controlador IRC5.
 
-## Desarrollo de la solución
+## Desarrollo de la práctica
+
+En la etapa inicial de la práctica se realizó el reconocimiento del entorno de robotstudio así como la familiarización con el IRB 140 haciendo reconocimiento de sus partes y realizando movimientos básicos del manipulador de forma manual. Posteriormente vino la etapa de diseño de la herramienta para fijar el marcador al flanche del robot en el software CAD Inventor.
 
 **Diseño de la herramienta**
 
