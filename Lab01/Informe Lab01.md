@@ -60,6 +60,14 @@ El diseño de la herramienta se realizó con base en las especificaciones del fl
 
 Debido a que el marcador se debía poder colocar y retirar de la herramienta que lo acopla al flanche se optó por un diseño en dos partes, la parte inferior actúa como el soporte del marcador y como la base que se une al flanche, mientras que la parte superior sella el marcador con la herramienta y aporta seguridad para evitar movimientos no deseados respecto a la parte inferior. 
 
+<p align="center">
+  <img src="base.png" alt="Soporte" width="400">
+</p>
+
+<p align="center">
+  <img src="tapa.png" alt="Soporte" width="400">
+</p>
+
 
 Otra consideración de la herramienta de acople del marcador son las dimensinones del marcador que se iba a utilizar, para ello se realizó el diseño 3D también del marcador mediante las medidas del objeto físico por medio de un calibrador pie de rey, para así con base a las dimensiones poder acoplarlo en la herramienta de soporte de forma óptima.
 
