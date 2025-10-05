@@ -50,7 +50,7 @@ En la etapa inicial de la práctica se realizó el reconocimiento del entorno de
 
 ### Diseño de la herramienta
 
-![Dimensiones Flanche](Lab01/especificaciones_flanche.png)
+![Dimensiones Flanche](especificaciones_flanche.png)
 
 ## Diagrama de flujo de acciones del robot.
 ### Diagrama de flujo principal:
