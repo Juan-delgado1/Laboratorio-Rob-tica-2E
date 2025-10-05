@@ -21,7 +21,9 @@
 ## Desarrollo de la solución
 
 **Diseño de la herramienta**
+
 **Funciones Utilizadas**
+
 **Código en Rapid**
 
 ## Video de la simulación
