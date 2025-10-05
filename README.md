@@ -12,4 +12,23 @@
 **Juan José Delgado Estrada**
 **judelgadoe@unal.edu.co**
 
+## Introducción
+
+## Planteamiento del problema
+
+## Objetivos
+
+## Desarrollo de la solución
+
+**Diseño de la herramienta**
+**Funciones Utilizadas**
+**Código en Rapid**
+
+## Video de la simulación
+
+## Video de la implementación física
+
+## Conclusiones
+
+
 
