@@ -75,7 +75,7 @@ Después de tener la herramienta ya fabricada se procedió con el montaje en el 
 Cómo siguiente paso se tenía la calibración del workObject que sería nuestra "torta" a decorar, para ello se usó una caja de madera con dos capas de papel contact en la parte superior para simular un tablero y poder borrar los trazos del marcador en caso de que se necesitara. Las dimensiones de la caja eran 203.55 mm de largo, 171.65 mm de ancho y 63.52 mm de alto.
 
 ### Planos de la herramienta
-
+Los planos de la herramienta se encuentran en [Planos](Planos/), mientras que los modelos CAD en inventor se encuentran en [Inventor](Inventor/)
 ## Diagrama de flujo de acciones del robot.
 ### Diagrama de flujo principal:
 
