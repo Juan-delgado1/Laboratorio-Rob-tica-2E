@@ -103,7 +103,7 @@ Cómo siguiente paso se tenía la calibración del workObject que sería nuestra
 
 ### Código en Rapid
 
-El código utilizado en RAPID se encuentra en el archivo [Module1](Codigos/Module1.MOD), así como los archivos de calibración de la herramienta [TCP tool2E2e](Codigos\TCP%20tool2E2e.MOD) y del workobject [Wobj_work2E2e](Codigos\Wobj%20work2E2e.MOD).
+El código utilizado en RAPID se encuentra en el archivo [Module1](Codigos/Module1.mod), así como los archivos de calibración de la herramienta [TCP tool2E2e](Codigos/TCP%20tool2E2e.MOD) y del workobject [Wobj_work2E2e](Codigos/Wobj%20work2E2e.MOD).
 
 ## Video de la simulación
 
