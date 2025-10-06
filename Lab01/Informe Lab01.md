@@ -154,8 +154,13 @@ Se utilizo la herramienta de SmartComponent para simular el movimiento de la ban
 El código utilizado en RAPID se encuentra en la carpeta [Codigos](Codigos/) el archivo [Module1](Codigos/Module1.mod), así como los archivos de calibración de la herramienta [TCP tool2E2e](Codigos/TCP_tool2E2e.MOD) y del workobject [Wobj_work2E2e](Codigos/Wobj_work2E2e.MOD).
 
 ## Video de la simulación
+El vídeo donde se muestra la simulación y las herramientas utilizadas de RobotStudio se encuentra en este link: [Grupo 2e - Simulación en Robot para decorar pasteles - Laboratorio No. 1](https://youtu.be/onNyF1kdBL0)
 
 ## Video de la implementación física
+El vídeo de implementación física se encuentra en el siguiente link: [Grupo 2e - Implementación física Robot para decorar pasteles - Laboratorio No. 1](https://youtu.be/giggZgN50dI)
+
+
+El resultado final de la decoración hecha por el robot se puede ver en la siguiente imagen:
 
 <p align="center">
   <img src="Images/decorado.jpeg" alt="Diseño CAD de la herrameinta" width="400" style="transform: rotate(270deg);">
@@ -165,3 +170,4 @@ El código utilizado en RAPID se encuentra en la carpeta [Codigos](Codigos/) el 
 - Es necesario siempre tener consideraciones de seguridad para el manejo de robots industriales. La velocidad de un robot puede ser mayor que la reacción de las personas quienes lo controlan, lo cual puede generar daños incluso si se activo un botón de emergencia. La trayectoria que toma el robot debe tener en cuenta todos los objetos que lo rodean para evitar golpearlos en su recorrido. Se debe tener especial cuidado al realizar mantenimientos en la herramienta o el algún elemento del robot, su fuerza es mayor a la de cualquier humano y por eso es importante que estén quietos cuando se esté cerca de él; también es una alternativa llevar al robot a una posición segura cuando se desee realizar estos tipos de mantenimiento y que al operarlos, las personas no se encuentren en su espacio de trabajo.
 
 - Las acciones hechas por el robot son completamente guiadas por el operador y el modulo que se cargue en el. Los robots no se conocen completamente ni el espacio que los rodea, por lo cual ellos no saben a que velocidad van, que objetos están tocando o que acción realizan a su alrededor. Por eso a la hora de programarlos, es importante tener en cuenta todo lo que hay en su alrededor y supervisar cada acción que realizan. Sus trayectorias puede cruzarse con algún componente, al escribir puede ser que lo hagan muy abajo, al moverse es posible incluso que se golpeen con ellos mismos. Para evitar todo esto existen las simulaciones y todas las herramientas de seguridad que están ya implementadas en el robot, se puede pausar una rutina antes de que el robot interactúe con otro objeto y detenerlo completamente si realiza movimientos no esperados.
+
