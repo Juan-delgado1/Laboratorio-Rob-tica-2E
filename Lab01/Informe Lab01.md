@@ -66,6 +66,9 @@ Otra consideración de la herramienta de acople del marcador son las dimensiones
 
 Con base al diseño CAD se realizó la manufactura de la herramienta mediante impresión 3D y el resultado fue el siguiente:
 
+<p align="center">
+  <img src="Images/impresion.jpeg" alt="Impresión" width="400">
+</p>
 
 Después de tener la herramienta ya fabricada se procedió con el montaje en el robot y la calibración del TCP que correspondía al punto final de la herramienta y será el contacto con la superficie. Para esto se calibró con una referencia (como se muestra en la siguiente imagen) la cuál debía ser alcanzada desde 4 posiciones diferentes del robot, logrando el menor error posible, después de varios intentos se logró un error de 4mm.
 
@@ -73,6 +76,10 @@ Después de tener la herramienta ya fabricada se procedió con el montaje en el 
   <img src="Images/calibración.jpeg" alt="Marcador" width="400">
 </p>
 Cómo siguiente paso se tenía la calibración del workObject que sería nuestra "torta" a decorar, para ello se usó una caja de madera con dos capas de papel contact en la parte superior para simular un tablero y poder borrar los trazos del marcador en caso de que se necesitara. Las dimensiones de la caja eran 203.55 mm de largo, 171.65 mm de ancho y 63.52 mm de alto.
+
+<p align="center">
+  <img src="Images/caja.jpeg" alt="Marcador" width="400">
+</p>
 
 ### Planos de la herramienta
 Los planos de la herramienta se encuentran en [Planos](Planos/), mientras que los modelos CAD en inventor se encuentran en [Inventor](Inventor/)
