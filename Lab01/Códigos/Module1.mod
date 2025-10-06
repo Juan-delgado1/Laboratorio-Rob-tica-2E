@@ -1,0 +1,340 @@
+MODULE Module1
+
+    CONST robtarget Target_10:=[[-694.73,238.6,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[-654.02,238.6,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[-643.85,227.85,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[-654.02,217.2,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[-544.31790343,172.259854367,496.430235891],[0.016376198,-0.982576919,0.151768324,0.106022613],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60_3:=[[-694.73,251.5,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60:=[[-694.73,251.5,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_70:=[[-659.11,251.5,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_80:=[[-643.85,262.25,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_90:=[[-659.11,278,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100:=[[-694.73,278,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100_2:=[[-694.73,278,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_2:=[[-694.73,238.6,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40_4:=[[-654.02,217.2,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110_2:=[[-643.85,285.8,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110:=[[-643.85,285.8,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_120:=[[-694.73,300.85,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_130:=[[-643.85,315.9,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_130_2:=[[-643.85,315.9,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_140_2:=[[-669.29,290.1,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_140:=[[-669.29,290.1,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_150:=[[-669.29,311.6,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_150_2:=[[-669.29,311.6,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_160_2:=[[-643.85,324.4,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_160:=[[-643.85,324.4,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_170:=[[-694.73,324.4,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_180:=[[-643.85,354.5,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_190:=[[-694.73,354.5,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_190_2:=[[-694.73,354.5,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    PERS tooldata Portamarcador:=[TRUE,[[109.712,0,129.534],[0.923879533,0,0.382683432,0]],[0.1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[50,0,35],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    CONST robtarget Target_200:=[[-626,260,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_210:=[[-600,280,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_200_2:=[[-626,260,303.52],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_210_2:=[[-600,280,303.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_220:=[[-626,280,283.52],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_230:=[[-600,260,283.52],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_230_2:=[[-600,260,303.52],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_240_2:=[[-626,295,303.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_240:=[[-626,286,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_250:=[[-629,301,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_260:=[[-600,290,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_270:=[[-600,303,283.52],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_270_2:=[[-600,303,303.52],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_280_2:=[[-590,240,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_280:=[[-590,240,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_290:=[[-590,220,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_300:=[[-585,215,281.214051369],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_310:=[[-580,220,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_320:=[[-580,240,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_330:=[[-572.5,245,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_340:=[[-565,240,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_350:=[[-565,220,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_350_2:=[[-565,220,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_360:=[[-565,250,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_370:=[[-590,260,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_380:=[[-565,270,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_380_2:=[[-565,270,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_390:=[[-578,255,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_400:=[[-578,265,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_400_2:=[[-578,265,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_410:=[[-565,275,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_420:=[[-590,275,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_430:=[[-565,295,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_440:=[[-590,295,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_440_2:=[[-590,295,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_450:=[[-590,300,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_460:=[[-590,320,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_460_2:=[[-590,320,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_470:=[[-590,310,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_480:=[[-565,310,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_480_2:=[[-565,310,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_490:=[[-590,325,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_500:=[[-590,345,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_500_2:=[[-590,345,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_510:=[[-590,335,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_520:=[[-565,335,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_520_2:=[[-565,335,301.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_530:=[[-565,325,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_540:=[[-565,345,281.02],[0,1,0,0],[1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST jointtarget JointTarget_1:=[[0,0,0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_550:=[[-40.44,-662.16369974,682.71],[0.298807166,0.664472091,0.640860248,-0.241845531],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_560:=[[-259.298529285,387.166901486,828.503632543],[0.167094317,0.622780608,-0.496472066,-0.581153415],[1,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    VAR num position := 0; 
+    CONST robtarget Target_570:=[[-630,341.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_590:=[[-615,326.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_580:=[[-600,341.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_600:=[[-615,356.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_570_2:=[[-630,341.65,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_610:=[[-622.5,349.15,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_620:=[[-615,341.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_630:=[[-607.5,334.15,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_580_2:=[[-600,341.65,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_640_2:=[[-607.5,341.65,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_640:=[[-607.5,341.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_650_2:=[[-622.5,341.65,293.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_650:=[[-622.5,341.65,283.52],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    PROC main()
+        Reset Conveyor_INV;
+        Reset Conveyor_FWD;
+        Path_Home;
+        WHILE TRUE DO
+            IF DI_01 = 1 THEN
+                Set DO_01;
+                Path_Home;
+                
+                Set Conveyor_INV;
+                Set Conveyor_FWD;
+                WaitTime 1;
+                Reset Conveyor_FWD;
+                
+                Path_Home;
+                Path_30;
+                Path_20;
+                Path_40;
+                path_50;
+                Path_70;
+                Path_80;
+                Path_270;
+                Path_90;
+                Path_100;
+                Path_110;
+                Path_120;
+                Path_130;
+                Path_140;
+                Path_150;
+                Path_160;
+                Path_170;
+                Path_180;
+                Path_190;
+                Path_200;
+                Path_210;
+                Path_220;
+                Path_230;
+                Path_240;
+                
+                Path_Home;
+                
+                WaitTime 2;
+                Set Conveyor_FWD;
+                WaitTime 2.75;
+                Reset Conveyor_FWD;
+                Reset Conveyor_INV;
+                Reset DO_01;
+                
+            ELSEIF DI_02 = 1 THEN 
+                Path_250;
+            ELSEIF DI_03 = 1 THEN
+                Path_260;
+            ENDIF
+        ENDWHILE
+        
+    ENDPROC
+    
+    PROC Path_Home()
+        IF position = 1 THEN
+            MoveJ Target_50,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 2 THEN
+            MoveJ Target_560,v100,z1,Portamarcador\WObj:=Workobject_1;
+            MoveJ Target_50,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 3 THEN
+            MoveJ Target_560,v100,z1,Portamarcador\WObj:=Workobject_1;
+            MoveJ Target_50,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 0 THEN
+            MoveJ Target_560,v100,z1,Portamarcador\WObj:=Workobject_1;
+            MoveJ Target_50,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ENDIF
+        position := 1;
+    ENDPROC
+    PROC Path_20()
+        MoveJ Target_60_3,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_60,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_70,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveC Target_80,Target_90,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_100,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_100_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_30()
+        MoveJ Target_10_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_10,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_20,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveC Target_30,Target_40,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_40_4,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_40()
+        MoveJ Target_110_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_110,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_120,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_130,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_130_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_140_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_140,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_150,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_150_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_50()
+        MoveJ Target_160_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_160,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_170,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_180,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_190,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_190_2,v200,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_60()
+
+    ENDPROC
+    PROC Path_70()
+        MoveJ Target_200_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_200,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_210,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_210_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_220,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_230,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_230_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_80()
+        MoveL Target_240_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_240,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_250,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_260,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_270,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_270_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_90()
+        MoveL Target_280_2,v100,z100,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_280,v100,z100,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_290,v100,z100,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_100()
+        MoveL Target_290,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_300,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_310,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_110()
+        MoveL Target_310,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_320,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_120()
+        MoveL Target_320,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_330,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_340,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_130()
+        MoveL Target_340,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_350,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_350_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_140()
+        MoveL Target_360,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_370,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_150()
+        MoveL Target_370,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_380,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_380_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_160()
+        MoveL Target_390,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_400,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_400_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_170()
+        MoveL Target_410,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_420,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_180()
+        MoveL Target_420,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_430,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_190()
+        MoveL Target_430,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_440,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_440_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_200()
+        MoveL Target_450,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_460,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_460_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_210()
+        MoveL Target_470,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_480,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_480_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_220()
+        MoveL Target_490,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_500,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_500_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_230()
+        MoveL Target_510,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_520,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_520_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_240()
+        MoveL Target_530,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_540,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_250()
+        IF position = 1 THEN
+            MoveJ Target_560,v100,z1,Portamarcador\WObj:=Workobject_1;
+            MoveAbsJ JointTarget_1,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 2 THEN
+            MoveAbsJ JointTarget_1,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 3 THEN
+            MoveAbsJ JointTarget_1,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ENDIF
+        position := 2;
+    ENDPROC
+    PROC Path_260()
+        IF position = 1 THEN
+            MoveJ Target_560,v100,z1,Portamarcador\WObj:=Workobject_1;  
+            MoveJ Target_550,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 2 THEN
+            MoveJ Target_550,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ELSEIF position = 3 THEN
+            MoveJ Target_550,v100,z1,Portamarcador\WObj:=Workobject_1;
+        ENDIF
+        position := 3;
+    ENDPROC
+    PROC Path_270()
+        MoveJ Target_570_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveL Target_570,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveC Target_590,Target_580,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveC Target_600,Target_570,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveC Target_610,Target_620,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveC Target_630,Target_580,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_580_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_640_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_640,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_640_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_650_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_650,v100,z1,Portamarcador\WObj:=Workobject_1;
+        MoveJ Target_650_2,v100,z1,Portamarcador\WObj:=Workobject_1;
+    ENDPROC
+    
+ENDMODULE
