@@ -138,11 +138,11 @@ Entre los elementos más utilizados se encuentran los siguientes:
 #### Elementos utilizados en RobotStudio
 Para la simulación en RobotStudio se implementaron distintos componentes que permiten tener una mejor visualización.
 
-![[Images/Pasted image 20251005213836.png]]
+![StationLogic](Images/Pasted image 20251005213836.png)
 
 Se utilizó la herramienta de **Station Logic** para conectar las entradas y salidas del controlador con la herramienta SmartComponent que se muestra a continuación.
 
-![[Images/Pasted image 20251005213251.png]]
+![SmarrtComponent](Images/Pasted image 20251005213251.png)
 
 Se utilizo la herramienta de SmartComponent para simular el movimiento de la banda. En ella se utilizaron los siguientes elementos:
 - **Entradas y salidas**: Aquí se simularon las entradas que tiene el controlador para activar/desactivar las señales de entrada. 
