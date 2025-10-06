@@ -2,14 +2,14 @@
 
 ## Integrantes
 
-**Juan Angel Vargas Rodríguez**
-**juvargasro@unal.edu.co**
+**Juan Ángel Vargas Rodríguez**
+juvargasro@unal.edu.co
 
 **Santiago Mariño Cortés**
-**smarinoc@unal.edu.co**
+smarinoc@unal.edu.co
 
 **Juan José Delgado Estrada**
-**judelgadoe@unal.edu.co**
+judelgadoe@unal.edu.co
 
 ## Introducción
 En la práctica se buscaba manipular un robot industrial IRB 140 con el objetivo de familiarizarse con esta máquina mediante la realización de una rutina de trabajo que consistía en la decoración de una superficie que simulara a una torta de cumpleaños y de esta forma aplicar conceptos vistos en clase de forma práctica. Para ello se tuvieron que identificar las partes IRB 140 y su funcionamiento para poder realizar el proceso de diseño una herramienta que se acoplara al manipulador y desarrollar una rutina de código conociendo las limitaciones y características claves tanto del IRB 140 como del entorno de RobotStudio.
@@ -104,7 +104,7 @@ Desp
 
 **Path Home**
 <p align="center">
-  <img src="Diagrama_de_flujo_2.png" alt="Diagrama de flujo principal" width="400">
+  <img src="Images/Diagrama_de_flujo_2.png" alt="Diagrama de flujo principal" width="400">
 </p>
 
 **Path Config**
