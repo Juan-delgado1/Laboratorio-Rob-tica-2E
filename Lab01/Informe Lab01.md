@@ -50,12 +50,12 @@ En la etapa inicial de la práctica se realizó el reconocimiento del entorno de
 
 ### Diseño de la herramienta
 
-![Dimensiones Flanche](especificaciones_flanche.png)
+![Dimensiones Flanche](Images/especificaciones_flanche.png)
 
 El diseño de la herramienta se realizó con base en las especificaciones del flanche encontradas en el manual de producto del robot IRB 140 y teniendo en cuenta la posición del marcador debería tener cierta inclinación para evitar que se presentaran singularidades en las articulaciones del manipulador y se debía colocar cierta tolerancia mediante un resorte que se contraía de acuerdo a la presión con la que el marcador hiciera contacto con la superficie de trabajo. De acuerdo a esto se realizó el siguiente diseño:
 
 <p align="center">
-  <img src="herramienta.png" alt="Diseño CAD de la herrameinta" width="400">
+  <img src="Images/herramienta.png" alt="Diseño CAD de la herrameinta" width="400">
 </p>
 
 La inclinación seleccionada fue de 45°, 2cm de espacio para un resorte de este largo; la unión de la herramienta al flanche se hace mediante tornillos M6.
@@ -63,17 +63,17 @@ La inclinación seleccionada fue de 45°, 2cm de espacio para un resorte de este
 Debido a que el marcador se debía poder colocar y retirar de la herramienta que lo acopla al flanche se optó por un diseño en dos partes, la parte inferior actúa como el soporte del marcador y como la base que se une al flanche, mientras que la parte superior sella el marcador con la herramienta y aporta seguridad para evitar movimientos no deseados respecto a la parte inferior. 
 
 <p align="center">
-  <img src="base.png" alt="Soporte" width="400">
+  <img src="Images/base.png" alt="Soporte" width="400">
 </p>
 
 <p align="center">
-  <img src="tapa.png" alt="Soporte" width="400">
+  <img src="Images/tapa.png" alt="Soporte" width="400">
 </p>
 
 Otra consideración de la herramienta de acople del marcador son las dimensinones del marcador que se iba a utilizar, para ello se realizó el diseño 3D también del marcador mediante las medidas del objeto físico por medio de un calibrador pie de rey, para así con base a las dimensiones poder acoplarlo en la herramienta de soporte de forma óptima.
 
 <p align="center">
-  <img src="marcador.png" alt="Marcador" width="400">
+  <img src="Images/marcador.png" alt="Marcador" width="400">
 </p>
 
 Con base al diseño CAD se realizó la manufactura de la herramienta mediante impresión 3D y el resultado fue el siguiente:
@@ -82,7 +82,7 @@ Con base al diseño CAD se realizó la manufactura de la herramienta mediante im
 Después de tener la herramienta ya fabricada se procedió con el montaje en el robot y la calibración del TCP que correspondía al punto final de la herramienta y será el contacto con la superficie. Para esto se calibró con una referencia (como se muestra en la siguiente imagen) la cuál debía ser alcanzada desde 4 posiciones diferentes del robot, logrando el menor error posible, después de varios intentos se logró un error de 4mm.
 
 <p align="center">
-  <img src="calibración.jpeg" alt="Marcador" width="400">
+  <img src="Images/calibración.jpeg" alt="Marcador" width="400">
 </p>
 Cómo siguiente paso se tenía la calibración del work object que sería nuestra "torta" a decorar, para ello se usó una caja de madera con dos capas de papel contact en la parte superior para simular un tablero y poder borrar los trazos del marcador en caso de que se necesitara. Las dimenciones de la caja eran 203.55 mm de largo, 171.65 mm de ancho y 63.52 mm de alto.
 
@@ -93,13 +93,13 @@ Desp
 ### Diagrama de flujo principal:
 
 <p align="center">
-  <img src="Diagrama_de_flujo_general.png" alt="Diagrama de flujo principal" width="400">
+  <img src="Images/Diagrama_de_flujo_general.png" alt="Diagrama de flujo principal" width="400">
 </p>
 
 ### Diagramas de flujo de los paths: 
 **Proceso escritura**
 <p align="center">
-  <img src="Diagrama_de_flujo_1.png" alt="Diagrama de flujo principal" width="400">
+  <img src="Images/Diagrama_de_flujo_1.png" alt="Diagrama de flujo principal" width="400">
 </p>
 
 **Path Home**
@@ -109,7 +109,7 @@ Desp
 
 **Path Config**
 <p align="center">
-  <img src="Diagrama_de _flujo_3.png" alt="Diagrama de flujo principal" width="400">
+  <img src="Images/Diagrama_de _flujo_3.png" alt="Diagrama de flujo principal" width="400">
 </p>
 
 ### Funciones Utilizadas
@@ -466,7 +466,7 @@ ENDMODULE
 ## Video de la implementación física
 
 <p align="center">
-  <img src="decorado.jpeg" alt="Diseño CAD de la herrameinta" width="400">
+  <img src="Images/decorado.jpeg" alt="Diseño CAD de la herrameinta" width="400">
 </p>
 
 ## Conclusiones
