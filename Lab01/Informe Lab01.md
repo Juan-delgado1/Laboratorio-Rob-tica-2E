@@ -84,6 +84,7 @@ Después de tener la herramienta ya fabricada se procedió con el montaje en el 
 <p align="center">
   <img src="calibración.jpeg" alt="Marcador" width="400">
 </p>
+Cómo siguiente paso se tenía la calibración del work object que sería nuestra "torta" a decorar, para ello se usó una caja de madera con dos capas de papel contact en la parte superior para simular un tablero y poder borrar los trazos del marcador en caso de que se necesitara. Las dimenciones de la caja eran 203.55 mm de largo, 171.65 mm de ancho y 63.52 mm de alto.
 
 Desp
 ### Planos de la herramienta
