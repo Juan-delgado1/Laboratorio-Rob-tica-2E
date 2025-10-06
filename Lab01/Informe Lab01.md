@@ -101,6 +101,46 @@ Cómo siguiente paso se tenía la calibración del workObject que sería nuestra
 
 ### Funciones Utilizadas
 
+#### Funciones y comandos en RAPID
+Para el desarrollo principal de la práctica, se utilizaron funciones implementadas en RAPID, las cuales hicieron posible el funcionamiento secuencial del robot como se mostró en los diagramas anteriores.
+
+##### Elementos:
+Entre los elementos más utilizados se encuentran los siguientes:
+- **tooldata Portamarcador:** La “herramienta” que usa el robot (punta). Incluye dónde está la punta y su peso.
+- **wobjdata Workobject_1:** El “sistema de referencia” del trabajo. Le dice al robot dónde está la pieza/mesa.
+- **robtarget Target_#*:** Puntos en el espacio a los que el robot debe ir (con posición y orientación).
+- **jointtarget JointTarget_1:** Posición de las **juntas** del robot (ángulos) para ir a una postura segura o inicial.
+- **num position:** Un número para contar o guardar estados simples.
+- **Entradas/Salidas (DI_01, DI_02, DI_03, DO_01, Conveyor_INV, Conveyor_FWD):** Señales para encender/apagar cosas (por ejemplo, banda transportadora).
+- **Parámetros de movimiento (v100, v200, z1, z100):**
+    - **v100 / v200:** Velocidad.
+    - **z1 / z100:** Qué tanto “suaviza” las esquinas al pasar por puntos (menos = más preciso, más = más suave/rápido).
+
+##### Comandos
+- **MoveJ:** Mueve el robot por dentro (por sus articulaciones). Rápido para ir de A a B sin seguir línea recta.
+- **MoveL:** Mueve en línea recta entre dos puntos. Útil cuando la punta debe “dibujar” una línea.    
+- **MoveC:** Mueve en arco/círculo pasando por puntos intermedios.
+- **MoveAbsJ:** Va a una postura específica de juntas (como una “posición casa”).    
+- **WaitTime t:** Espera “t” segundos (para sincronizar con algo externo).
+- **Set / Reset:** Enciende / apaga una salida (por ejemplo, prender la banda).
+- **IF / ELSEIF / ELSE / ENDIF:** “Si pasa esto, haz esto; si no, haz lo otro”.
+- **WHILE / ENDWHILE:** Repite mientras se cumpla una condición.
+- **Llamadas a procedimientos (`main`, `Path_#`):** Partes del programa que agrupan pasos (por ejemplo, “ir a home”, “hacer trayecto 1”, etc.).
+
+
+#### Elementos utilizados en RobotStudio
+Para la simulación en RobotStudio se implementaron distintos componentes que permiten tener una mejor visualización.
+
+![[Images/Pasted image 20251005213836.png]]
+
+Se utilizó la herramienta de **Station Logic** para conectar las entradas y salidas del controlador con la herramienta SmartComponent que se muestra a continuación.
+
+![[Images/Pasted image 20251005213251.png]]
+
+Se utilizo la herramienta de SmartComponent para simular el movimiento de la banda. En ella se utilizaron los siguientes elementos:
+- **Entradas y salidas**: Aquí se simularon las entradas que tiene el controlador para activar/desactivar las señales de entrada. 
+- **LinearMover**: Para mover el objeto que corresponde a la caja. En el se especificó la dirección del movimiento y la magnitud de la velocidad para que sea igual al de la caja, este valor es de aproximadamente 240 mm/s.
+- **LogicGate**: Este bloque se utilizó para especificar que solo exista movimiento cuando las dos salidas del controlador están activas: **Conveyor_FWD y Conveyor_INV**.
 ### Código en Rapid
 
 El código utilizado en RAPID se encuentra en el archivo [Module1](Codigos/Module1.MOD), así como los archivos de calibración de la herramienta [TCP tool2E2e](Codigos\TCP%20tool2E2e.MOD) y del workobject [Wobj_work2E2e](Codigos\Wobj%20work2E2e.MOD).
@@ -110,7 +150,7 @@ El código utilizado en RAPID se encuentra en el archivo [Module1](Codigos/Modul
 ## Video de la implementación física
 
 <p align="center">
-  <img src="Images/decorado.jpeg" alt="Diseño CAD de la herrameinta" width="400">
+  <img src="Images/decorado.jpeg" alt="Diseño CAD de la herrameinta" width="400" style="transform: rotate(270deg);">
 </p>
 
 ## Conclusiones
