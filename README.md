@@ -19,7 +19,7 @@ Con este repositorio se espera guardar tanto la información, procesos, códigos
 ## Laboratorio No. 1
 La primera entrega corresponde al primer laboratorio, el cual corresponde a un acercamiento a la robótica industrial y al manejo de posiciones, trayectorias, orientación, entradas y salidas de un robot industrial. Se manejó el manipulador manipulador industrial de ABB IRB 140 con su controlador IRC5.
 
-Para esta entrega se utilizó la carpeta Lab01, donde se encuentran los códigos, planos y el [Informe de laboratorio](Lab01/Informe%20Lab01.md) realizados para esta entrega.
+Para esta entrega se utilizó la carpeta [Lab01](Lab01/), donde se encuentran los códigos, planos y el [Informe de laboratorio](Lab01/Informe%20Lab01.md) realizados para esta entrega.
 
 
 

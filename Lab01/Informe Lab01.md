@@ -151,7 +151,7 @@ Se utilizo la herramienta de SmartComponent para simular el movimiento de la ban
 - **LogicGate**: Este bloque se utilizó para especificar que solo exista movimiento cuando las dos salidas del controlador están activas: **Conveyor_FWD y Conveyor_INV**.
 ### Código en Rapid
 
-El código utilizado en RAPID se encuentra en el archivo [Module1](Codigos/Module1.mod), así como los archivos de calibración de la herramienta [TCP tool2E2e](Codigos/TCP_tool2E2e.MOD) y del workobject [Wobj_work2E2e](Codigos/Wobj_work2E2e.MOD).
+El código utilizado en RAPID se encuentra en la carpeta [Codigos](Codigos/) el archivo [Module1](Codigos/Module1.mod), así como los archivos de calibración de la herramienta [TCP tool2E2e](Codigos/TCP_tool2E2e.MOD) y del workobject [Wobj_work2E2e](Codigos/Wobj_work2E2e.MOD).
 
 ## Video de la simulación
 
