@@ -54,11 +54,13 @@ judelgadoe@unal.edu.co
 - Describir las diferencias entre el home1 y el home2 del Motoman MH6.
 
 **Home 1**
+<p align="center">
 
-![Home1.0](./Images/Home1.1.jpg)
+<img src="./Images/Home1.1.jpg" width="600">
 
-![Home1.1](./Images/Home1.jpg)
-
+</p>
+<div align="center">
+  
 |**Eje**|**Posición**|
 |-------|------------|
 |1|0 deg|
@@ -68,16 +70,20 @@ judelgadoe@unal.edu.co
 |5|51.7618 deg|
 |6|-3.2709 deg|
 
+</div>
+
 En esta posición, el robot MH6 se encuentra completamente replegado o recogido, con los ejes articulados de forma compacta.
 Esta configuración se utiliza principalmente para almacenamiento, transporte, ya que minimiza el espacio ocupado y reduce el riesgo de colisiones con el entorno.
 Además, al mantener el brazo dentro de su radio mínimo de trabajo, se protege la integridad mecánica del manipulador y se facilita su mantenimiento o desconexión segura del sistema.
 
 **Home 2**
 
-![Home2.0](./Images/Home2.jpg)
+<p align="center">
+<img src="./Images/Home2.jpg" width="400">
+</p>
 
-![Home2.1](./Images/Home2.2.jpg)
-
+<div align="center">
+  
 |**Eje**|**Posición**|
 |-------|------------|
 |1|0 deg|
@@ -86,6 +92,7 @@ Además, al mantener el brazo dentro de su radio mínimo de trabajo, se protege 
 |4|0 deg|
 |5|-0.1468 deg|
 |6|-3.2709 deg|
+</div>
 
 En esta posición, el robot MH6 adopta una postura extendida, con el brazo y el efector final orientados hacia el área de trabajo.
 Esta configuración se considera el punto de partida ideal para operaciones de manipulación o movimientos automáticos, ya que ofrece una visión clara del entorno y una cinemática favorable para alcanzar distintas posiciones sin limitaciones articulares.
