@@ -19,8 +19,26 @@ judelgadoe@unal.edu.co
 ## Configuraciones y características del manipulador Motoman MH6 y sus herramientas
 
 ### Comparación entre manipuladores IRB140 y Motoman MH6
-- Cuadro comparativo detallado de las caracter´ısticas t´ecnicas del Motoman MH6 y el IRB140, incluyendo carga m´axima, alcance, n´umero de grados de libertad, velocidad, aplicaciones t´ıpicas, etc.
 - Comparar las especificaciones t´ecnicas del Motoman MH6 y el IRB140 en un cuadro comparativo.
+<div align="center">
+
+| **Característica** | **Motoman MH6 (Yaskawa)** | **ABB IRB 140-6/0.8** |
+|---------------------|---------------------------|-------------------------|
+| **Fabricante** | Yaskawa Motoman | ABB Robotics |
+| **Modelo** | MH6 | IRB 140-6/0.8 |
+| **Carga útil máxima** | 6 kg | 6 kg |
+| **Alcance máximo** | 1373 mm | 800 mm |
+| **Número de ejes** | 6 | 6 |
+| **Número de grados de libertad** | 6 | 6 |
+| **Peso del manipulador** | 130 kg | 98 kg |
+| **Velocidad máxima por eje** | E1: 170°/s<br>E2: 150°/s<br>E3: 172°/s<br>E4: 250°/s<br>E5: 250°/s<br>E6: 400°/s | E1: 200°/s<br>E2: 200°/s<br>E3: 260°/s<br>E4: 360°/s<br>E5: 360°/s<br>E6: 450°/s |
+| **Rango de movimiento por eje** | E1: ±170°<br>E2: +155° a –90°<br>E3: +250° a –170°<br>E4: ±200°<br>E5: ±120°<br>E6: ±360° | E1: ±180°<br>E2: +110° a –90°<br>E3: +50° a –230°<br>E4: ±200°<br>E5: ±115°<br>E6: ±400° |
+| **Repetibilidad (precisión)** | ±0.08 mm | ±0.03 mm |
+
+
+</div>
+
+
 
 ### Configuraciones iniciales del manipulador Motoman MH6
 - Descripci´on de las configuraciones home1 y home2 del Motoman MH6, indicando la posici´on de cada articulaci´on, ¿Cual posici´on es mejor?, justifique su respuesta.
