@@ -1,7 +1,7 @@
 # Laboratorio No. 02 - Robótica Industrial - Análisis y Operación del Manipulador Motoman MH6.
 ## Integrantes
 
-**Juan Ángel Vargas Rodríguez**
+**Juan Angel Vargas Rodríguez**
 juvargasro@unal.edu.co
 
 **Santiago Mariño Cortés**
@@ -28,8 +28,7 @@ judelgadoe@unal.edu.co
 | **Modelo** | MH6 | IRB 140-6/0.8 |
 | **Carga útil máxima** | 6 kg | 6 kg |
 | **Alcance máximo** | 1373 mm | 800 mm |
-| **Número de ejes** | 6 | 6 |
-| **Número de grados de libertad** | 6 | 6 |
+| **Número de ejes / Grados de libertad** | 6 | 6 |
 | **Peso del manipulador** | 130 kg | 98 kg |
 | **Velocidad máxima por eje** | E1: 220°/s<br>E2: 200°/s<br>E3: 220°/s<br>E4: 410°/s<br>E5: 410°/s<br>E6: 610°/s | E1: 200°/s<br>E2: 200°/s<br>E3: 260°/s<br>E4: 360°/s<br>E5: 360°/s<br>E6: 450°/s |
 | **Rango de movimiento por eje** | E1: ±170°<br>E2: +155° a –90°<br>E3: +250° a –175°<br>E4: ±180°<br>E5: +225° a -45°<br>E6: ±360° | E1: ±180°<br>E2: +110° a –90°<br>E3: +50° a –230°<br>E4: ±200°<br>E5: ±115°<br>E6: ±400° |
