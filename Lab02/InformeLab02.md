@@ -12,9 +12,18 @@ judelgadoe@unal.edu.co
 
 ## Introducción
 
+Los manipuladores industriales son herramientas clave en la automatizaci´on industrial. Cada modelo tiene sus propias características técnicas y configuraciones iniciales que los hacen ideales para diferentes aplicaciones. En este taller, se busca realizar una comparación técnica entre el manipulador Motoman MH6 y el ABB IRB140, comprender las configuraciones iniciales del Motoman MH6, explorar los diferentes modos de operación manual, y realizar simulaciones y ejecuciones reales de trayectorias usando RoboDK.
+
 ## Planteamiento del problema
 
 ## Objetivos
+
+ - Comprender las diferencias entre las características técnicas del manipulador Motoman MH6 y el IRB140. Identificar y describir las configuraciones iniciales del manipulador Motoman MH6, incluyendo el home1 y home2.
+ - Realizar movimientos manuales del manipulador Motoman en distintos modos de operación (articulaciones, cartesianos, traslaciones y rotaciones).
+ - Cambiar y controlar los niveles de velocidad para el movimiento manual del manipulador Motoman MH6.
+ - Comprender las principales aplicaciones del software RoboDK y su comunicaci´on con el manipulador.
+ - Comparar y analizar las diferencias entre RobotStudio y RoboDK.
+ - Diseñar y ejecutar una trayectoria polar en RoboDK y realizar su implementación física en el manipulador Motoman.
 
 ## Configuraciones y características del manipulador Motoman MH6 y sus herramientas
 
@@ -104,20 +113,21 @@ La elección depende del tipo de operación y del contexto de trabajo.
 
 
 ### Movimientos manuales
-- Procedimiento detallado para realizar movimientos manuales, especificando c´omo cambiar entre modos de operaci´on (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
-- Describir el procedimiento y cu´ales teclas se usan para realizar el movimiento manual del manipulador Motoman por articulaciones, cambiar a movimientos cartesianos y realizar movimientos de traslaci´on y rotaci´on en los ejes X, Y, Z.
+- Procedimiento detallado para realizar movimientos manuales, especificando como cambiar entre modos de operación (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
+- Describir el procedimiento y cuales teclas se usan para realizar el movimiento manual del manipulador Motoman por articulaciones, cambiar a movimientos cartesianos y realizar movimientos de traslación y rotación en los ejes X, Y, Z.
 
 ### Control de velocidad
-- Explicaci´on completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y c´omo identificar el nivel establecido en la interfaz del robot.
-- Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuraci´on, ¿C´omo se hace el cambio entre niveles de velocidad?, ¿C´omo se identifica en la pantalla el nivel de velocidad establecido?
+- Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
+- Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuración, ¿Cómo se hace el cambio entre niveles de velocidad?, ¿Cómo se identifica en la pantalla el nivel de velocidad establecido?
 
 ### Software RoboDK 
-- Descripci´on de las principales funcionalidades de RoboDK, explicando c´omo se comunica con el manipulador Motoman y qu´e procesos realiza para ejecutar movimientos.
-- Explicar las aplicaciones principales de RoboDK y c´omo se comunica con el manipulador, ¿Qu´e hace RoboDK para mover el manipulador?
-- ¿C´omo se comunica RoboDK con el manipulador?
+- Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y que procesos realiza para ejecutar movimientos.
+- Explicar las aplicaciones principales de RoboDK y cómo se comunica con el manipulador, ¿Qué hace RoboDK para mover el manipulador?
+- ¿Cómo se comunica RoboDK con el manipulador?
 
 ### Comparación de herramientas RoboDK y RobotStudio
 - Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
+
 #### RoboDK
 Herramienta multimarca, flexible y extensible para simulación y programación offline; fuerte en integración de muchos modelos, scripting (Python) y generación de programas para distintos controladores.
   - **Ventajas:**
