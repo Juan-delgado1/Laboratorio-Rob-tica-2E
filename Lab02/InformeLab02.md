@@ -155,9 +155,9 @@ Herramienta propietaria ABB enfocada a simulación de alta fidelidad y programac
     - Validación final de programas antes de subirlos a producción en sistemas ABB (reduce riesgos y tiempos de parada).    
 
 ## Desarrollo de práctica: Trayectoria polar
-- Explicar que vamos a hacer Xd
-- Programar una trayectoria polar en RoboDK, hacer que se ejecute virtualmente en RoboDK y hacer que el manipulador Motoman la realice f´ısicamente comandado desde el PC. https://www.monografias.com/trabajos33/coordenadas-polares/coordenadas-polares.
-- Bajo la secci´on de la trayectoria polar, incluir los nombres de los integrantes del equipo.
+
+Para el desarrollo de la práctica se realizó primero la exploración del entorno de RoboDK y el movimiento de forma manual del manipulador del robot Motoman MH6 mediante el teach pendant, después de esto se procedió con la elaboración de un código para que el robot ejecutara una trayectoria, para ello se usó un  [Script de python](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
+
 
 ### Diagrama de flujo de acciones del robot
 ### Plano de planta 
