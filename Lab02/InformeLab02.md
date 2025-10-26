@@ -19,7 +19,16 @@ judelgadoe@unal.edu.co
 ## Configuraciones y características del manipulador Motoman MH6 y sus herramientas
 
 ### Comparación entre manipuladores IRB140 y Motoman MH6
-- Comparar las especificaciones t´ecnicas del Motoman MH6 y el IRB140 en un cuadro comparativo.
+- Comparar las especificaciones técnicas del Motoman MH6 y el IRB140 en un cuadro comparativo.
+
+Ejes del Motoman MH6:
+
+![Motoman MH6](./Images/Motoman-MH6.png)
+
+Ejes del ABB 140:
+
+![ABB 140](./Images/ABB-140.png)
+
 <div align="center">
 
 | **Característica** | **Motoman MH6 (Yaskawa)** | **ABB IRB 140-6/0.8** |
