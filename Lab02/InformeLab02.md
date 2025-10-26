@@ -21,11 +21,11 @@ judelgadoe@unal.edu.co
 ### Comparación entre manipuladores IRB140 y Motoman MH6
 - Comparar las especificaciones técnicas del Motoman MH6 y el IRB140 en un cuadro comparativo.
 
-Ejes del Motoman MH6:
+*Ejes del Motoman MH6:*
 
 ![Motoman MH6](./Images/Motoman-MH6.png)
 
-Ejes del ABB 140:
+*Ejes del ABB 140:*
 
 ![ABB 140](./Images/ABB-140.png)
 
@@ -51,8 +51,50 @@ Ejes del ABB 140:
 
 
 ### Configuraciones iniciales del manipulador Motoman MH6
-- Descripci´on de las configuraciones home1 y home2 del Motoman MH6, indicando la posici´on de cada articulaci´on, ¿Cual posici´on es mejor?, justifique su respuesta.
 - Describir las diferencias entre el home1 y el home2 del Motoman MH6.
+
+**Home 1**
+
+![Home1.0](./Images/Home1.1.jpg)
+
+![Home1.1](./Images/Home1.jpg)
+
+|**Eje**|**Posición**|
+|-------|------------|
+|1|0 deg|
+|2|88.6629 deg|
+|3|-81.0787 deg|
+|4|-0.0017 deg|
+|5|51.7618 deg|
+|6|-3.2709 deg|
+
+En esta posición, el robot MH6 se encuentra completamente replegado o recogido, con los ejes articulados de forma compacta.
+Esta configuración se utiliza principalmente para almacenamiento, transporte, ya que minimiza el espacio ocupado y reduce el riesgo de colisiones con el entorno.
+Además, al mantener el brazo dentro de su radio mínimo de trabajo, se protege la integridad mecánica del manipulador y se facilita su mantenimiento o desconexión segura del sistema.
+
+**Home 2**
+
+![Home2.0](./Images/Home2.jpg)
+
+![Home2.1](./Images/Home2.2.jpg)
+
+|**Eje**|**Posición**|
+|-------|------------|
+|1|0 deg|
+|2|-1.5665 deg|
+|3|1.7135 deg|
+|4|0 deg|
+|5|-0.1468 deg|
+|6|-3.2709 deg|
+
+En esta posición, el robot MH6 adopta una postura extendida, con el brazo y el efector final orientados hacia el área de trabajo.
+Esta configuración se considera el punto de partida ideal para operaciones de manipulación o movimientos automáticos, ya que ofrece una visión clara del entorno y una cinemática favorable para alcanzar distintas posiciones sin limitaciones articulares.
+También puede emplearse como posición de referencia o inicio de trayectorias programadas, facilitando tanto la enseñanza manual como la ejecución de rutinas automáticas.
+
+No existe una posición “mejor” que otra, cada configuración del robot cumple un propósito distinto.
+La posición Home 1 (recogido) es ideal para almacenamiento, transporte o seguridad, mientras que la Home 2 (extendida) se usa como punto de partida para tareas de manipulación o enseñanza.
+La elección depende del tipo de operación y del contexto de trabajo.
+
 
 ### Movimientos manuales
 - Procedimiento detallado para realizar movimientos manuales, especificando c´omo cambiar entre modos de operaci´on (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
