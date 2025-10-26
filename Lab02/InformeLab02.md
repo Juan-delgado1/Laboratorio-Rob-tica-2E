@@ -118,7 +118,32 @@ La elección depende del tipo de operación y del contexto de trabajo.
 
 ### Comparación de herramientas RoboDK y RobotStudio
 - An´alisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
-- Analizar las diferencias entre RoboDK y RobotStudio y describir los usos espec´ıficos de cada herramienta, ¿Qu´e significa para usted cada una de esas herramientas?
+- Analizar las diferencias entre RoboDK y RobotStudio y describir los usos espec´ıficos de cada herramienta, ¿Qué significa para usted cada una de esas herramientas?
+#### RoboDK
+Herramienta multimarca, flexible y extensible para simulación y programación offline; fuerte en integración de muchos modelos, scripting (Python) y generación de programas para distintos controladores.
+  - **Ventajas:**
+    - Compatibilidad multi-marca: soporte para decenas de fabricantes y modelos, por lo que sirve para entornos heterogéneos o para pruebas con distintos brazos.
+    - Extensible y scriptable: API en Python y posibilidad de crear post-procesadores personalizados y plugins; ideal para automatización de flujos y para integrar CAM/CNC → robot.
+    - Rápida puesta en marcha: interfaz orientada a generar programas offline con poco esfuerzo; buena para prototipado y pruebas conceptuales.
+  - **Limitaciones:**
+    - Fidelidad vs controlador real: aunque produce programas que funcionan en el robot real, la simulación no siempre reproduce exactamente el comportamiento del controlador del fabricante (pequeñas diferencias en cinemática, límites, comportamiento de control). Para validación final puede requerir ajustes y verificación en el controlador real.
+    - Dependencia de post-procesadores: para generar código listo para el robot se necesitan post-procesadores correctos; si no existe uno perfecto para un controlador/versión concreta, será necesario crearlo o adaptarlo.
+  - **Aplicaciones:**
+    - Integraciones multi-marca (cuando tu célula tiene robots de distintos fabricantes).
+    - Prototipado rápido, generación de trayectorias y post-procesado personalizado (p. ej. conversión de CAM a programas robot).
+    - Escuelas, investigación y startups que necesitan flexibilidad y scripting en Python. 
+#### RobotStudio
+Herramienta propietaria ABB enfocada a simulación de alta fidelidad y programación offline para robots ABB (IRC5/RobotWare), con integración nativa, control virtual y simulación muy fiel al controlador real.
+  - **Ventajas:**
+    - Integración nativa con ABB (IRC5 / RobotWare): virtual controller y emulación que reproduce con alta fidelidad cómo el robot responderá en el mundo real (RAPID, I/O, señales, tiempos). Esto reduce riesgos al pasar a producción.
+    - Alta fidelidad en trayectoria y tiempos de ciclo: modelos y física optimizados para validar trayectoria, verificación de colisiones y obtener estimaciones reales de tiempos.
+    - Herramientas avanzadas de análisis: Signal Analyzer, Event Manager, verificación de I/O y conexión con controladores reales para pruebas integradas.
+  - **Limitaciones:**
+    - Enfoque propietario: optimizado para ABB; si trabajas con robots de otras marcas no es útil.
+    - Costo y licencias: algunas funciones avanzadas (virtual controller, add-ins premium) pueden requerir licencias o módulos adicionales; hay conversas de usuarios sobre la curva de licenciamiento.
+  - **Aplicaciones:**
+    - Proyectos con robots ABB donde la fidelidad al controlador IRC5 es crítica: puesta en marcha virtual, verificación de colisiones, I/O y estimación de tiempos realistas.
+    - Validación final de programas antes de subirlos a producción en sistemas ABB (reduce riesgos y tiempos de parada).    
 
 ## Desarrollo de práctica: Trayectoria polar
 - Explicar que vamos a hacer Xd
