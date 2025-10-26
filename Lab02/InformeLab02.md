@@ -117,7 +117,7 @@ La elección depende del tipo de operación y del contexto de trabajo.
 - ¿C´omo se comunica RoboDK con el manipulador?
 
 ### Comparación de herramientas RoboDK y RobotStudio
-- Analizar las diferencias entre RoboDK y RobotStudio y describir los usos específicos de cada herramienta, ¿Qué significa para usted cada una de esas herramientas?
+- Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
 #### RoboDK
 Herramienta multimarca, flexible y extensible para simulación y programación offline; fuerte en integración de muchos modelos, scripting (Python) y generación de programas para distintos controladores.
   - **Ventajas:**
