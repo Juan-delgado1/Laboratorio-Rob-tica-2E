@@ -218,9 +218,6 @@ flowchart TD
     M --> N["Llevar el robot a una posición segura"]
     N --> O@{ label: "print(f'¡Cardioide completado en el frame '{frame_name}'!')" }
     O --> Z(["Fin"])
-    n1["SÍ"]
-    O@{ shape: rect}
-    n1@{ shape: text}
                         
  
 ```
