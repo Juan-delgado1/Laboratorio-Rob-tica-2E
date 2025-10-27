@@ -142,10 +142,12 @@ A la izquierda se encuentran los movimientos de traslación de los ejes x,y,z y 
 
 
 ### Control de velocidad
-Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: HIGH SPEED, FAST, SLOW. En la pantalla en la parte superior se puede observar en que modo está el robot actualmente: H,F,L
+Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: HIGH SPEED, FAST, SLOW. En la pantalla en la parte superior señalada con rojo se puede observar en que modo está el robot actualmente: H,M,L. High Speed se refiere a una velocidad intermedia, Fast a un nivel intermedio y Slow a un nivel de velocidad bajo
 
-- Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
-- Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuración, ¿Cómo se hace el cambio entre niveles de velocidad?, ¿Cómo se identifica en la pantalla el nivel de velocidad establecido?
+<p align="center">
+<img src="./Images/Velocidades.jpeg" width="400">
+</p>
+
 
 ### Software RoboDK 
 El software utilizado para esta práctica es RoboDK, un programa que permite simular y programar robots industriales en un entorno virtual. Se usa para planear trayectorias, probar rutinas y generar código para diferentes marcas de robots sin necesidad de tenerlos físicamente. También permite integrar herramientas, bandas transportadoras y procesos como soldadura, corte o ensamblaje dentro de una misma celda de trabajo. 
@@ -232,9 +234,6 @@ flowchart TD
     M --> N["Llevar el robot a una posición segura"]
     N --> O@{ label: "print(f'¡Cardioide completado en el frame '{frame_name}'!')" }
     O --> Z(["Fin"])
-    n1["SÍ"]
-    O@{ shape: rect}
-    n1@{ shape: text}
                         
  
 ```
