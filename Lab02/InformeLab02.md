@@ -162,9 +162,18 @@ Para el desarrollo de la práctica se realizó primero la exploración del entor
 <img src="./Images/cardioide.jpg" width="400">
 </p>
 
+Resultado de la simulación
 
-### Diagrama de flujo de acciones del robot 
+<p align="center">
+<img src="./Images/resultado simulación.jpg" width="400">
+</p>
+
+Después de realizar la simulación se procedió a cargar el código en el robot y verificar la correcta ejecución de la rutina por parte del manipulador
+
+### Diagrama de flujo de acciones del robot
+### Plano de planta 
 ### Código desarrollado en RoboDK
+[Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
 
 ### Plano de Planta
 El siguiente plano de planta representa la disposición general del área de trabajo destinada a las prácticas con el robot industrial Motoman MH6.
