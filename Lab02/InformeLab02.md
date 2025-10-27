@@ -168,9 +168,44 @@ Resultado de la simulación
 Después de realizar la simulación se procedió a cargar el código en el robot y verificar la correcta ejecución de la rutina por parte del manipulador
 
 ### Diagrama de flujo de acciones del robot
+```mermaid
+---
+config:
+  theme: redux
+---
+flowchart TD
+    A(["Inicio"]) --> B[["RDK &lt;-- Robolink()"]]
+    B --> C["Selección del robot"]
+    C --> D{"Validación del robot"}
+    D --> E["Mostrar error de conexión"] & F{"Conectar con el robot"}
+    F --> G["Mostrar mensaje de error"] & H["frame_name &lt;-- Frame_from_Target1"]
+    H --> I["robot.setPoseFrame(frame)"]
+    I --> J["robot.setSpeed(300)"]
+    J --> K["robot.setRounding(5)"]
+    K --> L["Dibujar el cardioide"]
+    L --> M["Escribir los nombres"]
+    M --> N["Llevar el robot a una posición segura"]
+    N --> O@{ label: "print(f'¡Cardioide completado en el frame '{frame_name}'!')" }
+    O --> Z(["Fin"])
+    n1["SÍ"]
+    O@{ shape: rect}
+    n1@{ shape: text}
+                        
+ 
+```
 
 ### Código desarrollado en RoboDK
 [Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
+
+```
+from robodk.robolink import *    # API para comunicarte con RoboDK
+from robodk.robomath import *    # Funciones matemáticas
+import math
+from matplotlib.textpath import TextPath
+from matplotlib.patches import PathPatch
+from matplotlib.transforms import Affine2D                   
+ 
+```
 
 ### Plano de Planta
 El siguiente plano de planta representa la disposición general del área de trabajo destinada a las prácticas con el robot industrial Motoman MH6.
