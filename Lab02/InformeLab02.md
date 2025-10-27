@@ -153,6 +153,8 @@ Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: H
 
 El software utilizado para esta práctica es RoboDK, un programa que permite simular y programar robots industriales en un entorno virtual. Se usa para planear trayectorias, probar rutinas y generar código para diferentes marcas de robots sin necesidad de tenerlos físicamente. También permite integrar herramientas, bandas transportadoras y procesos como soldadura, corte o ensamblaje dentro de una misma celda de trabajo. 
 A continuación se muestra el panel general de RoboDK, en el se encuentran distintas opciones y funciones para desarrollar en este simulador:
+
+
 ![PanelGeneral](./Images/FuncionesRoboDK/PanelGeneral.png)
 
 #### Funciones del panel general
@@ -204,6 +206,37 @@ A continuación se muestra el panel general de RoboDK, en el se encuentran disti
 	- Exportar la simulación a formatos PDF o HTML.
 
 #### Panel lateral
+A la izquierda de la pantalla se pueden observar lo siguiente:
+
+![PanelLateral](./Images/FuncionesRoboDK/PanelLateral.png)
+
+- En la parte superior se encuentra la estación con el nombre del archivo, dentada a ella están:
+	- El programa en python para simular, al dar click derecho en esta opción podemos ejecutar el programa con la simulación.
+	- La caja sobre la que va a escribir el robot.
+	- El sistema de referencia del robot Motoman MH6. Dentado a este están:
+		- El frame de referencia para la superficie donde se va a escribir.
+		- El manipulador Motoman MH6 y la herramienta *Ventosas*.
+
+#### Opciones para el robot
+Al dar click derecho sobre el robot, se encuentran las siguientes opciones:
+
+![OpsMH&](./Images/FuncionesRoboDK/OpcionesRobot.png)
+
+Aquí podemos ver diferentes alternativas que son de mucha utilidad para el manejo del manipulador como *Muévete a casa, enseñar posición actual, añadir sistema de referencia o herramienta*, entre muchas otras más.
+
+Hay dos opciones que son de gran interés para el desarrollo de la práctica:
+1. **Conectar con el robot**: Esta opción nos lleva al siguiente panel:
+
+	![connectRobot](./Images/FuncionesRoboDK/ConectarRobot.png)
+	
+	Esta opción permite conectar con el robot físico, para ello hay que conectarse a la misma red de internet y en el panel ubicar la dirección IP del robot y seleccionar su puerto. Finalmente al oprimir la opción *Conectar* debe aparecer *Connected* en la parte inferior, en este caso aparece *Disconnected* debido a que no lo está.
+	Para ejecutar el programa en el robot físico se debe realizar el mismo procedimiento que para la simulación: dar click derecho en el icono de python del panel lateral que se vió anteriormente y seleccionar *Ejecutar script de python*. Tanto la simulación como el manipulador físico empezarán a realizar los mismos movimientos, esto se conoce como un *Gemelo digital.*
+	Hay que tener en cuenta que para que sea posible conectar con el manipulador, el teach pendant tiene que estar en la opción **Remote**, así va a estar conectado únicamente con el software RoboDk y la única función activa y posible que tendrá el teach pendant es el de paro de emergencia.
+	
+2. La otra casilla que es de interés para nosotros es la que dice **Opciones**, la cual nos lleva al siguiente panel:
+	 
+	![masopciones](./Images/FuncionesRoboDK/Masopciones.png)
+	Aquí podemos realizar diversos movimientos con el robot, movimientos articulares y cartesianos, trasladar o rotar la herramienta con base a diferentes sistemas de referencia, ubicarlo en posiciones específicas, entre otras.
 
 
 
@@ -308,5 +341,8 @@ El vídeo donde se muestra la implementación física de la práctica se encuent
 
 ## Conclusiones
 
-
-
+- El manejo del manipulador Motoman MH6 permitió comprender la importancia de las configuraciones iniciales y los modos de operación manual para garantizar un control seguro y preciso del robot.
+    
+- El uso de RoboDK facilitó la programación y simulación de trayectorias, mostrando su utilidad para planear rutinas antes de implementarlas físicamente en el robot.
+    
+- La comparación entre RoboDK y RobotStudio evidenció que, aunque ambos permiten simulación y control offline, su aplicación depende del tipo de robot y del nivel de fidelidad requerido para la ejecución real.
