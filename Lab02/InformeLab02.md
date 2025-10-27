@@ -162,10 +162,47 @@ Para el desarrollo de la práctica se realizó primero la exploración del entor
 <img src="./Images/cardioide.jpg" width="400">
 </p>
 
+Resultado de la simulación
+
+<p align="center">
+<img src="./Images/resultado simulación.jpg" width="400">
+</p>
+
+Después de realizar la simulación se procedió a cargar el código en el robot y verificar la correcta ejecución de la rutina por parte del manipulador
 
 ### Diagrama de flujo de acciones del robot
+
+```mermaid
+---
+config:
+      theme: redux
+---
+flowchart TD
+        
+        A(["Inicio"])
+
+        
+        A --> B[["RDK <-- Robolink() "]]
+        B --> C["Selección del robot"]
+        C --> D{"Validación del robot"}
+        D --> E["Mostrar error de conexión"]
+        D --> F{"Conectar con el robot"}
+        F --> G["Mostrar mensaje de error"]
+        F --> H["frame_name <-- Frame_from_Target1"]
+        H --> I["robot.setPoseFrame(frame)"]
+        I --> J["robot.setSpeed(300)"]
+        J --> K["robot.setRounding(5)"]
+        K --> L["Dibujar el cardioide"]
+        L --> M["Escribir los nombres"]
+        M --> N["Llevar el robot a una posición segura"]
+        N --> O["print(f'¡Cardioide completado en el frame '{frame_name}'!')"]
+
+        O --> Z(["Fin"])
+```
 ### Plano de planta 
+
 ### Código desarrollado en RoboDK
+[Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
 
 ### Video de la simulación en RoboDK
 ### Video de la implementación física con el manipulador Motoman MH6
