@@ -148,9 +148,25 @@ Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: H
 - Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuración, ¿Cómo se hace el cambio entre niveles de velocidad?, ¿Cómo se identifica en la pantalla el nivel de velocidad establecido?
 
 ### Software RoboDK 
-- Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y que procesos realiza para ejecutar movimientos.
-- Explicar las aplicaciones principales de RoboDK y cómo se comunica con el manipulador, ¿Qué hace RoboDK para mover el manipulador?
-- ¿Cómo se comunica RoboDK con el manipulador?
+El software utilizado para esta práctica es RoboDK, un programa que permite simular y programar robots industriales en un entorno virtual. Se usa para planear trayectorias, probar rutinas y generar código para diferentes marcas de robots sin necesidad de tenerlos físicamente. También permite integrar herramientas, bandas transportadoras y procesos como soldadura, corte o ensamblaje dentro de una misma celda de trabajo. 
+A continuación se muestra el panel general de RoboDK, en el se encuentran distintas opciones y funciones para desarrollar en este simulador:
+![PanelGeneral](./Images/FuncionesRoboDK/PanelGeneral.png)
+
+
+
+- Las primeras opciones que vemos en el panel son:
+	![GBDeshacer](./Images/FuncionesRoboDK/GuardarBibliosDeshacer.png)
+	Estas corresponden de izquierda a derecha a:
+	- Cargar un archivo
+	- Abrir biblioteca de robots
+	- Guardar Estación
+	- Deshacer y rehacer
+- Las siguientes corresponden a la creación de targets y ajuste de vistas:
+	![Targetssssssss](./Images/FuncionesRoboDK/Targets.png)
+	- Añadir un sistema de referencia
+	- Añadir un nuevo objetivo para el robot
+	- Ajustar todo: para reubicar la vista del robot
+	- Selección de vista
 
 ### Comparación de herramientas RoboDK y RobotStudio
 
