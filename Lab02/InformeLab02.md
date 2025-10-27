@@ -142,9 +142,8 @@ A la izquierda se encuentran los movimientos de traslación de los ejes x,y,z y 
 
 
 ### Control de velocidad
-Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: HIGH SPEED, FAST, SLOW. En la pantalla en la parte superior se puede observar en que modo está el robot actualmente: H,F,L
+Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: HIGH SPEED, FAST, SLOW. En la pantalla en la parte superior se puede observar en que modo está el robot actualmente: H,M,L
 
-- Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
 - Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuración, ¿Cómo se hace el cambio entre niveles de velocidad?, ¿Cómo se identifica en la pantalla el nivel de velocidad establecido?
 
 ### Software RoboDK 
