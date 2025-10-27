@@ -171,13 +171,15 @@ Resultado de la simulación
 Después de realizar la simulación se procedió a cargar el código en el robot y verificar la correcta ejecución de la rutina por parte del manipulador
 
 ### Diagrama de flujo de acciones del robot
-### Plano de planta 
+
 ### Código desarrollado en RoboDK
 [Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
 
 ### Plano de Planta
 El siguiente plano de planta representa la disposición general del área de trabajo destinada a las prácticas con el robot industrial Motoman MH6.
-![[PlanoPlantaMH6.png]]
+![PlantaMotoman](./Images/PlanoPlantaMH6.png)
+
+![Motoman MH6](./Images/Motoman-MH6.png)
 
 Como se puede observar, en la parte del fondo se ubica el tablero eléctrico de protección de subcircuito y el controlador del robot junto con el lugar para ubicar el Teach Pendant. En el centro se encuentra el controlador principal Motoman MH6, a un costado está el banco de trabajo rotativo, en la zona frontal se dispone la base del robot, el WorkObject para el dibujo y donde se desarrollo la práctica, el espacio destinado al corte y grabado y la banda transportadora que permite el movimiento del robot.
 ### Video de la simulación en RoboDK
