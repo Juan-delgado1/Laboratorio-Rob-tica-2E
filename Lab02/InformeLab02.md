@@ -150,6 +150,7 @@ Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: H
 
 
 ### Software RoboDK 
+
 El software utilizado para esta práctica es RoboDK, un programa que permite simular y programar robots industriales en un entorno virtual. Se usa para planear trayectorias, probar rutinas y generar código para diferentes marcas de robots sin necesidad de tenerlos físicamente. También permite integrar herramientas, bandas transportadoras y procesos como soldadura, corte o ensamblaje dentro de una misma celda de trabajo. 
 A continuación se muestra el panel general de RoboDK, en el se encuentran distintas opciones y funciones para desarrollar en este simulador:
 ![PanelGeneral](./Images/FuncionesRoboDK/PanelGeneral.png)
