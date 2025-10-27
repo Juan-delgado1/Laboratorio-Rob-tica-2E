@@ -163,11 +163,19 @@ Para el desarrollo de la práctica se realizó primero la exploración del entor
 </p>
 
 
-### Diagrama de flujo de acciones del robot
-### Plano de planta 
+### Diagrama de flujo de acciones del robot 
 ### Código desarrollado en RoboDK
 
+### Plano de Planta
+El siguiente plano de planta representa la disposición general del área de trabajo destinada a las prácticas con el robot industrial Motoman MH6.
+![[PlanoPlantaMH6.png]]
+
+Como se puede observar, en la parte del fondo se ubica el tablero eléctrico de protección de subcircuito y el controlador del robot junto con el lugar para ubicar el Teach Pendant. En el centro se encuentra el controlador principal Motoman MH6, a un costado está el banco de trabajo rotativo, en la zona frontal se dispone la base del robot, el WorkObject para el dibujo y donde se desarrollo la práctica, el espacio destinado al corte y grabado y la banda transportadora que permite el movimiento del robot.
 ### Video de la simulación en RoboDK
+
+El vídeo donde se muestra la simulación y las herramientas utilizadas de RobotStudio se encuentra en este link: [Grupo 2E - Implementación de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/SNpgFyDXbFQ)
+
+
 ### Video de la implementación física con el manipulador Motoman MH6
 
 ## Conclusiones
