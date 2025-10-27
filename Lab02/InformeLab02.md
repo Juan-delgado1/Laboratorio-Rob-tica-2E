@@ -236,6 +236,7 @@ Hay dos opciones que son de gran interés para el desarrollo de la práctica:
 2. La otra casilla que es de interés para nosotros es la que dice **Opciones**, la cual nos lleva al siguiente panel:
 	 
 	![masopciones](./Images/FuncionesRoboDK/Masopciones.png)
+	
 	Aquí podemos realizar diversos movimientos con el robot, movimientos articulares y cartesianos, trasladar o rotar la herramienta con base a diferentes sistemas de referencia, ubicarlo en posiciones específicas, entre otras.
 
 
@@ -343,6 +344,8 @@ El vídeo donde se muestra la implementación física de la práctica se encuent
 
 - RoboDk es una herramienta versátil que permite trabajar con diferentes modelos de robot de diversas marcas, sin necesidad de instalar software adicional de acuerdo a la empresa del robot que se quiera utilizar.
 - RoboDk permite realizar programs en python lo que unifica la sintaxis de varios robots para que sólo se tenga que aprender un lenguaje de programación.
+- La comparación entre RoboDK y RobotStudio evidenció que, aunque ambos permiten simulación y control offline, su aplicación depende del tipo de robot y del nivel de fidelidad requerido para la ejecución real.
+- El manejo del manipulador Motoman MH6 permitió comprender la importancia de las configuraciones iniciales y los modos de operación manual para garantizar un control seguro y preciso del robot.    
 
 
 
