@@ -111,10 +111,39 @@ La elección depende del tipo de operación y del contexto de trabajo.
 
 
 ### Movimientos manuales
-- Procedimiento detallado para realizar movimientos manuales, especificando como cambiar entre modos de operación (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
-- Describir el procedimiento y cuales teclas se usan para realizar el movimiento manual del manipulador Motoman por articulaciones, cambiar a movimientos cartesianos y realizar movimientos de traslación y rotación en los ejes X, Y, Z.
+
+Para realizar movimientos de forma manual del robot se deben seguir los pasos que se describen a continuación:
+
+1. Seleccionar el modo teach
+2. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
+3. Activar los servos del robot con el botón SERVO ON READY
+4. En la pantalla darle a la opción Robot
+5. Segunda posición HOME
+6. Presionar botón del hombre muerto
+7. Presionar el botón de FORWARD
+8. Verificar el estado del movimiento que va a realizar el robot en la pantalla
+9. Presionar el botón COORD para cambiar el modo, si está en articular al presionarlo una vez cambia a coordenadas, 2 veces a quaterniones
+
+#### Movimiento por coordenadas
+
+10.
+<p align="center">
+<img src="./Images/coordenadas.jpg" width="400">
+</p>
+
+A la izquierda se encuentran los movimientos de traslación de los ejes x,y,z y a la derecha sus rotaciones respectivas. Presionar los botones de acuerdo al movimiento que se desee realizar, con los botones con el número 8 se puede mover esa articulación y con los que tienen la e indicada la 7
+
+#### Movimiento articular
+
+10. A continuación se muestra la numeración de las articulaciones, se debe presionar el botón correspondiente para el movimiento de cada una 
+<p align="center">
+<img src="./Images/articulaciones.jpg" width="400">
+</p>
+
 
 ### Control de velocidad
+Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: HIGH SPEED, FAST, SLOW. En la pantalla en la parte superior se puede observar en que modo está el robot actualmente: H,F,L
+
 - Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
 - Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuración, ¿Cómo se hace el cambio entre niveles de velocidad?, ¿Cómo se identifica en la pantalla el nivel de velocidad establecido?
 
