@@ -308,5 +308,9 @@ El vídeo donde se muestra la implementación física de la práctica se encuent
 
 ## Conclusiones
 
+- RoboDk es una herramienta versátil que permite trabajar con diferentes modelos de robot de diversas marcas, sin necesidad de instalar software adicional de acuerdo a la empresa del robot que se quiera utilizar.
+- RoboDk permite realizar programs en python lo que unifica la sintaxis de varios robots para que sólo se tenga que aprender un lenguaje de programación.
+
+
 
 
