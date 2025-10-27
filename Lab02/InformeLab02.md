@@ -12,9 +12,8 @@ judelgadoe@unal.edu.co
 
 ## Introducción
 
-Los manipuladores industriales son herramientas clave en la automatizaci´on industrial. Cada modelo tiene sus propias características técnicas y configuraciones iniciales que los hacen ideales para diferentes aplicaciones. En este taller, se busca realizar una comparación técnica entre el manipulador Motoman MH6 y el ABB IRB140, comprender las configuraciones iniciales del Motoman MH6, explorar los diferentes modos de operación manual, y realizar simulaciones y ejecuciones reales de trayectorias usando RoboDK.
+Los manipuladores industriales son herramientas clave en la automatización industrial. Cada modelo tiene sus propias características técnicas y configuraciones iniciales que los hacen ideales para diferentes aplicaciones. En este taller, se busca realizar una comparación técnica entre el manipulador Motoman MH6 y el ABB IRB140, comprender las configuraciones iniciales del Motoman MH6, explorar los diferentes modos de operación manual, y realizar simulaciones y ejecuciones reales de trayectorias usando RoboDK.
 
-## Planteamiento del problema
 
 ## Objetivos
 
@@ -28,7 +27,6 @@ Los manipuladores industriales son herramientas clave en la automatizaci´on ind
 ## Configuraciones y características del manipulador Motoman MH6 y sus herramientas
 
 ### Comparación entre manipuladores IRB140 y Motoman MH6
-- Comparar las especificaciones técnicas del Motoman MH6 y el IRB140 en un cuadro comparativo.
 
 *Ejes del Motoman MH6:*
 
@@ -60,7 +58,7 @@ Los manipuladores industriales son herramientas clave en la automatizaci´on ind
 
 
 ### Configuraciones iniciales del manipulador Motoman MH6
-- Describir las diferencias entre el home1 y el home2 del Motoman MH6.
+
 
 **Home 1**
 <p align="center">
@@ -126,7 +124,6 @@ La elección depende del tipo de operación y del contexto de trabajo.
 - ¿Cómo se comunica RoboDK con el manipulador?
 
 ### Comparación de herramientas RoboDK y RobotStudio
-- Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
 
 #### RoboDK
 Herramienta multimarca, flexible y extensible para simulación y programación offline; fuerte en integración de muchos modelos, scripting (Python) y generación de programas para distintos controladores.
@@ -177,17 +174,21 @@ Después de realizar la simulación se procedió a cargar el código en el robot
 
 ### Plano de Planta
 El siguiente plano de planta representa la disposición general del área de trabajo destinada a las prácticas con el robot industrial Motoman MH6.
+
+
+
 ![PlantaMotoman](./Images/PlanoPlantaMH6.png)
 
-![Motoman MH6](./Images/Motoman-MH6.png)
+
 
 Como se puede observar, en la parte del fondo se ubica el tablero eléctrico de protección de subcircuito y el controlador del robot junto con el lugar para ubicar el Teach Pendant. En el centro se encuentra el controlador principal Motoman MH6, a un costado está el banco de trabajo rotativo, en la zona frontal se dispone la base del robot, el WorkObject para el dibujo y donde se desarrollo la práctica, el espacio destinado al corte y grabado y la banda transportadora que permite el movimiento del robot.
 ### Video de la simulación en RoboDK
 
-El vídeo donde se muestra la simulación y las herramientas utilizadas de RobotStudio se encuentra en este link: [Grupo 2E - Implementación de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/SNpgFyDXbFQ)
+El vídeo donde se muestra la simulación y las herramientas utilizadas de RoboDK se encuentra en este link: [Grupo 2E - Simulación de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/SNpgFyDXbFQ)
 
 
 ### Video de la implementación física con el manipulador Motoman MH6
+El vídeo donde se muestra la implementación física de la práctica se encuentra en este link: [Grupo 2E - Implementación física de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/thkcGVQ2n2Q)
 
 ## Conclusiones
 
