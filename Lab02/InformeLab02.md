@@ -341,8 +341,9 @@ El vídeo donde se muestra la implementación física de la práctica se encuent
 
 ## Conclusiones
 
-- El manejo del manipulador Motoman MH6 permitió comprender la importancia de las configuraciones iniciales y los modos de operación manual para garantizar un control seguro y preciso del robot.
-    
-- El uso de RoboDK facilitó la programación y simulación de trayectorias, mostrando su utilidad para planear rutinas antes de implementarlas físicamente en el robot.
-    
-- La comparación entre RoboDK y RobotStudio evidenció que, aunque ambos permiten simulación y control offline, su aplicación depende del tipo de robot y del nivel de fidelidad requerido para la ejecución real.
+- RoboDk es una herramienta versátil que permite trabajar con diferentes modelos de robot de diversas marcas, sin necesidad de instalar software adicional de acuerdo a la empresa del robot que se quiera utilizar.
+- RoboDk permite realizar programs en python lo que unifica la sintaxis de varios robots para que sólo se tenga que aprender un lenguaje de programación.
+
+
+
+
