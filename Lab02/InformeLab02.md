@@ -154,21 +154,50 @@ El software utilizado para esta práctica es RoboDK, un programa que permite sim
 A continuación se muestra el panel general de RoboDK, en el se encuentran distintas opciones y funciones para desarrollar en este simulador:
 ![PanelGeneral](./Images/FuncionesRoboDK/PanelGeneral.png)
 
-
+#### Funciones del panel general
 
 - Las primeras opciones que vemos en el panel son:
 	![GBDeshacer](./Images/FuncionesRoboDK/GuardarBibliosDeshacer.png)
 	Estas corresponden de izquierda a derecha a:
-	- Cargar un archivo
-	- Abrir biblioteca de robots
-	- Guardar Estación
-	- Deshacer y rehacer
+	- Cargar un archivo.
+	- Abrir biblioteca de robots.
+	- Guardar Estación.
+	- Deshacer y rehacer.
 - Las siguientes corresponden a la creación de targets y ajuste de vistas:
 	![Targetssssssss](./Images/FuncionesRoboDK/Targets.png)
-	- Añadir un sistema de referencia
-	- Añadir un nuevo objetivo para el robot
-	- Ajustar todo: para reubicar la vista del robot
-	- Selección de vista
+	- Añadir un sistema de referencia.
+	- Añadir un nuevo objetivo para el robot.
+	- Ajustar todo: para reubicar la vista del robot.
+	- Selección de vista.
+- RoboDk también ofrece la opción de elegir la función que va a desarrollar el mouse:
+	![Mousessssssss](./Images/FuncionesRoboDK/Mouse.png)
+	- La primera opción es para no mover nada.
+	- La segunda para mover los sistemas de referencia.
+	- La tercera para mover la herramienta del robot.
+- Opciones para crear archivos de código y vista de la simulación:
+	![Mousesssss](./Images/FuncionesRoboDK/Programs.png)
+	- La flecha sirve para elegir la velocidad de la simulación. No es la velocidad que va a tener el robot en la vida real, solo de la simulación.
+	- El botón de pause.
+	- Agregar un programa de python.
+	- Agregar un programa de otro tipo.
+- Una ventaja que tiene RoboDk frente a RobotStudio es la facilidad de añadir instrucciones al robot:
+	![Operationsss](./Images/FuncionesRoboDK/operaciones.png)
+	- La primera opción es para llevar el robot a un punto deseado.
+	- La segunda para que el robot haga un trayectoria recta.
+	- La tercera para realizar una curva. 
+		Al seleccionar alguna de estas tres opciones, la operación automáticamente de agrega en el programa del robot.
+	- La siguiente opción es para agregar una pausa.
+	- La siguiente es para mostrar un mensaje en el Teach Pendant.
+	- La última es para ejecutar o agregar un bloque de código.
+- Las ultimas opciones son:
+	![OperationsIO](./Images/FuncionesRoboDK/UltimasOps.png)
+	- Administrar entradas y salidas digitales-
+	- Agregar tareas fuera de la línea del robot, como interactuar con objetos externos.
+	- Exportar la simulación a formatos PDF o HTML.
+
+#### Panel lateral
+
+
 
 ### Comparación de herramientas RoboDK y RobotStudio
 
