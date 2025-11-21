@@ -28,3 +28,10 @@ La segunda entrega corresponde a un nuevo laboratorio con un robot diferente. En
 Para esta entrega se utilizó la carpeta [Lab02](Lab02/), donde se encuentran los códigos, planos y el [Informe de laboratorio](Lab02/InformeLab02.md) realizados para esta entrega.
 
 
+
+## Laboratorio No.3
+En esta tercera entrega el robot que se va a trabajar es el EPSON T3-401S, un robot enfocado en el paletizado y el pick and place para diferentes objetos. En comparación con los demás, este es un robot más pequeño, con un menor alcance y capacidad de carga. Como es un robot diferente también se utilizará un software diferente: EPSON RC+ 7.0. Para esta entrega se identificarán las funciones, configuraciones y características de este robot, además de sus diferencias con los anteriores robots. También se realizó un ejemplo de paletizado para comprender mejor su funcionamiento  y estructura, para esto se diseño un griper neumático que pueda sostener los objetos.
+
+Para esta entrega se utilizó la carpeta [Lab03](Lab03/), donde se encuentran los códigos, planos y el [Informe de laboratorio](Lab03/InformeLab03.md) realizados para esta entrega.
+
+
