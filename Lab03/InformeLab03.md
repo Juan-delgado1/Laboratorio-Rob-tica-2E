@@ -64,13 +64,13 @@ judelgadoe@unal.edu.co
 
 
 
-### Configuraciones iniciales del manipulador Motoman MH6
+### Configuraciones iniciales del manipulador EPSON T3-401S
 
 
-**Home 1**
+**Home**
 <p align="center">
 
-<img src="./Images/Home1.1.jpg" width="600">
+<img src="./Images/T3_HOME.png" width="600">
 
 </p>
 <div align="center">
@@ -90,31 +90,6 @@ En esta posición, el robot MH6 se encuentra completamente replegado o recogido,
 Esta configuración se utiliza principalmente para almacenamiento, transporte, ya que minimiza el espacio ocupado y reduce el riesgo de colisiones con el entorno.
 Además, al mantener el brazo dentro de su radio mínimo de trabajo, se protege la integridad mecánica del manipulador y se facilita su mantenimiento o desconexión segura del sistema.
 
-**Home 2**
-
-<p align="center">
-<img src="./Images/Home2.jpg" width="400">
-</p>
-
-<div align="center">
-  
-|**Eje**|**Posición**|
-|-------|------------|
-|1|0 deg|
-|2|-1.5665 deg|
-|3|1.7135 deg|
-|4|0 deg|
-|5|-0.1468 deg|
-|6|-3.2709 deg|
-</div>
-
-En esta posición, el robot MH6 adopta una postura extendida, con el brazo y el efector final orientados hacia el área de trabajo.
-Esta configuración se considera el punto de partida ideal para operaciones de manipulación o movimientos automáticos, ya que ofrece una visión clara del entorno y una cinemática favorable para alcanzar distintas posiciones sin limitaciones articulares.
-También puede emplearse como posición de referencia o inicio de trayectorias programadas, facilitando tanto la enseñanza manual como la ejecución de rutinas automáticas.
-
-No existe una posición “mejor” que otra, cada configuración del robot cumple un propósito distinto.
-La posición Home 1 (recogido) es ideal para almacenamiento, transporte o seguridad, mientras que la Home 2 (extendida) se usa como punto de partida para tareas de manipulación o enseñanza.
-La elección depende del tipo de operación y del contexto de trabajo.
 
 
 ### Movimientos manuales
