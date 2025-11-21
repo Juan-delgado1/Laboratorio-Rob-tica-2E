@@ -78,23 +78,20 @@ judelgadoe@unal.edu.co
 |**Eje**|**Posición**|
 |-------|------------|
 |1|0 deg|
-|2|88.6629 deg|
-|3|-81.0787 deg|
-|4|-0.0017 deg|
-|5|51.7618 deg|
-|6|-3.2709 deg|
+|2|0 deg|
+|3|0 mm|
+|4|0 deg|
+
 
 </div>
 
-En esta posición, el robot MH6 se encuentra completamente replegado o recogido, con los ejes articulados de forma compacta.
-Esta configuración se utiliza principalmente para almacenamiento, transporte, ya que minimiza el espacio ocupado y reduce el riesgo de colisiones con el entorno.
-Además, al mantener el brazo dentro de su radio mínimo de trabajo, se protege la integridad mecánica del manipulador y se facilita su mantenimiento o desconexión segura del sistema.
+En esta posición, el robot se encuentra completamente estirado, con sus articulaciones rotacionales en 0 grados y la prismática en su punto más alto. Esto implica que los ejes 1 y 2 del SCARA están alineados entre sí y orientados hacia el frente del robot, de modo que el brazo queda extendido en la dirección del eje X positivo. El eje Z (articulación prismática) se ubica en su posición superior de seguridad, mientras que el eje 4 de rotación de la herramienta también se fija en 0°, alineando el efector final con la orientación base del manipulador.
 
 
 
 ### Movimientos manuales
 
-Para realizar movimientos de forma manual del robot se deben seguir los pasos que se describen a continuación:
+Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por lo tanto para que el robot pueda realizar algún movimiento, deben ser desde un computador que tenga instalada este programas. Para realizar movimientos de forma manual del robot se deben seguir los pasos que se describen a continuación:
 
 1. Seleccionar el modo teach
 2. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
