@@ -110,41 +110,16 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
    <p align="center">
 		<img src="./Images/MOVEREnseñar.png" width="400">
 		</p>
-     
-1. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
-2. Activar los servos del robot con el botón SERVO ON READY
-3. En la pantalla darle a la opción Robot
-4. Segunda posición HOME
-5. Presionar botón del hombre muerto
-6. Presionar el botón de FORWARD
-7. Verificar el estado del movimiento que va a realizar el robot en la pantalla
-8. Presionar el botón COORD para cambiar el modo, si está en articular al presionarlo una vez cambia a coordenadas, 2 veces a quaterniones
 
-#### Movimiento por coordenadas
 
-10.
-<p align="center">
-<img src="./Images/coordenadas.jpg" width="400">
-</p>
 
-A la izquierda se encuentran los movimientos de traslación de los ejes x,y,z y a la derecha sus rotaciones respectivas. Presionar los botones de acuerdo al movimiento que se desee realizar, con los botones con el número 8 se puede mover esa articulación y con los que tienen la e indicada la 7
-
-#### Movimiento articular
-
-10. A continuación se muestra la numeración de las articulaciones, se debe presionar el botón correspondiente para el movimiento de cada una 
-<p align="center">
-<img src="./Images/articulaciones.jpg" width="400">
-</p>
 
 
 ### Control de velocidad
-Después de seguir los pasos del 1 al 4 se selecciona la velocidad a trabajar: HIGH SPEED, FAST, SLOW. En la pantalla en la parte superior señalada con rojo se puede observar en que modo está el robot actualmente: H,M,L. High Speed se refiere a una velocidad intermedia, Fast a un nivel intermedio y Slow a un nivel de velocidad bajo
 
-<p align="center">
-<img src="./Images/Velocidades.jpeg" width="400">
-</p>
-
-
+1. La **velocidad de referencia** del robot se define en el **código** mediante la instrucción `SPEED n`, donde _n_ es un valor entre 1 y 100 que corresponde a un porcentaje de la velocidad máxima del manipulador.
+2. Para los **movimientos manuales (jog)**, la velocidad no se ajusta con un valor numérico, sino seleccionando en la ventana de **Mover y Enseñar** si se trabaja con velocidad **BAJA (LOW)** o **ALTA (HIGH)**.
+3. La opción **LOW** limita la velocidad y es adecuada para aproximaciones seguras y enseñanza de puntos, mientras que **HIGH** permite movimientos más rápidos cuando el área de trabajo está despejada; el nivel activo se identifica porque en la interfaz aparece claramente indicado si la velocidad seleccionada es baja o alta.
 ### Software RoboDK 
 
 El software utilizado para esta práctica es RoboDK, un programa que permite simular y programar robots industriales en un entorno virtual. Se usa para planear trayectorias, probar rutinas y generar código para diferentes marcas de robots sin necesidad de tenerlos físicamente. También permite integrar herramientas, bandas transportadoras y procesos como soldadura, corte o ensamblaje dentro de una misma celda de trabajo. 
