@@ -1,7 +1,7 @@
-# Laboratorio No. 02 - Robótica Industrial - Análisis y Operación del Manipulador Motoman MH6.
+# Laboratorio No. 03- Robótica Industrial- Análisis y Operación del Manipulador EPSON T3-401S
 ## Integrantes
 
-**Juan Angel Vargas Rodríguez**
+**Juan Ángel Vargas Rodríguez**
 juvargasro@unal.edu.co
 
 **Santiago Mariño Cortés**
@@ -12,22 +12,26 @@ judelgadoe@unal.edu.co
 
 ## Introducción
 
-Los manipuladores industriales son herramientas clave en la automatización industrial. Cada modelo tiene sus propias características técnicas y configuraciones iniciales que los hacen ideales para diferentes aplicaciones. En este taller, se busca realizar una comparación técnica entre el manipulador Motoman MH6 y el ABB IRB140, comprender las configuraciones iniciales del Motoman MH6, explorar los diferentes modos de operación manual, y realizar simulaciones y ejecuciones reales de trayectorias usando RoboDK.
+
 
 
 ## Objetivos
 
- - Comprender las diferencias entre las características técnicas del manipulador Motoman MH6 y el IRB140. Identificar y describir las configuraciones iniciales del manipulador Motoman MH6, incluyendo el home1 y home2.
- - Realizar movimientos manuales del manipulador Motoman en distintos modos de operación (articulaciones, cartesianos, traslaciones y rotaciones).
- - Cambiar y controlar los niveles de velocidad para el movimiento manual del manipulador Motoman MH6.
- - Comprender las principales aplicaciones del software RoboDK y su comunicaci´on con el manipulador.
- - Comparar y analizar las diferencias entre RobotStudio y RoboDK.
- - Diseñar y ejecutar una trayectoria polar en RoboDK y realizar su implementación física en el manipulador Motoman.
+ - Comprender las diferencias entre las características técnicas del manipulador EPSON T3-401S. 
+ - Identificar y describir las configuraciones iniciales del manipulador EPSON T3-401S, incluyendo la definición de la posición de Home. 
+ - Realizar movimientos manuales del manipulador EPSON T3-401S en distintos modos de operación (articulaciones, cartesianos, traslaciones y rotaciones). 
+ - Cambiar y controlar los niveles de velocidad para el movimiento manual del manipulador EPSON T3-401S. 
+ - Comprender las principales aplicaciones del software EPSON RC+ 7.0 y su comunicación con el manipulador. 
+ - Comparar y analizar las diferencias entre RobotStudio, RoboDK y EPSON RC+ 7.0. 
+ - Diseñar un gripper neumático que permita la manipulación de objetos en el espacio de trabajo del robot EPSON T3-401S. 
+ - Diseñar y ejecutar una trayectoria en el software EPSON RC+ 7.0 y realizar su implementación física en el manipulador EPSON T3-401S.
 
-## Configuraciones y características del manipulador Motoman MH6 y sus herramientas
+## Configuraciones y características del manipulador EPSON T3-401S y sus herramientas
 
-### Comparación entre manipuladores IRB140 y Motoman MH6
+### Características técnicas de los manipuladores IRB140, Motoman MH6 y EPSON T3-401S
 
+*Ejes del EPSON T3-401S*
+![BocetoEPSON](./Images/BocetoEPSON.png)
 *Ejes del Motoman MH6:*
 
 ![Motoman MH6](./Images/Motoman-MH6.png)
