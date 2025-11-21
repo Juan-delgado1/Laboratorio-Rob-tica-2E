@@ -93,15 +93,32 @@ En esta posición, el robot se encuentra completamente estirado, con sus articul
 
 Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por lo tanto para que el robot pueda realizar algún movimiento, deben ser desde un computador que tenga instalada este programas. Para realizar movimientos de forma manual del robot se deben seguir los pasos que se describen a continuación:
 
-1. Seleccionar el modo teach
-2. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
-3. Activar los servos del robot con el botón SERVO ON READY
-4. En la pantalla darle a la opción Robot
-5. Segunda posición HOME
-6. Presionar botón del hombre muerto
-7. Presionar el botón de FORWARD
-8. Verificar el estado del movimiento que va a realizar el robot en la pantalla
-9. Presionar el botón COORD para cambiar el modo, si está en articular al presionarlo una vez cambia a coordenadas, 2 veces a quaterniones
+1. Para visualizar el robot en el software, seleccionar *Simulator* o oprimir las teclas *Ctrl+F5*. 
+2. Verificar cual controlador tiene el software. 
+   - Para está practica se conectará el robot con el computador mediante un cable USB, por lo tanto la conexión del controlador debe decir USB.
+   - Si solo se va a realizar una simulación, se selecciona *Sin conexión*.
+3. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
+4. Dirigirse a **Robot Manager** 
+5. En la pestaña **Panel de control**, seleccionar **Motores ON**
+   - Observar en que nivel de potencia está, si HIGH o LOW. Seleccionar el que se ajuste más a la aplicación que se quiere realizar. Para esta práctica se mantendrá en POWER LOW.
+   
+	 <p align="center">
+		<img src="./Images/RobotManager.png" width="400">
+		</p>
+5. Ahora en la pestaña de Mover y Enseñar podemos seleccionar si mover las articulaciones o en ejes cartesianos. 
+   - En esta pestaña aparecen los botones para mover cada elemento que se requiere en un sentido o en otro. Por ejemplo, en la imagen a continuación se muestran los movimientos por articulación donde aparecen 8 botones para el movimiento de cada articulación en un sentido o en otro.
+   <p align="center">
+		<img src="./Images/RobotManager.png" width="400">
+		</p>
+     
+1. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
+2. Activar los servos del robot con el botón SERVO ON READY
+3. En la pantalla darle a la opción Robot
+4. Segunda posición HOME
+5. Presionar botón del hombre muerto
+6. Presionar el botón de FORWARD
+7. Verificar el estado del movimiento que va a realizar el robot en la pantalla
+8. Presionar el botón COORD para cambiar el modo, si está en articular al presionarlo una vez cambia a coordenadas, 2 veces a quaterniones
 
 #### Movimiento por coordenadas
 
