@@ -120,125 +120,43 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 1. La **velocidad de referencia** del robot se define en el **código** mediante la instrucción `SPEED n`, donde _n_ es un valor entre 1 y 100 que corresponde a un porcentaje de la velocidad máxima del manipulador.
 2. Para los **movimientos manuales (jog)**, la velocidad no se ajusta con un valor numérico, sino seleccionando en la ventana de **Mover y Enseñar** si se trabaja con velocidad **BAJA (LOW)** o **ALTA (HIGH)**.
 3. La opción **LOW** limita la velocidad y es adecuada para aproximaciones seguras y enseñanza de puntos, mientras que **HIGH** permite movimientos más rápidos cuando el área de trabajo está despejada; el nivel activo se identifica porque en la interfaz aparece claramente indicado si la velocidad seleccionada es baja o alta.
-### Software RoboDK 
+### Software EPSON RC+ 7.0
 
-El software utilizado para esta práctica es RoboDK, un programa que permite simular y programar robots industriales en un entorno virtual. Se usa para planear trayectorias, probar rutinas y generar código para diferentes marcas de robots sin necesidad de tenerlos físicamente. También permite integrar herramientas, bandas transportadoras y procesos como soldadura, corte o ensamblaje dentro de una misma celda de trabajo. 
-A continuación se muestra el panel general de RoboDK, en el se encuentran distintas opciones y funciones para desarrollar en este simulador:
-
-
-![PanelGeneral](./Images/FuncionesRoboDK/PanelGeneral.png)
-
-#### Funciones del panel general
-
-- Las primeras opciones que vemos en el panel son:
-	
-	![GBDeshacer](./Images/FuncionesRoboDK/GuardarBibliosDeshacer.png)
-	
-	Estas corresponden de izquierda a derecha a:
-	- Cargar un archivo.
-	- Abrir biblioteca de robots.
-	- Guardar Estación.
-	- Deshacer y rehacer.
-- Las siguientes corresponden a la creación de targets y ajuste de vistas:
-	
-	![Targetssssssss](./Images/FuncionesRoboDK/Targets.png)
-	- Añadir un sistema de referencia.
-	- Añadir un nuevo objetivo para el robot.
-	- Ajustar todo: para reubicar la vista del robot.
-	- Selección de vista.
-- RoboDk también ofrece la opción de elegir la función que va a desarrollar el mouse:
-	
-	![Mousessssssss](./Images/FuncionesRoboDK/Mouse.png)
-	- La primera opción es para no mover nada.
-	- La segunda para mover los sistemas de referencia.
-	- La tercera para mover la herramienta del robot.
-- Opciones para crear archivos de código y vista de la simulación:
-	
-	![Mousesssss](./Images/FuncionesRoboDK/Programs.png)
-	- La flecha sirve para elegir la velocidad de la simulación. No es la velocidad que va a tener el robot en la vida real, solo de la simulación.
-	- El botón de pause.
-	- Agregar un programa de python.
-	- Agregar un programa de otro tipo.
-- Una ventaja que tiene RoboDk frente a RobotStudio es la facilidad de añadir instrucciones al robot:
-	
-	![Operationsss](./Images/FuncionesRoboDK/operaciones.png)
-	- La primera opción es para llevar el robot a un punto deseado.
-	- La segunda para que el robot haga un trayectoria recta.
-	- La tercera para realizar una curva. 
-		Al seleccionar alguna de estas tres opciones, la operación automáticamente de agrega en el programa del robot.
-	- La siguiente opción es para agregar una pausa.
-	- La siguiente es para mostrar un mensaje en el Teach Pendant.
-	- La última es para ejecutar o agregar un bloque de código.
-- Las ultimas opciones son:
-	
-	![OperationsIO](./Images/FuncionesRoboDK/UltimasOps.png)
-	- Administrar entradas y salidas digitales-
-	- Agregar tareas fuera de la línea del robot, como interactuar con objetos externos.
-	- Exportar la simulación a formatos PDF o HTML.
-
-#### Panel lateral
-A la izquierda de la pantalla se pueden observar lo siguiente:
-
-![PanelLateral](./Images/FuncionesRoboDK/PanelLateral.png)
-
-- En la parte superior se encuentra la estación con el nombre del archivo, dentada a ella están:
-	- El programa en python para simular, al dar click derecho en esta opción podemos ejecutar el programa con la simulación.
-	- La caja sobre la que va a escribir el robot.
-	- El sistema de referencia del robot Motoman MH6. Dentado a este están:
-		- El frame de referencia para la superficie donde se va a escribir.
-		- El manipulador Motoman MH6 y la herramienta *Ventosas*.
-
-#### Opciones para el robot
-Al dar click derecho sobre el robot, se encuentran las siguientes opciones:
-
-![OpsMH&](./Images/FuncionesRoboDK/OpcionesRobot.png)
-
-Aquí podemos ver diferentes alternativas que son de mucha utilidad para el manejo del manipulador como *Muévete a casa, enseñar posición actual, añadir sistema de referencia o herramienta*, entre muchas otras más.
-
-Hay dos opciones que son de gran interés para el desarrollo de la práctica:
-1. **Conectar con el robot**: Esta opción nos lleva al siguiente panel:
-
-	![connectRobot](./Images/FuncionesRoboDK/ConectarRobot.png)
-	
-	Esta opción permite conectar con el robot físico, para ello hay que conectarse a la misma red de internet y en el panel ubicar la dirección IP del robot y seleccionar su puerto. Finalmente al oprimir la opción *Conectar* debe aparecer *Connected* en la parte inferior, en este caso aparece *Disconnected* debido a que no lo está.
-	Para ejecutar el programa en el robot físico se debe realizar el mismo procedimiento que para la simulación: dar click derecho en el icono de python del panel lateral que se vió anteriormente y seleccionar *Ejecutar script de python*. Tanto la simulación como el manipulador físico empezarán a realizar los mismos movimientos, esto se conoce como un *Gemelo digital.*
-	Hay que tener en cuenta que para que sea posible conectar con el manipulador, el teach pendant tiene que estar en la opción **Remote**, así va a estar conectado únicamente con el software RoboDk y la única función activa y posible que tendrá el teach pendant es el de paro de emergencia.
-	
-2. La otra casilla que es de interés para nosotros es la que dice **Opciones**, la cual nos lleva al siguiente panel:
-	 
-	![masopciones](./Images/FuncionesRoboDK/Masopciones.png)
-	
-	Aquí podemos realizar diversos movimientos con el robot, movimientos articulares y cartesianos, trasladar o rotar la herramienta con base a diferentes sistemas de referencia, ubicarlo en posiciones específicas, entre otras.
+1. **EPSON RC+ 7.0 como entorno de desarrollo y supervisión**   
+    - Permite crear, editar y depurar programas en lenguaje **SPEL+**.        
+    - Gestiona proyectos del robot: archivos de programa, librerías y configuraciones asociadas.
+    - Configura parámetros del sistema: marcos de referencia, entradas y salidas digitales, velocidades, aceleraciones y límites de trabajo.
+    - Ofrece herramientas de simulación de trayectorias para verificar movimientos antes de ejecutarlos sobre el manipulador real.
+    - Permite monitorizar en tiempo real el estado del controlador y del manipulador (posiciones, errores, alarmas, etc.).
+        
+2. **Comunicación entre EPSON RC+ 7.0 y el manipulador T3-401S**    
+    - El software se ejecuta en un **PC con Windows** y se conecta al controlador integrado del T3 mediante **USB o Ethernet**, según la configuración seleccionada.        
+    - A través de este enlace se envían programas compilados, parámetros de configuración y órdenes de movimiento.        
+    - El controlador devuelve al PC información de posición, estado de los ejes, señales de E/S, alarmas y mensajes de error.        
+    - La configuración establecida desde EPSON RC+ queda almacenada en el controlador, permitiendo que el robot ejecute los programas incluso sin la intervención constante del PC.
+        
+3. **Procesos que realiza para ejecutar movimientos**
+    
+    - El usuario puede enseñar puntos y trayectorias desde la ventana de **Mover y Enseñar (Jog & Teach)** o definirlos directamente en el código SPEL+.        
+    - EPSON RC+ organiza estos puntos dentro de programas y, al iniciar la ejecución, los **descarga al controlador del robot** junto con los parámetros de movimiento (velocidad, tipo de trayectoria, etc.).        
+    - El controlador se encarga de realizar los cálculos cinemáticos, planificar la trayectoria y generar la interpolación entre puntos.        
+    - Durante esta ejecución se respetan los límites de velocidad, aceleración, rango articular y el modo de operación activo (Teach, Test o Auto).
+        
+4. **EPSON RC+ 7.0 como interfaz de supervisión y control en tiempo real**    
+    - Permite **arrancar, pausar y detener** programas directamente desde la interfaz gráfica.        
+    - Facilita el ajuste de parámetros en tiempo real, como la velocidad de referencia utilizada durante la ejecución.        
+    - Muestra el avance del programa, la posición actual del robot y, en caso de utilizar el simulador, una visualización gráfica del movimiento.        
+    - Gestiona condiciones de seguridad: estado de los motores (ON/OFF), nivel de potencia (LOW/HIGH), paros de emergencia y mensajes de error.        
+    - De esta forma, asegura que los comandos enviados al manipulador se ejecuten de manera controlada, segura y trazable para el operador.
 
 
+### Comparación de herramientas RoboDK, RobotStudio y EPSON RC+ 7.0
 
-### Comparación de herramientas RoboDK y RobotStudio
-
-#### RoboDK
-Herramienta multimarca, flexible y extensible para simulación y programación offline; fuerte en integración de muchos modelos, scripting (Python) y generación de programas para distintos controladores.
-  - **Ventajas:**
-    - Compatibilidad multi-marca: soporte para decenas de fabricantes y modelos, por lo que sirve para entornos heterogéneos o para pruebas con distintos brazos.
-    - Extensible y scriptable: API en Python y posibilidad de crear post-procesadores personalizados y plugins; ideal para automatización de flujos y para integrar CAM/CNC → robot.
-    - Rápida puesta en marcha: interfaz orientada a generar programas offline con poco esfuerzo; buena para prototipado y pruebas conceptuales.
-  - **Limitaciones:**
-    - Fidelidad vs controlador real: aunque produce programas que funcionan en el robot real, la simulación no siempre reproduce exactamente el comportamiento del controlador del fabricante (pequeñas diferencias en cinemática, límites, comportamiento de control). Para validación final puede requerir ajustes y verificación en el controlador real.
-    - Dependencia de post-procesadores: para generar código listo para el robot se necesitan post-procesadores correctos; si no existe uno perfecto para un controlador/versión concreta, será necesario crearlo o adaptarlo.
-  - **Aplicaciones:**
-    - Integraciones multi-marca (cuando tu célula tiene robots de distintos fabricantes).
-    - Prototipado rápido, generación de trayectorias y post-procesado personalizado (p. ej. conversión de CAM a programas robot).
-    - Escuelas, investigación y startups que necesitan flexibilidad y scripting en Python. 
-#### RobotStudio
-Herramienta propietaria ABB enfocada a simulación de alta fidelidad y programación offline para robots ABB (IRC5/RobotWare), con integración nativa, control virtual y simulación muy fiel al controlador real.
-  - **Ventajas:**
-    - Integración nativa con ABB (IRC5 / RobotWare): virtual controller y emulación que reproduce con alta fidelidad cómo el robot responderá en el mundo real (RAPID, I/O, señales, tiempos). Esto reduce riesgos al pasar a producción.
-    - Alta fidelidad en trayectoria y tiempos de ciclo: modelos y física optimizados para validar trayectoria, verificación de colisiones y obtener estimaciones reales de tiempos.
-    - Herramientas avanzadas de análisis: Signal Analyzer, Event Manager, verificación de I/O y conexión con controladores reales para pruebas integradas.
-  - **Limitaciones:**
-    - Enfoque propietario: optimizado para ABB; si trabajas con robots de otras marcas no es útil.
-    - Costo y licencias: algunas funciones avanzadas (virtual controller, add-ins premium) pueden requerir licencias o módulos adicionales; hay conversas de usuarios sobre la curva de licenciamiento.
-  - **Aplicaciones:**
-    - Proyectos con robots ABB donde la fidelidad al controlador IRC5 es crítica: puesta en marcha virtual, verificación de colisiones, I/O y estimación de tiempos realistas.
-    - Validación final de programas antes de subirlos a producción en sistemas ABB (reduce riesgos y tiempos de parada).    
+|**Herramienta**|**Descripción general**|**Ventajas**|**Limitaciones**|**Aplicaciones**|
+|---|---|---|---|---|
+|**RoboDK**|Herramienta multimarca, flexible y extensible para simulación y programación offline, con énfasis en integración de muchos modelos, scripting en Python y generación de programas para distintos controladores.|• Compatibilidad multi-marca: soporte para muchos fabricantes y modelos, ideal para celdas heterogéneas.• Extensible y scriptable: API en Python, creación de post-procesadores y plugins para automatizar flujos e integrar CAM/CNC → robot.• Rápida puesta en marcha y prototipado: interfaz orientada a generar programas offline con poco esfuerzo.|• La simulación no siempre reproduce al 100 % el comportamiento del controlador real; puede requerir ajustes en el robot físico.• Dependencia de post-procesadores: si no existe uno adecuado para un controlador/versión, hay que adaptarlo o desarrollarlo.|• Integraciones multi-marca en celdas con varios fabricantes.• Prototipado rápido de trayectorias, conversión CAM→robot y post-procesado personalizado.• Docencia, investigación y startups que requieren flexibilidad y scripting en Python.|
+|**RobotStudio**|Herramienta propietaria de ABB para simulación de alta fidelidad y programación offline de robots ABB (IRC5/RobotWare), con controlador virtual y emulación cercana al comportamiento real.|• Integración nativa con controladores ABB (IRC5/RobotWare), incluyendo virtual controller y compatibilidad completa con RAPID, I/O y señales.• Alta fidelidad de trayectoria y tiempos de ciclo, con buenas herramientas de verificación de colisiones.• Herramientas avanzadas de análisis y depuración (Signal Analyzer, Event Manager, etc.) y conexión con controladores reales.|• Enfoque propietario: solo útil para robots ABB, no sirve para otras marcas.• Coste y licenciamiento: algunas funciones avanzadas requieren módulos o licencias adicionales.|• Proyectos donde se usan robots ABB y se necesita alta fidelidad respecto al controlador real.• Puesta en marcha virtual, verificación de colisiones e I/O y estimación de tiempos de ciclo antes de producción.• Validación final de programas antes de cargarlos en sistemas ABB en planta.|
+|**EPSON RC+ 7.0**|Entorno propietario de Epson para programación, simulación básica y supervisión de robots EPSON (como el T3-401S), que integra editor SPEL+, gestor de proyectos y herramientas de configuración del controlador.|• Integración directa con el controlador EPSON: comunicación por USB/Ethernet sin necesidad de post-procesadores intermedios.• Alta coherencia entre simulación y ejecución real, ya que usa el propio entorno del fabricante y sus modelos cinemáticos oficiales.• Incluye herramientas específicas para enseñanza de puntos, configuración de I/O, ajuste de parámetros de movimiento y diagnóstico del sistema.|• Enfoque propietario: solo funciona con robots EPSON, no es válido para otras marcas.• Menos orientado a entornos multi-marca o a flujos complejos de CAM que herramientas como RoboDK.• El scripting y la automatización están centrados en SPEL+ y el ecosistema EPSON, con menor flexibilidad multi-lenguaje.|• Programación y puesta en marcha de celdas con robots EPSON (p. ej., T3-401S).• Enseñanza de trayectorias, ajuste fino de velocidades, potencias y secuencias de I/O directamente sobre el controlador real o en simulación.• Entornos industriales donde se valora la integración nativa con el hardware EPSON y la reducción de riesgos al transferir programas a producción.|
 
 ## Desarrollo de práctica: Trayectoria polar
 
