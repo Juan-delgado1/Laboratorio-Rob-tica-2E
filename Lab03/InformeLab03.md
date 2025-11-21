@@ -108,7 +108,7 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 5. Ahora en la pestaña de Mover y Enseñar podemos seleccionar si mover las articulaciones o en ejes cartesianos. 
    - En esta pestaña aparecen los botones para mover cada elemento que se requiere en un sentido o en otro. Por ejemplo, en la imagen a continuación se muestran los movimientos por articulación donde aparecen 8 botones para el movimiento de cada articulación en un sentido o en otro.
    <p align="center">
-		<img src="./Images/RobotManager.png" width="400">
+		<img src="./Images/MOVEREnseñar.png" width="400">
 		</p>
      
 1. Verificar que la para de emergencia no esté activa y si el botón está activado liberarlo
