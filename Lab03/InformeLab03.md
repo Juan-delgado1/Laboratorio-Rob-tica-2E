@@ -152,75 +152,15 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 
 ### Comparación de herramientas RoboDK, RobotStudio y EPSON RC+ 7.0
 
-|**Herramienta**|**Descripción general**|**Ventajas**|**Limitaciones**|**Aplicaciones**|
-|---|---|---|---|---|
-|**RoboDK**|Herramienta multimarca, flexible y extensible para simulación y programación offline, con énfasis en integración de muchos modelos, scripting en Python y generación de programas para distintos controladores.|• Compatibilidad multi-marca: soporte para muchos fabricantes y modelos, ideal para celdas heterogéneas.• Extensible y scriptable: API en Python, creación de post-procesadores y plugins para automatizar flujos e integrar CAM/CNC → robot.• Rápida puesta en marcha y prototipado: interfaz orientada a generar programas offline con poco esfuerzo.|• La simulación no siempre reproduce al 100 % el comportamiento del controlador real; puede requerir ajustes en el robot físico.• Dependencia de post-procesadores: si no existe uno adecuado para un controlador/versión, hay que adaptarlo o desarrollarlo.|• Integraciones multi-marca en celdas con varios fabricantes.• Prototipado rápido de trayectorias, conversión CAM→robot y post-procesado personalizado.• Docencia, investigación y startups que requieren flexibilidad y scripting en Python.|
-|**RobotStudio**|Herramienta propietaria de ABB para simulación de alta fidelidad y programación offline de robots ABB (IRC5/RobotWare), con controlador virtual y emulación cercana al comportamiento real.|• Integración nativa con controladores ABB (IRC5/RobotWare), incluyendo virtual controller y compatibilidad completa con RAPID, I/O y señales.• Alta fidelidad de trayectoria y tiempos de ciclo, con buenas herramientas de verificación de colisiones.• Herramientas avanzadas de análisis y depuración (Signal Analyzer, Event Manager, etc.) y conexión con controladores reales.|• Enfoque propietario: solo útil para robots ABB, no sirve para otras marcas.• Coste y licenciamiento: algunas funciones avanzadas requieren módulos o licencias adicionales.|• Proyectos donde se usan robots ABB y se necesita alta fidelidad respecto al controlador real.• Puesta en marcha virtual, verificación de colisiones e I/O y estimación de tiempos de ciclo antes de producción.• Validación final de programas antes de cargarlos en sistemas ABB en planta.|
-|**EPSON RC+ 7.0**|Entorno propietario de Epson para programación, simulación básica y supervisión de robots EPSON (como el T3-401S), que integra editor SPEL+, gestor de proyectos y herramientas de configuración del controlador.|• Integración directa con el controlador EPSON: comunicación por USB/Ethernet sin necesidad de post-procesadores intermedios.• Alta coherencia entre simulación y ejecución real, ya que usa el propio entorno del fabricante y sus modelos cinemáticos oficiales.• Incluye herramientas específicas para enseñanza de puntos, configuración de I/O, ajuste de parámetros de movimiento y diagnóstico del sistema.|• Enfoque propietario: solo funciona con robots EPSON, no es válido para otras marcas.• Menos orientado a entornos multi-marca o a flujos complejos de CAM que herramientas como RoboDK.• El scripting y la automatización están centrados en SPEL+ y el ecosistema EPSON, con menor flexibilidad multi-lenguaje.|• Programación y puesta en marcha de celdas con robots EPSON (p. ej., T3-401S).• Enseñanza de trayectorias, ajuste fino de velocidades, potencias y secuencias de I/O directamente sobre el controlador real o en simulación.• Entornos industriales donde se valora la integración nativa con el hardware EPSON y la reducción de riesgos al transferir programas a producción.|
+| **Herramienta**   | **Descripción general**                                                                                                                                                                                           | **Ventajas**                                                                                                                                                                                                                                                                                                                                                                                                       | **Limitaciones**                                                                                                                                                                                                                                                                                                  | **Aplicaciones**                                                                                                                                                                                                                                                                                                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RoboDK**        | Herramienta multimarca, flexible y extensible para simulación y programación offline, con énfasis en integración de muchos modelos, scripting en Python y generación de programas para distintos controladores.   | • Compatibilidad multi-marca: soporte para muchos fabricantes y modelos, ideal para celdas heterogéneas.• Extensible y scriptable: API en Python, creación de post-procesadores y plugins para automatizar flujos e integrar CAM/CNC → robot.• Rápida puesta en marcha y prototipado: interfaz orientada a generar programas offline con poco esfuerzo.                                                            | • La simulación no siempre reproduce al 100 % el comportamiento del controlador real; puede requerir ajustes en el robot físico.• Dependencia de post-procesadores: si no existe uno adecuado para un controlador/versión, hay que adaptarlo o desarrollarlo.                                                     | • Integraciones multi-marca en celdas con varios fabricantes.• Prototipado rápido de trayectorias, conversión CAM→robot y post-procesado personalizado.• Docencia, investigación y startups que requieren flexibilidad y scripting en Python.                                                                                                                                    |
+| **RobotStudio**   | Herramienta propietaria de ABB para simulación de alta fidelidad y programación offline de robots ABB (IRC5/RobotWare), con controlador virtual y emulación cercana al comportamiento real.                       | • Integración nativa con controladores ABB (IRC5/RobotWare), incluyendo virtual controller y compatibilidad completa con RAPID, I/O y señales.• Alta fidelidad de trayectoria y tiempos de ciclo, con buenas herramientas de verificación de colisiones.• Herramientas avanzadas de análisis y depuración (Signal Analyzer, Event Manager, etc.) y conexión con controladores reales.                              | • Enfoque propietario: solo útil para robots ABB, no sirve para otras marcas.• Coste y licenciamiento: algunas funciones avanzadas requieren módulos o licencias adicionales.                                                                                                                                     | • Proyectos donde se usan robots ABB y se necesita alta fidelidad respecto al controlador real.• Puesta en marcha virtual, verificación de colisiones e I/O y estimación de tiempos de ciclo antes de producción.• Validación final de programas antes de cargarlos en sistemas ABB en planta.                                                                                   |
+| **EPSON RC+ 7.0** | Entorno propietario de Epson para programación, simulación básica y supervisión de robots EPSON (como el T3-401S), que integra editor SPEL+, gestor de proyectos y herramientas de configuración del controlador. | • Integración directa con el controlador EPSON: comunicación por USB/Ethernet sin necesidad de post-procesadores intermedios.• Alta coherencia entre simulación y ejecución real, ya que usa el propio entorno del fabricante y sus modelos cinemáticos oficiales.• Incluye herramientas específicas para enseñanza de puntos, configuración de I/O, ajuste de parámetros de movimiento y diagnóstico del sistema. | • Enfoque propietario: solo funciona con robots EPSON, no es válido para otras marcas.• Menos orientado a entornos multi-marca o a flujos complejos de CAM que herramientas como RoboDK.• El scripting y la automatización están centrados en SPEL+ y el ecosistema EPSON, con menor flexibilidad multi-lenguaje. | • Programación y puesta en marcha de celdas con robots EPSON (p. ej., T3-401S).• Enseñanza de trayectorias, ajuste fino de velocidades, potencias y secuencias de I/O directamente sobre el controlador real o en simulación.• Entornos industriales donde se valora la integración nativa con el hardware EPSON y la reducción de riesgos al transferir programas a producción. |
 
-## Desarrollo de práctica: Trayectoria polar
-
-Para el desarrollo de la práctica se realizó primero la exploración del entorno de RoboDK y el movimiento de forma manual del manipulador del robot Motoman MH6 mediante el teach pendant, después de esto se procedió con la elaboración de un código para que el robot ejecutara una trayectoria, para esto se usó un  [Script de python](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py) que busca dibujar una trayectoria polar de tipo cardioide y los nombres de los integrantes del grupo ( Juan X2 Santi).
-
-<p align="center">
-<img src="./Images/cardioide.jpg" width="400">
-</p>
-
-Resultado de la simulación
-
-<p align="center">
-<img src="./Images/resultado simulación.jpg" width="400">
-</p>
-
-Después de realizar la simulación se procedió a cargar el código en el robot y verificar la correcta ejecución de la rutina por parte del manipulador
-
-### Diagrama de flujo de acciones del robot
-```mermaid
----
-config:
-  theme: redux
----
-flowchart TD
-    A(["Inicio"]) --> B[["RDK &lt;-- Robolink()"]]
-    B --> C["Selección del robot"]
-    C --> D{"Validación del robot"}
-    D --> E["Mostrar error de conexión"] & F{"Conectar con el robot"}
-    F --> G["Mostrar mensaje de error"] & H["frame_name &lt;-- Frame_from_Target1"]
-    H --> I["robot.setPoseFrame(frame)"]
-    I --> J["robot.setSpeed(300)"]
-    J --> K["robot.setRounding(5)"]
-    K --> L["Dibujar el cardioide"]
-    L --> M["Escribir los nombres"]
-    M --> N["Llevar el robot a una posición segura"]
-    N --> O@{ label: "print(f'¡Cardioide completado en el frame '{frame_name}'!')" }
-    O --> Z(["Fin"])
-                        
- 
-```
-
-### Código desarrollado en RoboDK
-[Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
-
-```
-from robodk.robolink import *    # API para comunicarte con RoboDK
-from robodk.robomath import *    # Funciones matemáticas
-import math
-from matplotlib.textpath import TextPath
-from matplotlib.patches import PathPatch
-from matplotlib.transforms import Affine2D                   
- 
-```
-
-### Plano de Planta
-El siguiente plano de planta representa la disposición general del área de trabajo destinada a las prácticas con el robot industrial Motoman MH6.
+## Desarrollo de práctica: Paletizado de 2 esferas en un panal de huevos
 
 
-
-![PlantaMotoman](./Images/PlanoPlantaMH6.png)
-
-
-
-Como se puede observar, en la parte del fondo se ubica el tablero eléctrico de protección de subcircuito y el controlador del robot junto con el lugar para ubicar el Teach Pendant. En el centro se encuentra el controlador principal Motoman MH6, a un costado está el banco de trabajo rotativo, en la zona frontal se dispone la base del robot, el WorkObject para el dibujo y donde se desarrollo la práctica, el espacio destinado al corte y grabado y la banda transportadora que permite el movimiento del robot.
 ### Video de la simulación en RoboDK
 
 El vídeo donde se muestra la simulación y las herramientas utilizadas de RoboDK se encuentra en este link: [Grupo 2E - Simulación de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/SNpgFyDXbFQ)
@@ -231,10 +171,7 @@ El vídeo donde se muestra la implementación física de la práctica se encuent
 
 ## Conclusiones
 
-- RoboDk es una herramienta versátil que permite trabajar con diferentes modelos de robot de diversas marcas, sin necesidad de instalar software adicional de acuerdo a la empresa del robot que se quiera utilizar.
-- RoboDk permite realizar programs en python lo que unifica la sintaxis de varios robots para que sólo se tenga que aprender un lenguaje de programación.
-- La comparación entre RoboDK y RobotStudio evidenció que, aunque ambos permiten simulación y control offline, su aplicación depende del tipo de robot y del nivel de fidelidad requerido para la ejecución real.
-- El manejo del manipulador Motoman MH6 permitió comprender la importancia de las configuraciones iniciales y los modos de operación manual para garantizar un control seguro y preciso del robot.    
+
 
 
 
