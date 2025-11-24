@@ -12,7 +12,7 @@ Fend
 
 Function main
 	Motor On
-	Power High
+	Power Low
 	Accel 100, 100 '%
 	Speed 100 '%	
 	Grip_Off()
