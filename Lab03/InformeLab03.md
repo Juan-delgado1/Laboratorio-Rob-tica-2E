@@ -235,7 +235,7 @@ El proceso de manipulación, encapsulado en la función Movimiento_huevos, opera
 Al finalizar la primera secuencia de 14 movimientos, el sistema ejecuta una rutina de transición donde el Huevo 1 se traslada al punto de inicio de la ruta del Huevo 2, y viceversa, permitiendo que ambos objetos intercambien sus trayectorias o completen el recorrido total de la matriz en un segundo ciclo de bucle idéntico al primero.
 
 
-[Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
+[Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/6ebdc937786b314adc7951cdcb2fe664746063fa/Lab03/C%C3%B3digos/Paletizado_huevos.prg)
 
 ```vb
 Global Integer i
