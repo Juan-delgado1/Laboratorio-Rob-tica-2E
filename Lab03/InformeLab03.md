@@ -11,7 +11,7 @@ smarinoc@unal.edu.co
 judelgadoe@unal.edu.co
 
 ## Introducción
-
+El presente laboratorio tiene como propósito familiarizar al estudiante con la operación y programación del manipulador SCARA EPSON T3-401S en un entorno cercano a una celda industrial real. A partir de la comparación con los robots Motoman MH6 y ABB IRB 140, se analizan sus diferencias en arquitectura, capacidades y aplicaciones típicas. Posteriormente, se trabaja con el software EPSON RC+ 7.0 para configurar el sistema, definir la posición de Home, realizar movimientos manuales en distintos modos (articular y cartesiano) y ajustar parámetros de velocidad. Finalmente, se diseña un gripper neumático y se implementa una tarea de paletizado de dos esferas sobre un panal de huevos, integrando conceptos de programación, trayectoria y operación segura del manipulador.
 
 
 
@@ -272,16 +272,16 @@ Fend
 ...
 ```
 
-### Video de la simulación en RoboDK
+### Video de la simulación en EPSON RC+ 7.0
 
-El vídeo donde se muestra la simulación y las herramientas utilizadas de RoboDK se encuentra en este link: [Grupo 2E - Simulación de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/SNpgFyDXbFQ)
+El vídeo donde se muestra la simulación y las herramientas utilizadas de EPSON RC+7.0 se encuentra en este link: [Grupo 2E - Simulación de Laboratorio 3 con Manipulador EPSON T3-401S](https://youtu.be/uz3ZTg-uTo8?si=OGDmg9CCw3jylUJw)
 
 
-### Video de la implementación física con el manipulador Motoman MH6
-El vídeo donde se muestra la implementación física de la práctica se encuentra en este link: [Grupo 2E - Implementación física de Laboratorio 2 con Manipulador Robot Motoman MH6](https://youtu.be/thkcGVQ2n2Q)
+### Video de la implementación física con el manipulador EPSON T3-401S
+El vídeo donde se muestra la implementación física de la práctica se encuentra en este link: [Grupo 2E - Implementación física de Laboratorio 3 con Manipulador EPSON T3-401S](https://youtu.be/0OPY-gkM478?si=EnLo-ygpki_pwg9B)
 
 ## Conclusiones
-
+El desarrollo del laboratorio permitió comprender de forma práctica las diferencias entre un robot SCARA como el EPSON T3-401S y manipuladores industriales de seis grados de libertad (Motoman MH6 y ABB IRB 140), tanto en su estructura mecánica como en su rango de aplicaciones. El uso de EPSON RC+ 7.0 facilitó la configuración del robot, la enseñanza de puntos y la ejecución de trayectorias, evidenciando la importancia de la posición de Home, los modos de operación y el ajuste de velocidades para garantizar movimientos seguros. El diseño del gripper neumático y la programación de la rutina de paletizado sobre el panal de huevos integraron conceptos de planificación de tareas, lógica de control y manipulación de objetos, reforzando la relación entre la teoría de robótica industrial y su implementación en un entorno experimental real.
 
 
 
