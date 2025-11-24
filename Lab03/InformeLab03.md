@@ -165,10 +165,9 @@ Los planos de la herramienta se encuentran en [Planos](Planos/),
 
 ## Plano de planta
 A continuación se muestran las posiciones iniciales de la cubeta, el manipulador y los huevos.
-
-	 <p align="center">
-		<img src="./Images/ vistaplanta.jpg" width="400">
-		</p>
+<p align="center">
+		<img src="./Images/vistaplanta.jpg" width="400">
+</p>
 
 
 ### Programación
