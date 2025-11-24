@@ -160,19 +160,9 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 
 ## Desarrollo de práctica: Paletizado de 2 esferas en un panal de huevos
 
-### Código 
+### Programación
 
-Descripción del Algoritmo de Control y Trayectoria
-
-El programa, desarrollado en el entorno Epson RC+ 7.0, controla un brazo robótico encargado de manipular dos objetos ("huevos") dentro de una superficie paletizada definida como una matriz de 6x5 posiciones (30 puntos en total). El ciclo inicia con la configuración de los parámetros cinemáticos del robot (potencia alta, aceleración y velocidad al 100%) y el posicionamiento en Home.
-
-La lógica central se apoya en la definición de un Pallet y dos vectores globales (H1 y H2) que almacenan una secuencia precalculada de índices. Estos índices representan las coordenadas espaciales que cada huevo debe visitar respetando el movimiento en "L" (tipo caballo de ajedrez).
-
-El proceso de manipulación, encapsulado en la función Movimiento_huevos, opera mediante un bucle iterativo. En cada iteración, el robot ejecuta una secuencia de Pick-and-Place (coger y dejar): primero desplaza el Huevo 1 de su posición actual (i-1) a la siguiente (i) en el vector H1, y seguidamente realiza la misma operación para el Huevo 2 utilizando el vector H2. El control de la herramienta (pinza) se gestiona mediante lógica negativa en la salida Out_9.
-
-Al finalizar la primera secuencia de 14 movimientos, el sistema ejecuta una rutina de transición donde el Huevo 1 se traslada al punto de inicio de la ruta del Huevo 2, y viceversa, permitiendo que ambos objetos intercambien sus trayectorias o completen el recorrido total de la matriz en un segundo ciclo de bucle idéntico al primero.
-
-Diagrama de bloques del código:
+**Diagrama de bloques del código:**
 ```mermaid
 	flowchart TD
     %% Estilos
@@ -231,6 +221,47 @@ Diagrama de bloques del código:
 
     Loop2_Start -- No --> HomeEnd
     HomeEnd[Ir a HOME]:::init --> End([Fin])
+```
+
+
+**Descripción del Algoritmo de Control y Trayectoria:**
+
+El programa, desarrollado en el entorno Epson RC+ 7.0, controla un brazo robótico encargado de manipular dos objetos ("huevos") dentro de una superficie paletizada definida como una matriz de 6x5 posiciones (30 puntos en total). El ciclo inicia con la configuración de los parámetros cinemáticos del robot (potencia alta, aceleración y velocidad al 100%) y el posicionamiento en Home.
+
+La lógica central se apoya en la definición de un Pallet y dos vectores globales (H1 y H2) que almacenan una secuencia precalculada de índices. Estos índices representan las coordenadas espaciales que cada huevo debe visitar respetando el movimiento en "L" (tipo caballo de ajedrez).
+
+El proceso de manipulación, encapsulado en la función Movimiento_huevos, opera mediante un bucle iterativo. En cada iteración, el robot ejecuta una secuencia de Pick-and-Place (coger y dejar): primero desplaza el Huevo 1 de su posición actual (i-1) a la siguiente (i) en el vector H1, y seguidamente realiza la misma operación para el Huevo 2 utilizando el vector H2. El control de la herramienta (pinza) se gestiona mediante lógica negativa en la salida Out_9.
+
+Al finalizar la primera secuencia de 14 movimientos, el sistema ejecuta una rutina de transición donde el Huevo 1 se traslada al punto de inicio de la ruta del Huevo 2, y viceversa, permitiendo que ambos objetos intercambien sus trayectorias o completen el recorrido total de la matriz en un segundo ciclo de bucle idéntico al primero.
+
+
+[Código](https://github.com/Juan-delgado1/Laboratorio-Rob-tica-2E/blob/75d58c01aad77d062bc4d28cf6bb98d9c7c7b7c5/Lab02/C%C3%B3digo/codigo%20lab2.py)
+
+```vb
+Global Integer i
+Global Integer H1(14)
+Global Integer H2(14)
+
+Function Grip_On       ' activar pinza (lógica NEGATIVA: activo = nivel bajo)
+    Off Out_9
+Fend
+
+Function Grip_Off      ' desactivar pinza (lógica NEGATIVA: inactivo = nivel alto)
+    On Out_9
+Fend
+
+Function main
+	Motor On
+	Power High
+	Accel 100, 100 '%
+	Speed 100 '%	
+	Grip_Off()
+	Home
+	Call Paletizado_01
+	Call Movimiento_huevos()
+	Home
+Fend
+...
 ```
 
 ### Video de la simulación en RoboDK
