@@ -160,6 +160,78 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 
 ## Desarrollo de práctica: Paletizado de 2 esferas en un panal de huevos
 
+### Código 
+
+Descripción del Algoritmo de Control y Trayectoria
+
+El programa, desarrollado en el entorno Epson RC+ 7.0, controla un brazo robótico encargado de manipular dos objetos ("huevos") dentro de una superficie paletizada definida como una matriz de 6x5 posiciones (30 puntos en total). El ciclo inicia con la configuración de los parámetros cinemáticos del robot (potencia alta, aceleración y velocidad al 100%) y el posicionamiento en Home.
+
+La lógica central se apoya en la definición de un Pallet y dos vectores globales (H1 y H2) que almacenan una secuencia precalculada de índices. Estos índices representan las coordenadas espaciales que cada huevo debe visitar respetando el movimiento en "L" (tipo caballo de ajedrez).
+
+El proceso de manipulación, encapsulado en la función Movimiento_huevos, opera mediante un bucle iterativo. En cada iteración, el robot ejecuta una secuencia de Pick-and-Place (coger y dejar): primero desplaza el Huevo 1 de su posición actual (i-1) a la siguiente (i) en el vector H1, y seguidamente realiza la misma operación para el Huevo 2 utilizando el vector H2. El control de la herramienta (pinza) se gestiona mediante lógica negativa en la salida Out_9.
+
+Al finalizar la primera secuencia de 14 movimientos, el sistema ejecuta una rutina de transición donde el Huevo 1 se traslada al punto de inicio de la ruta del Huevo 2, y viceversa, permitiendo que ambos objetos intercambien sus trayectorias o completen el recorrido total de la matriz en un segundo ciclo de bucle idéntico al primero.
+
+Diagrama de bloques del código:
+```mermaid
+	flowchart TD
+    %% Estilos
+    classDef init fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef proc fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    classDef move fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef logic fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+
+    Start([Inicio]) --> Init
+    
+    subgraph Configuracion [Inicialización]
+        Init[Motor ON, Power High<br>Speed 100, Accel 100]:::init
+        Home1[Ir a HOME]:::init
+        DefPallet[Definir Pallet 6x5<br>Cargar Arrays H1 y H2]:::init
+    end
+
+    Init --> Home1
+    Home1 --> DefPallet
+    DefPallet --> Loop1_Start
+
+    subgraph Bucle1 [Primera Secuencia de Movimientos]
+        Loop1_Start{¿ i <= 14 ?}:::logic
+        MoveH1_A[Mover Huevo 1<br>De H1_prev a H1_actual]:::move
+        MoveH2_A[Mover Huevo 2<br>De H2_prev a H2_actual]:::move
+        Inc1[Incrementar i]:::proc
+    end
+
+    Loop1_Start -- Sí --> MoveH1_A
+    MoveH1_A --> MoveH2_A
+    MoveH2_A --> Inc1
+    Inc1 --> Loop1_Start
+
+    Loop1_Start -- No --> Transition
+
+    subgraph Intercambio [Transición de Rutas]
+        Transition[Intercambio de Posiciones]:::proc
+        Swap1[Mover Huevo 1<br>Fin Ruta H1 -> Inicio Ruta H2]:::move
+        Swap2[Mover Huevo 2<br>Fin Ruta H2 -> Inicio Ruta H1]:::move
+    end
+
+    Transition --> Swap1
+    Swap1 --> Swap2
+    Swap2 --> Loop2_Start
+
+    subgraph Bucle2 [Segunda Secuencia de Movimientos]
+        Loop2_Start{¿ i <= 14 ?}:::logic
+        MoveH1_B[Mover Huevo 1<br>De H1_prev a H1_actual]:::move
+        MoveH2_B[Mover Huevo 2<br>De H2_prev a H2_actual]:::move
+        Inc2[Incrementar i]:::proc
+    end
+
+    Loop2_Start -- Sí --> MoveH1_B
+    MoveH1_B --> MoveH2_B
+    MoveH2_B --> Inc2
+    Inc2 --> Loop2_Start
+
+    Loop2_Start -- No --> HomeEnd
+    HomeEnd[Ir a HOME]:::init --> End([Fin])
+```
 
 ### Video de la simulación en RoboDK
 
