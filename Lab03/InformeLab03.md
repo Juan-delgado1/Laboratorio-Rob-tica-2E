@@ -163,6 +163,11 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 ### Planos de la herramienta
 Los planos de la herramienta se encuentran en [Planos](Planos/),
 
+## Plano de planta
+A continuación se muestran las posiciones iniciales de la cubeta, el manipulador y los huevos.
+
+	![Plano de planta](./Images/Vista_de_planta.jpg)
+
 ### Programación
 
 **Diagrama de bloques del código:**
