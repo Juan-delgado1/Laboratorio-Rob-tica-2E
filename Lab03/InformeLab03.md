@@ -160,6 +160,9 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 
 ## Desarrollo de práctica: Paletizado de 2 esferas en un panal de huevos
 
+### Planos de la herramienta
+Los planos de la herramienta se encuentran en [Planos](Planos/),
+
 ### Programación
 
 **Diagrama de bloques del código:**
