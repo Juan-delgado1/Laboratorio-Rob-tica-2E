@@ -174,7 +174,7 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
     Start([Inicio]) --> Init
     
     subgraph Configuracion [Inicialización]
-        Init[Motor ON, Power High<br>Speed 100, Accel 100]:::init
+        Init[Motor ON, Power Low<br>Speed 100, Accel 100]:::init
         Home1[Ir a HOME]:::init
         DefPallet[Definir Pallet 6x5<br>Cargar Arrays H1 y H2]:::init
     end
@@ -252,7 +252,7 @@ Fend
 
 Function main
 	Motor On
-	Power High
+	Power Low
 	Accel 100, 100 '%
 	Speed 100 '%	
 	Grip_Off()
