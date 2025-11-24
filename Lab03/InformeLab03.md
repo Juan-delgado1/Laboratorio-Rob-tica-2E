@@ -165,29 +165,26 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
 **Diagrama de bloques del código:**
 ```mermaid
 	flowchart TD
-    %% Estilos
-    classDef init fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef proc fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
-    classDef move fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    classDef logic fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+    %% Estilo Global en Blanco y Negro
+    classDef default fill:#fff,stroke:#000,stroke-width:1px,color:#000;
 
     Start([Inicio]) --> Init
     
     subgraph Configuracion [Inicialización]
-        Init[Motor ON, Power Low<br>Speed 100, Accel 100]:::init
-        Home1[Ir a HOME]:::init
-        DefPallet[Definir Pallet 6x5<br>Cargar Arrays H1 y H2]:::init
+        Init[Motor ON, Power High<br>Speed 100, Accel 100]
+        Home1[Ir a HOME]
+        DefPallet[Definir Pallet 6x5<br>Cargar Arrays H1 y H2]
     end
 
     Init --> Home1
     Home1 --> DefPallet
     DefPallet --> Loop1_Start
 
-    subgraph Bucle1 [Primera Secuencia de Movimientos]
-        Loop1_Start{¿ i <= 14 ?}:::logic
-        MoveH1_A[Mover Huevo 1<br>De H1_prev a H1_actual]:::move
-        MoveH2_A[Mover Huevo 2<br>De H2_prev a H2_actual]:::move
-        Inc1[Incrementar i]:::proc
+    subgraph Bucle1 [Primera Secuencia]
+        Loop1_Start{¿ i <= 14 ?}
+        MoveH1_A[Mover Huevo 1<br>Posición H1]
+        MoveH2_A[Mover Huevo 2<br>Posición H2]
+        Inc1[Incrementar i]
     end
 
     Loop1_Start -- Sí --> MoveH1_A
@@ -198,20 +195,20 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
     Loop1_Start -- No --> Transition
 
     subgraph Intercambio [Transición de Rutas]
-        Transition[Intercambio de Posiciones]:::proc
-        Swap1[Mover Huevo 1<br>Fin Ruta H1 -> Inicio Ruta H2]:::move
-        Swap2[Mover Huevo 2<br>Fin Ruta H2 -> Inicio Ruta H1]:::move
+        Transition[Intercambio de Posiciones]
+        Swap1[Huevo 1 -> Inicio Ruta H2]
+        Swap2[Huevo 2 -> Inicio Ruta H1]
     end
 
     Transition --> Swap1
     Swap1 --> Swap2
     Swap2 --> Loop2_Start
 
-    subgraph Bucle2 [Segunda Secuencia de Movimientos]
-        Loop2_Start{¿ i <= 14 ?}:::logic
-        MoveH1_B[Mover Huevo 1<br>De H1_prev a H1_actual]:::move
-        MoveH2_B[Mover Huevo 2<br>De H2_prev a H2_actual]:::move
-        Inc2[Incrementar i]:::proc
+    subgraph Bucle2 [Segunda Secuencia]
+        Loop2_Start{¿ i <= 14 ?}
+        MoveH1_B[Mover Huevo 1]
+        MoveH2_B[Mover Huevo 2]
+        Inc2[Incrementar i]
     end
 
     Loop2_Start -- Sí --> MoveH1_B
@@ -220,7 +217,7 @@ Para el control del robot se utiliza únicamente el software EPSON RC+ 7.0, por 
     Inc2 --> Loop2_Start
 
     Loop2_Start -- No --> HomeEnd
-    HomeEnd[Ir a HOME]:::init --> End([Fin])
+    HomeEnd[Ir a HOME] --> End([Fin])
 ```
 
 
