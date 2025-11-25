@@ -53,7 +53,9 @@ Dentro del **workspace** creado en clase (*my_turtle_controller*), se debe edita
 
 El controlador de movimiento manual de la tortuga en Turtlesim está diseñado para utilizar el teclado, específicamente las flechas direccionales. Existen varias formas de configurar este control. Una de ellas consiste en que, al oprimir una flecha, la tortuga se mueva de manera continua en la dirección indicada hasta que se presione una flecha diferente para cambiar su trayectoria.
 
-![Turtlesim](Carpeta/turtle.png)
+<p align="center">
+  <img src="Images/turtle.png" alt="Soporte" width="400">
+</p>
 
 Sin embargo, este diseño presenta una limitación importante: como el movimiento de la tortuga está restringido por el área de la pantalla de Turtlesim, si no se modifica la dirección oportunamente, la tortuga inevitablemente chocará contra una de las paredes, ya que continuará avanzando indefinidamente en la trayectoria inicial.
 
@@ -63,7 +65,9 @@ Para que esta mejora sea efectiva, es indispensable que el desplazamiento por pu
 
 Durante la ejecución de Turtlesim, un inconveniente común es que, a medida que la tortuga se desplaza, se va imprimiendo su trayectoria sobre la pantalla. Cuando se generan desplazamientos prolongados, esto puede provocar que las trayectorias se superpongan, dificultando la visualización clara del movimiento actual. Para mantener una pantalla limpia y mejorar la experiencia de control, se implementó la tecla 't', que permite borrar las trayectorias anteriores sin necesidad de reiniciar el programa. Además, se decidió modificar el comando de salida, reemplazando la combinación tradicional Ctrl + C por la tecla 'q' para facilitar un cierre más rápido y sencillo. En este diseño, las teclas 't' y 'q' cumplen funciones específicas que aumentan la flexibilidad y el control del sistema: la primera permite limpiar la trayectoria registrada, facilitando nuevos intentos o correcciones, y la segunda proporciona una forma segura y controlada de finalizar la ejecución del programa.
 
-![Turtle_Clear](Carpeta/turtle_clear.jpg)
+<p align="center">
+  <img src="Images/turtle_clear.jpg" alt="Soporte" width="400">
+</p>
 
 Ahora se describe el funcionamiento de nuestro diseño: El controlador de movimiento manual inicia leyendo continuamente la entrada del teclado dentro de un bucle principal. Cada vez que se presiona una tecla, primero se verifica si corresponde a una flecha; si es así, se ejecuta una trayectoria y se imprime un mensaje antes de volver a leer el teclado. Si la tecla no es una flecha, se evalúa si es la letra 't'; en ese caso, el programa limpia la trayectoria y continúa esperando una nueva entrada. Si tampoco es 't', se verifica si la tecla es 'q'; si lo es, el programa finaliza su ejecución. Si la tecla presionada no corresponde a ninguna de las opciones anteriores, simplemente se ignora y se vuelve a leer una nueva tecla. 
 
@@ -178,7 +182,9 @@ Para la función control_loop se efectuaron las siguentes lìneas de còdigo:
 *stdscr.addstr(0, 0, "↑ ↓ ← → para mover, 't' limpiar trayectoria, 'q' salir.")*: addstr escribe una cadena de texto en la ventana stdscr, donde el parámetro (0, 0) especifica las coordenadas de la pantalla donde se imprimirá el texto, en este caso, la esquina superior izquierda de la terminal.
 "↑ ↓ ← → para mover, 'c' limpiar trayectoria, 'q' salir." es el mensaje que se muestra en la pantalla, indicando las teclas que el usuario debe presionar para controlar la tortuga.
 
-![Indicaciones](Carpeta/trayectoria.jpg)
+<p align="center">
+  <img src="Images/trayectoria.jpg" alt="Soporte" width="400">
+</p>
 
 *stdscr.refresh()*: actualiza la pantalla de la ventana stdscr después de realizar cambios, asegurando que el contenido recién añadido o actualizado sea visible para el usuario.
 
@@ -261,7 +267,9 @@ def main(args=None):
 
 De esta forma se obtiene el codigo para el control de movimiento manual que cumple con los requerimiento solicitados.
 
-![Turtlesim](Carpeta/Punto_1.jpg)
+<p align="center">
+  <img src="Images/Punto_1.jpg" alt="Soporte" width="600">
+</p>
 
 Adicionalmente, se anexa el script con el código completo para el controlador de movimiento manual, el cual puedes consultar [aquí](move_turtle.py) 
 
