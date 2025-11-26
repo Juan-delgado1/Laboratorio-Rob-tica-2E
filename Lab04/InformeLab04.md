@@ -271,7 +271,8 @@ De esta forma se obtiene el codigo para el control de movimiento manual que cump
   <img src="Images/Punto_1.jpg" alt="Soporte" width="600">
 </p>
 
-Adicionalmente, se anexa el script con el código completo para el controlador de movimiento manual, el cual puedes consultar [aquí](move_turtle.py) 
+Adicionalmente, se anexa el script con el código completo para el controlador de movimiento manual, el cual se puede consultar en [Codigos](Códigos/) [movimiento](Códigos/move_turtle.py)
+
 
 ## **2. Dibujo automático de letras personalizadas**
 
