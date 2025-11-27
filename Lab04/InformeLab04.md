@@ -373,11 +373,10 @@ flowchart TD
     ROSSpin --> MainLoop
 
 ```
-## Video de la simulación
-El vídeo donde se muestra la simulación y las herramientas utilizadas de RobotStudio se encuentra en este link: [Grupo 2e - Simulación en Robot para decorar pasteles - Laboratorio No. 1](https://youtu.be/onNyF1kdBL0)
 
-## Video de la implementación física
-El vídeo de implementación física se encuentra en el siguiente link: [Grupo 2e - Implementación física Robot para decorar pasteles - Laboratorio No. 1](https://youtu.be/giggZgN50dI)
+
+## Video de resultados del laboratorio
+El vídeo de los resultados obtenidos se encuentra en el siguiente link: [Grupo 2e - Robótica de Desarrollo, Intro a ROS 2 Humble-Turtlesim - Laboratorio No. 4](https://youtu.be/giggZgN50dI)
 
 
 ## Conclusiones
