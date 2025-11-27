@@ -376,7 +376,7 @@ flowchart TD
 
 
 ## Video de resultados del laboratorio
-El vídeo de los resultados obtenidos se encuentra en el siguiente link: [Grupo 2e - Robótica de Desarrollo, Intro a ROS 2 Humble-Turtlesim - Laboratorio No. 4]([https://youtu.be/giggZgN50dI](https://youtu.be/Al0QpvcHdFg))
+El vídeo de los resultados obtenidos se encuentra en el siguiente link: [Grupo 2e - Robótica de Desarrollo, Intro a ROS 2 Humble-Turtlesim - Laboratorio No. 4](https://youtu.be/Al0QpvcHdFg)
 
 
 ## Conclusiones
