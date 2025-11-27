@@ -35,3 +35,8 @@ En esta tercera entrega el robot que se va a trabajar es el EPSON T3-401S, un ro
 Para esta entrega se utilizó la carpeta [Lab03](Lab03/), donde se encuentran los códigos, planos y el [Informe de laboratorio](Lab03/InformeLab03.md) realizados para esta entrega.
 
 
+## Laboratorio No. 4
+En este laboratorio se exploró ROS 2 usando Turtlesim, primero implementando un controlador con teclado para mover la tortuga (flechas) y funciones extra como borrar la trayectoria y salir del nodo, y luego añadiendo rutinas automáticas para que dibujara las iniciales del equipo mediante movimientos lineales y en arco controlados por tiempo. Se utilizaron tópicos, servicios y mensajes (por ejemplo, /turtle1/cmd_vel, clear, set_pen, teleport_absolute) y se manejó odometría interna sencilla para planear trayectorias. Con esto se afianzaron conceptos de nodos, comunicación en ROS 2 y planificación básica de movimiento en un robot móvil simulado, además de practicar comandos básicos en Linux.
+
+Para esta entrega se utilizó la carpeta [Lab04](Lab04/), donde se encuentran los códigos, planos y el [Informe de laboratorio](Lab03/InformeLab04.md) realizados para esta entrega.
+
