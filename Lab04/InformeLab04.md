@@ -278,10 +278,101 @@ Adicionalmente, se anexa el script con el código completo para el controlador d
 
 ## Diseño y funcionamiento
 
-El principio de captura de información de las teclas es similar al del punto anterior, pero ahora se utilizan las letras del teclado, por lo que no hay necesidad de convertir el valor de las flechas, ya que se puede hacer la comparación directa con el carácter correspondiente a cada tecla, otra diferencia es que ahora cada tecla tiene asociada una función para dibujar la letra, mediante un conjunto de movimientos secuenciales, adicionalmente se mantiene la implementación anterior de las funciones para borrar y terminar ejecución del control de movimiento de la tortuga (tecla x y tecla q respectivamente), la primera se mantiene aunque al finalizar la letra se borran las trayectorias de la pantalla, la tortuga se debe desplazar al origen para asegurar que al hacer la siguiente figura no se salga de los límites de la panta, aunque este movimiento de traslación al origen deja un trazo, aquí la importancia de la letra x para eliminarlo.
+El principio de captura de información de las teclas es similar al del punto anterior, pero ahora se utilizan las letras del teclado, por lo que no hay necesidad de convertir el valor de las flechas, ya que se puede hacer la comparación directa con el carácter correspondiente a cada tecla, otra diferencia es que ahora cada tecla tiene asociada una función para dibujar la letra, mediante un conjunto de movimientos secuenciales, adicionalmente se mantiene la implementación anterior de las funciones para borrar y terminar ejecución del control de movimiento de la tortuga (tecla x y tecla q respectivamente).
+
+A continuación se detallan las nuevas adiciones lógicas y matemáticas:
+
+### 1. Control de Lazo Abierto Basado en Tiempo (`_run_for`)
+A diferencia del control manual, para dibujar formas geométricas precisas necesitamos que la tortuga recorra distancias exactas.
+* **Nueva Lógica:** En lugar de enviar una velocidad y esperar a que el usuario suelte la tecla, el sistema calcula el tiempo necesario para completar una acción usando la fórmula física básica: $t = d / v$.
+* **Función `_run_for`:** Bloquea el flujo del programa enviando comandos de velocidad constantes durante el tiempo calculado (`duration`), garantizando que la línea mida exactamente lo que deseamos.
+
+### 2. Matemáticas de Navegación
+La tortuga de `turtlesim` no nos dice dónde está respecto al inicio de una letra, por lo que el script implementa su propio sistema de posicionamiento (Odometría estimada).
+
+* **`_wrap_to_pi`:** Una utilidad crítica para la navegación. Normaliza cualquier ángulo al rango $(-\pi, \pi]$. Esto evita errores de orientación cuando la tortuga realiza múltiples giros sobre sí misma (ej. interpreta 370° correctamente como 10°).
+* **Estado Interno (`_lx`, `_ly`, `_ltheta`):** El nodo mantiene variables que rastrean la posición "imaginaria" de la tortuga relativa al inicio del dibujo actual. Esto permite calcular vectores hacia el siguiente punto.
+
+### 3. Cinemática Inversa (`_line_to`)
+Esta es la función más importante para el dibujo vectorial. Implementa un algoritmo básico de cinemática inversa:
+1. Recibe una coordenada destino $(x, y)$.
+2. Calcula la diferencia con la posición actual.
+3. Usa `math.atan2(dy, dx)` para determinar el ángulo exacto hacia el objetivo.
+4. Gira la tortuga hacia ese ángulo y luego avanza la distancia necesaria.
+
+### 4. Generación de Curvas (`move_arc`)
+Para dibujar letras orgánicas (como la **C**, **S**, **J**), el movimiento recto no es suficiente. Se implementó una función que relaciona la velocidad lineal y angular:
+* **Fórmula:** $w = v / r$ (Velocidad angular = Velocidad lineal / Radio).
+* Esto permite trazar arcos perfectos de un radio específico, actualizando la odometría interna mediante trigonometría de cuerdas.
+
+### 5. Gestión de Herramientas (Servicios ROS)
+Se han integrado nuevos clientes de servicio para manipular el entorno:
+* **`set_pen`:** Permite levantar el lápiz (para moverse entre letras sin rayar el papel virtual), bajarlo para dibujar, y cambiar dinámicamente el color y grosor del trazo.
+* **`teleport_absolute` (Función `go_home`):** Permite reiniciar el lienzo llevando a la tortuga a las coordenadas absolutas $(5.5, 5.5)$ y reseteando la orientación a 0, algo imposible de hacer solo con comandos de velocidad.
+
+### 6. Rutinas de Dibujo Procedural
+El código estructura el alfabeto en dos tipos de rutinas:
+* **Lineales (`draw_strokes_linear`):** Para letras como **A**, **E**, **M**. Se definen como una lista de vértices y el sistema une los puntos automáticamente.
+* **Compuestas:** Para letras como **R**, **D**, **J**. Son scripts secuenciales que combinan líneas rectas y arcos en un orden específico para formar la geometría de la letra.
 
 
+## Diagrama de Flujo
 
+```mermaid
+flowchart TD
+    Start((Inicio)) --> InitROS[Inicializar ROS 2 y Nodo]
+    InitROS --> SetupServices["Crear Clientes:<br>/cmd_vel, /clear, /set_pen, /teleport"]
+    SetupServices --> WaitServices{¿Servicios Listos?}
+    WaitServices -- No --> LogWarn[Log: Warning] --> WaitServices
+    WaitServices -- Sí --> SetupCurses["Configurar Curses<br>(Teclado no bloqueante)"]
+    
+    SetupCurses --> PrintMenu[Mostrar Menú en Pantalla]
+    
+    %% Bucle Principal
+    PrintMenu --> MainLoop{¿rclpy.ok?}
+    MainLoop -- No --> CleanUp[Destruir Nodo y Salir]
+    MainLoop -- Sí --> GetKey["Leer Tecla (stdscr.getch)"]
+    
+    GetKey --> CheckInput{¿Qué tecla es?}
+    
+    %% Ramas de Decisión
+    CheckInput -- "Flechas (↑ ↓ ← →)" --> ManualMove[Publicar Twist Manual]
+    CheckInput -- "'T' (Trail)" --> CallClear["Servicio: /clear"]
+    CheckInput -- "'H' (Home)" --> CallHome["Función: go_home()<br>Teleport a (5.5, 5.5)"]
+    CheckInput -- "'Q' (Quit)" --> CleanUp
+    CheckInput -- "Letras (J,A,V...)" --> IsLetter{¿Es Letra Válida?}
+    CheckInput -- "Ninguna / Otra" --> StopSmooth["Publicar Twist (0,0)"]
+
+    %% Lógica de Dibujo Detallada
+    IsLetter -- Sí --> DrawRoutine[Rutina de Dibujo Específica]
+    
+    subgraph DrawingProcess [Proceso de Dibujo de Letra]
+        direction TB
+        DrawRoutine --> ResetLoc[Resetear Odometría Local]
+        ResetLoc --> PenUp1[Lápiz ARRIBA]
+        PenUp1 --> MoveStart[Mover al punto de inicio]
+        MoveStart --> PenDown[Lápiz ABAJO]
+        PenDown --> Strokes{¿Rectas o Curvas?}
+        Strokes -- Rectas --> FuncLine["_line_to: Calcular ángulo y dist"]
+        Strokes -- Curvas --> FuncArc["move_arc: Calcular vel angular"]
+        FuncLine --> ExecMove["_run_for: Mover por tiempo t"]
+        FuncArc --> ExecMove
+        ExecMove --> MoreStrokes{¿Más trazos?}
+        MoreStrokes -- Sí --> Strokes
+        MoreStrokes -- No --> PenUp2[Lápiz ARRIBA]
+        PenUp2 --> MoveSpace[Mover espacio entre letras]
+    end
+
+    DrawRoutine --> UpdateScreen[Actualizar Mensaje Pantalla]
+    ManualMove --> UpdateScreen
+    CallClear --> UpdateScreen
+    CallHome --> UpdateScreen
+    StopSmooth --> UpdateScreen
+    
+    UpdateScreen --> ROSSpin[rclpy.spin_once]
+    ROSSpin --> MainLoop
+
+```
 ## Video de la simulación
 El vídeo donde se muestra la simulación y las herramientas utilizadas de RobotStudio se encuentra en este link: [Grupo 2e - Simulación en Robot para decorar pasteles - Laboratorio No. 1](https://youtu.be/onNyF1kdBL0)
 
