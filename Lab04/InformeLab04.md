@@ -28,17 +28,17 @@ Dentro del **workspace** creado en clase (*my_turtle_controller*), se debe edita
 ◦ Flecha ←: girar a la izquierda.<br>
 ◦ Flecha →: girar a la derecha.<br>
 
-### 2. Implementar funciones para que la tortuga dibuje las iniciales de los miembros del equipo de trabajo (S,M,C,J,M,R,L) al presionar la tecla correspondiente a cada letra:
+### 2. Implementar funciones para que la tortuga dibuje las iniciales de los miembros del equipo de trabajo al presionar la tecla correspondiente a cada letra:
 
-◦ Tecla J: Dibuja la letra J. <br>
-◦ Tecla A: Dibuja la letra A. <br>
-◦ Tecla V: Dibuja la letra V. <br>
-◦ Tecla R: Dibuja la letra R. <br>
-◦ Tecla D: Dibuja la letra D. <br>
-◦ Tecla E: Dibuja la letra E. <br>
-◦ Tecla S: Dibuja la letra S. <br>
-◦ Tecla M: Dibuja la letra M. <br>
-◦ Tecla C: Dibuja la letra C. <br>
+◦ Tecla J: Dibuja la letra J. (Juan y Jose)    <br> 
+◦ Tecla A: Dibuja la letra A. (Angel)   <br>
+◦ Tecla V: Dibuja la letra V. (Vargas)  <br>
+◦ Tecla R: Dibuja la letra R. (Rodriguez)<br>
+◦ Tecla D: Dibuja la letra D. (Delgado) <br>
+◦ Tecla E: Dibuja la letra E. (Estrada) <br>
+◦ Tecla S: Dibuja la letra S. (Santiago) <br>
+◦ Tecla M: Dibuja la letra M. (Mariño) <br>
+◦ Tecla C: Dibuja la letra C. (Cortez) <br>
 
 ### Restricciones:
 • Gestionar el movimiento de la tortuga exclusivamente desde el script *move_turtle.py*.
