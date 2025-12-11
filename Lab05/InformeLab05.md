@@ -139,7 +139,7 @@ Esta es la función "cerebro" del robot. Realiza tres acciones fundamentales en 
 
 Finalmente, en la función main, inicializo el entorno de ROS y entro en un bucle while(True). Esto mantiene al robot en una "danza" infinita: va a Home, ejecuta la secuencia, y repite, hasta que el usuario decida terminar el programa (momento en el que se cierran los puertos y se destruyen los nodos limpiamente).
 
-Para poder entender bien el funcionamiento del código hacemos el siguiente diagrama de flujo:
+### Diagrama de flujo
 ```mermaid
 graph TD;
     %% Nodos principales
@@ -176,6 +176,64 @@ Los scripts para este ejercicio se encuentran en el workspace [phantom_ws](phant
 
 ## Robotic Toolbox
 Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [toolbox.py](phantom_ws/src/pincher_control/pincher_control/toolbox.py).
+
+Este script establece un puente entre el hardware real (robot Pincher) y un modelo virtual 3D, permitiendo controlar el robot mediante comandos de teclado y visualizando su movimiento en tiempo real. La arquitectura se basa en tres pilares:
+
+1. Modelado Cinemático (build_pincher_robot)
+
+Lo primero que hago es definir el "esqueleto" matemático del robot utilizando la librería Robotics Toolbox for Python.
+- Parámetros DH: Replico la tabla de Denavit-Hartenberg estándar del Pincher (L1=44mm, L2=107.5mm, etc.), convirtiendo todas las medidas a metros.
+- Eslabones (Links): Creo una lista de objetos RevoluteDH, configurando distancias ($d, a$) y rotaciones ($\alpha, \text{offset}$) para cada articulación.
+- Herramienta: Añado la transformación final (T_tool) para que el sistema de coordenadas de la punta (End Effector) coincida con la orientación real de la pinza.
+
+2. Integración con ROS 2 y Hardware (main - Inicialización)
+
+Al iniciar el programa (main), ocurren dos procesos paralelos cruciales:
+- Controlador de Hardware: Instancio PincherController (mi nodo de ROS 2) para manejar la comunicación serial con los motores Dynamixel. Configuro una velocidad segura (50) para evitar movimientos bruscos.
+- Hilo de Escucha (Spin Thread): Lanzo un hilo secundario (threading.Thread) que ejecuta rclpy.spin. Esto es vital: permite que el nodo siga recibiendo y publicando datos en /joint_states en segundo plano mientras la terminal espera mis comandos (input del usuario).
+
+3. Bucle de Control Interactivo
+
+El corazón del script es un bucle infinito while True que funciona así:
+- Entrada de Usuario: Solicito 4 ángulos en grados (cintura, hombro, codo, muñeca).
+- Validación y Seguridad: Verifico que sean números válidos y que estén dentro de un rango seguro ($\pm 150^\circ$) antes de enviarlos.
+- Envío al Robot Físico: Convierto los grados a radianes y luego a valores Dynamixel (0-4095), enviando la orden a cada motor.
+- Sincronización Visual (Gemelo Digital): Aquí está la magia. En lugar de simplemente mover el modelo 3D al objetivo final, abro una ventana de 2 segundos donde leo continuamente controller.current_joint_positions (los datos reales que vienen de los motores). Actualizo el gráfico pyplot con estos datos reales.
+- Resultado: La visualización 3D no muestra "a dónde quiero ir", sino "dónde está el robot realmente" mientras se mueve.
+
+### Diagrama de flujo
+
+```mermaid
+graph TD;
+    %% Inicialización
+    Start((Inicio)) --> BuildModel["Construir Modelo DH Pincher<br/>(Robotics Toolbox)"];
+    BuildModel --> InitROS[Inicializar ROS 2 y Controlador Dynamixel];
+    InitROS --> Thread["Lanzar Hilo rclpy.spin<br/>(Background)"];
+    Thread --> LaunchPlot[Abrir Visualizador 3D PyPlot];
+    
+    %% Bucle Principal
+    LaunchPlot --> InputUser[/"Esperar Input: 4 Ángulos (Grados)"/];
+    InputUser --> Validate{¿Input Válido?};
+    
+    %% Ramas de validación
+    Validate -- No/Error --> ErrorMsg[Mostrar Error];
+    ErrorMsg --> InputUser;
+    Validate -- "q/Salir" --> Cleanup[Cerrar ROS y Ventana];
+    Cleanup --> End((Fin));
+    
+    %% Ejecución de movimiento
+    Validate -- Sí --> Convert[Grados -> Radianes -> Valor DXL];
+    Convert --> SendCmd[Enviar Comando a Motores Reales];
+    
+    %% Bucle de visualización (Feedback)
+    SendCmd --> LoopViz_Start(Inicio Feedback Visual 2s);
+    LoopViz_Start --> ReadSensors[Leer Posición Real Motores];
+    ReadSensors --> UpdatePlot[Actualizar Modelo 3D con Dato Real];
+    UpdatePlot --> CheckTime{¿Tiempo < 2s?};
+    CheckTime -- Sí --> ReadSensors;
+    CheckTime -- No --> ShowPos[Imprimir Posición Final en Consola];
+    ShowPos --> InputUser;
+```
 
 ## Interfaz gráfica y visualización con RViz
 Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [HMI_RVIZ.py](phantom_ws/src/pincher_control/pincher_control/HMI_RVIZ.py).
