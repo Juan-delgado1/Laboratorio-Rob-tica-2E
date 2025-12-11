@@ -1,0 +1,21 @@
+L1 = 44
+L2 = 107.5
+L3 = 107.5
+L4 = 75.3
+
+
+%       theta    d     a     alpha
+DH = [    0     L1    0.0    pi/2;  % L1
+          0     0.0   L2     0   ;  % L2
+          0     0.0   L3     0   ;  % L3
+          0     0.0   L4     0   ]; % L4
+
+robot = SerialLink(DH, 'name', 'Pincher')
+
+robot.offset = [0 pi/2 0 0];  % offset para cada articulación
+
+T_tool = trotz(-pi/2) * trotx(-pi/2);  % solo rotación, sin traslación
+
+robot.tool = T_tool;
+
+robot.teach()
