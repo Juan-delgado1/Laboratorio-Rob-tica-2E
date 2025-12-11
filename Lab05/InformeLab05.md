@@ -78,7 +78,9 @@ Gracias a la libreria de Peter Corke obtenemos el siguiente robot en MATLAB:
 Ahora con esta implementación podemos realizar los puntos del taller que requieran una cinemática inversa de forma más fácil.
 
 ## Plano de planta del robot
-
+<p align="center">
+  <img src="Images/plano_lab5.jpg" alt="Plano de planta" width="800">
+</p>
 ## Ciclo Home - Posición objetivo
 
 El objetivo principal es generar un bucle infinito que alterna entre una posición de reposo (Home) y una pose objetivo definida por cinemática directa (ángulos específicos), moviendo cada articulación de forma secuencial.
