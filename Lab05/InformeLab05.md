@@ -81,6 +81,47 @@ Ahora con esta implementación podemos realizar los puntos del taller que requie
 <p align="center">
   <img src="Images/plano_lab5.jpg" alt="Plano de planta" width="800">
 </p>
+
+
+## Workspace para ROS2
+
+Para el desarrollo del laboratorio se creó el workspace  [phantom_ws](phantom_ws/), donde se encuentran los paquetes y scripts utilizados para la solución de los ejercicios planteados. Este workspaces tiene la siguiente estructura:
+
+```text
+
+phantom_ws/
+├── build/
+├── install/
+├── log/
+└── src/
+	├── phantomx_pincher_description/
+	    └── urdf/
+	        ├── phantomx_pincher.urdf
+			├── phantomx_pincher.urdf.xacro
+			└── kit.xacro
+		└── launch/
+			├── display.launch.py
+			└── view.launch.py
+		└── meshes/
+	├── phantomx_pincher_moveit_config/
+	├── pincher_control/
+		└── pincher_control/
+			├── __init__.py
+			├── control_servo.py
+			├── HMI_RVIZ.py
+			├── Lab5_P1.py
+			├── terminal_control.py
+			├── terminal_subscriber.py
+			└── toolbox.py
+		└──setup.py
+
+sources/
+├── DH.png
+└── Matlab_vis.gif
+
+DH.mlx
+```
+
 ## Ciclo Home - Posición objetivo
 
 El objetivo principal es generar un bucle infinito que alterna entre una posición de reposo (Home) y una pose objetivo definida por cinemática directa (ángulos específicos), moviendo cada articulación de forma secuencial.
