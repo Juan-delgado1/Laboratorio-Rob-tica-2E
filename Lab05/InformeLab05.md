@@ -119,7 +119,7 @@ phantom_ws/
 
 
 ## Ciclo Home - Posición objetivo
-Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [Lab5_P1.py](Lab05/phantom_ws/src/pincher_control/pincher_control/Lab5_P1.py).
+Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [Lab5_P1.py](phantom_ws/src/pincher_control/pincher_control/Lab5_P1.py).
 El objetivo principal es generar un bucle infinito que alterna entre una posición de reposo (Home) y una pose objetivo definida por cinemática directa (ángulos específicos), moviendo cada articulación de forma secuencial.
 
 A continuación detallo cómo estructuré la lógica:
@@ -172,10 +172,14 @@ graph TD;
 ```
 
 ## Publisher - Suscriber
+Los scripts para este ejercicio se encuentran en el workspace [phantom_ws](phantom_ws/) como [terminal_control.py](phantom_ws/src/pincher_control/pincher_control/terminal_control.py) y [terminal_suscriber.py](phantom_ws/src/pincher_control/pincher_control/terminal_suscriber.py).
 
 ## Robotic Toolbox
+Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [toolbox.py](phantom_ws/src/pincher_control/pincher_control/toolbox.py).
 
 ## Interfaz gráfica y visualización con RViz
+Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [HMI_RVIZ.py](phantom_ws/src/pincher_control/pincher_control/HMI_RVIZ.py).
+
 
 ## Video de implementación de los scripts
 
