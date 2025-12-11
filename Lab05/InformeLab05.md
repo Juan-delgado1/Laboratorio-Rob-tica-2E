@@ -238,6 +238,60 @@ graph TD;
 ## Interfaz gráfica y visualización con RViz
 Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [HMI_RVIZ.py](phantom_ws/src/pincher_control/pincher_control/HMI_RVIZ.py).
 
+Para esta interfaz gráfica se utilizó la librería *qt5* de python la cual tiene distintas pestañas, en cada una de ellas se encuentra:
+- Nombres de los integrantes del grupo.
+- Coordenadas XYZ del TCP.
+- Ángulos Roll, Pitch y Yaw del TCP.
+- Posiciones angulares de cada motor.
+- Visualización con toolbox de robótica.
+
+Esta interfaz tiene las siguientes pestañas:
+
+- **Pestaña Principal**: En esta pestaña se encuentra el control de los motores con sliders, además de botones para llevar el robot a HOME y a las siguientes posiciones:
+
+| Configuración | θ₁  | θ₂  | θ₃  | θ₄   | θ₅ |
+|--------------|-----|-----|-----|------|----|
+| 1            | 0   | 0   | 0   | 0    | 0  |
+| 2            | 25  | 25  | 20  | -20  | 0  |
+| 3            | -35 | 35  | -30 | 30   | 0  |
+| 4            | 85  | -20 | 55  | 25   | 0  |
+| 5            | 80  | -35 | 55  | -45  | 0  |
+
+
+
+<p align="center">
+  <img src="Images/Slider_m.png" alt="Ejes" width="400">
+</p>
+
+
+- **Control numérico**: En esta pestaña se envía el valor deseado del ángulo de cada uno de los motores.
+<p align="center">
+  <img src="Images/num_m.png" alt="Ejes" width="400">
+</p>
+
+- **Control XYZ**: En esta pestaña se el valor deseado de la posición XYZ  del TCP, calculando su cinemática inversa. Hay ciertas posiciones que el robot no puede alcanzar por su alcance o por los límites que se le definieron a los motores.
+<p align="center">
+  <img src="Images/num_xy.png" alt="Ejes" width="400">
+</p>
+
+- **Sliders XYZ**: En esta pestaña se puede controlar la posición XYZ del TCP por sliders.
+<p align="center">
+  <img src="Images/slider_xy.png" alt="Ejes" width="400">
+</p>
+
+- **Visualización RViz**: En esta pestaña se lanza la visualización en RViz.
+
+<p align="center">
+  <img src="Images/hmi_rviz.png" alt="Ejes" width="400">
+</p>
+<p align="center">
+  <img src="Images/rviz.png" alt="Ejes" width="400">
+</p>
+
+
+
+
+
 
 ## Video de implementación de los scripts
 
