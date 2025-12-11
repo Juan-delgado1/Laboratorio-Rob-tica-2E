@@ -86,14 +86,21 @@ El objetivo principal es generar un bucle infinito que alterna entre una posici�
 A continuación detallo cómo estructuré la lógica:
 
 1. Inicialización y Gestión de Nodos (__init__)
+
 Para empezar, creé la clase SecuenciaLab5 que hereda de Node. Sin embargo, no reinventé la rueda: en lugar de manejar los puertos seriales aquí, instancié un objeto PincherController (importado de pincher_control).
 
-Multithreading: Un punto crítico fue el manejo del hilo de ejecución. Como voy a usar comandos bloqueantes (como time.sleep), no podía bloquear el hilo principal de ROS. Por eso, lancé el rclpy.spin del controlador en un threading.Thread en modo daemon. Esto asegura que el robot siga "escuchando" y publicando en los tópicos de ROS en segundo plano mientras mi script ejecuta las pausas de movimiento.
+  - Multithreading: Un punto crítico fue el manejo del hilo de ejecución. Como voy a usar comandos bloqueantes (como time.sleep), no podía bloquear el hilo principal de ROS. Por eso, lancé el rclpy.spin del controlador en un threading.Thread en modo daemon. Esto asegura que el robot siga "escuchando" y publicando en los tópicos de ROS en segundo plano mientras mi script ejecuta las pausas de movimiento.
 
-2. La Rutina de Movimiento (ejecutar_secuencia)Esta es la función "cerebro" del robot. Realiza tres acciones fundamentales en cada ciclo:Retorno a Home: Primero, llamo a home_all_motors_sec(). Esto asegura que el robot siempre tenga un punto de partida conocido y seguro antes de intentar cualquier maniobra compleja.Cálculo de Cinemática (Radianes a DXL): Defino la pose objetivo en radianes (una forma natural de pensar en robótica). Luego, utilizo el método radians_to_dxl para traducir esos ángulos humanos a valores enteros (0-4095) que los servomotores Dynamixel entienden.Movimiento Secuencial: Para evitar colisiones o movimientos bruscos, no muevo todo el robot a la vez. Envío comandos motor por motor (Cintura $\rightarrow$ Hombro $\rightarrow$ Codo $\rightarrow$ Muñeca), introduciendo un time.sleep(2.0) entre cada articulación. Esto permite observar claramente el comportamiento de cada eslabón.
+2. La Rutina de Movimiento (ejecutar_secuencia)
+
+Esta es la función "cerebro" del robot. Realiza tres acciones fundamentales en cada ciclo:Retorno a Home: Primero, llamo a home_all_motors_sec(). Esto asegura que el robot siempre tenga un punto de partida conocido y seguro antes de intentar cualquier maniobra compleja.Cálculo de Cinemática (Radianes a DXL): Defino la pose objetivo en radianes (una forma natural de pensar en robótica). Luego, utilizo el método radians_to_dxl para traducir esos ángulos humanos a valores enteros (0-4095) que los servomotores Dynamixel entienden.
+  - Movimiento Secuencial: Para evitar colisiones o movimientos bruscos, no muevo todo el robot a la vez. Envío comandos motor por motor (Cintura $\rightarrow$ Hombro $\rightarrow$ Codo $\rightarrow$ Muñeca), introduciendo un time.sleep(2.0) entre cada articulación. Esto permite observar claramente el comportamiento de cada eslabón.
    
-3. El Bucle Principal (main)Finalmente, en la función main, inicializo el entorno de ROS y entro en un bucle while(True). Esto mantiene al robot en una "danza" infinita: va a Home, ejecuta la secuencia, y repite, hasta que el usuario decida terminar el programa (momento en el que se cierran los puertos y se destruyen los nodos limpiamente).
+3. El Bucle Principal (main)
 
+Finalmente, en la función main, inicializo el entorno de ROS y entro en un bucle while(True). Esto mantiene al robot en una "danza" infinita: va a Home, ejecuta la secuencia, y repite, hasta que el usuario decida terminar el programa (momento en el que se cierran los puertos y se destruyen los nodos limpiamente).
+
+Para poder entender bien el funcionamiento del código hacemos el siguiente diagrama de flujo:
 ```mermaid
 graph TD;
     %% Nodos principales
@@ -104,16 +111,16 @@ graph TD;
     %% Bloque de la secuencia
     LoopStart -- Sí --> Home[Mover todos los motores a HOME];
     Home --> Wait1[Esperar 3 seg];
-    Wait1 --> Calc[Calcular Pose Objetivo<br/>(Conv. Radianes a DXL)];
+    Wait1 --> Calc["Calcular Pose Objetivo<br/>(Conv. Radianes a DXL)"];
     
     %% Movimientos secuenciales
-    Calc --> Move1[Mover Waist / Cintura];
+    Calc --> Move1["Mover Waist / Cintura"];
     Move1 --> W_M1[Esperar 2 seg];
-    W_M1 --> Move2[Mover Shoulder / Hombro];
+    W_M1 --> Move2["Mover Shoulder / Hombro"];
     Move2 --> W_M2[Esperar 2 seg];
-    W_M2 --> Move3[Mover Elbow / Codo];
+    W_M2 --> Move3["Mover Elbow / Codo"];
     Move3 --> W_M3[Esperar 2 seg];
-    W_M3 --> Move4[Mover Wrist / Muñeca];
+    W_M3 --> Move4["Mover Wrist / Muñeca"];
     Move4 --> W_M4[Esperar 2 seg];
     
     %% Retorno al bucle
@@ -123,17 +130,7 @@ graph TD;
     %% Salida
     LoopStart -- Interrupción/No --> Cleanup[Cerrar Controlador y ROS];
     Cleanup --> End((Fin));
-
-    %% Estilos para que se vea bien en GitHub
-    classDef action fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef wait fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef decision fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-
-    class Home,Calc,Move1,Move2,Move3,Move4,Cleanup action;
-    class Wait1,W_M1,W_M2,W_M3,W_M4 wait;
-    class LoopStart decision;
 ```
-
 
 ## Publisher - Suscriber
 
