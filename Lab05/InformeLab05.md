@@ -602,6 +602,7 @@ Esta interfaz tiene las siguientes pestañas:
 
 
 ## Video de implementación de los scripts
+El vídeo de los resultados obtenidos se encuentra en el siguiente link: [Grupo 2e - Pincher Phantom X100- ROS Humble- RVIZ - Laboratorio No. 5](https://youtu.be/hbnAiTJTvuo)
 
 ## Conclusiones
 1. Al trabajar con el modelo DH en MATLAB/Python, el URDF en ROS y el robot real al mismo tiempo, nos dimos cuenta de que cualquier error pequeño en medidas, offsets o frames se ve de inmediato en la punta del robot. Eso nos ayudó a entender que la cinemática no es solo hacer cuentas, sino que tiene un efecto directo en dónde termina realmente el TCP.

@@ -40,3 +40,9 @@ En este laboratorio se exploró ROS 2 usando Turtlesim, primero implementando un
 
 Para esta entrega se utilizó la carpeta [Lab04](Lab04/), donde se encuentran los códigos y el [Informe de laboratorio](Lab04/InformeLab04.md) realizados para esta entrega.
 
+## Laboratorio No. 5
+En este laboratorio se trabajó con el robot manipulador Phantom X Pincher usando ROS 2 Humble y servomotores Dynamixel AX-12. Primero se configuraron los joint controllers y se probó el movimiento de cada articulación desde la terminal, validando límites de seguridad y leyendo el estado del robot a través del tópico /joint_states con un nodo suscriptor. Luego se integró el modelo cinemático del brazo mediante parámetros Denavit-Hartenberg, usando la toolbox de robótica en MATLAB y Python para que el modelo virtual coincidiera con el robot físico. Finalmente se desarrolló una HMI en Qt que permite controlar el Pincher tanto en espacio articular (sliders y valores numéricos) como en espacio cartesiano (XYZ con cinemática inversa), y se conectó con RViz para visualizar el manipulador en 3D a partir de los joint states. Con esto se reforzaron conceptos de cinemática directa e inversa, publicación y suscripción en ROS 2, control seguro de actuadores y diseño de interfaces de usuario para robots reales.
+
+
+Para esta entrega se utilizó la carpeta [Lab05](Lab05/), donde se encuentran los códigos y el [Informe de laboratorio](Lab05/InformeLab05.md) realizados para esta entrega.
+
