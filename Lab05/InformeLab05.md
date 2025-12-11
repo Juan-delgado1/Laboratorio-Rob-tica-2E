@@ -237,6 +237,58 @@ graph TD;
 
 ### Terminal_suscriber
 
+Este nodo tiene una función pasiva pero vital: actuar como los "ojos" del operador. Su único trabajo es escuchar lo que el robot dice sobre sí mismo y traducirlo a un formato legible para humanos.
+
+Diseñé la lógica de la siguiente manera:
+
+1. Suscripción al Tópico (__init__)
+En lugar de conectar con el hardware directamente (eso ya lo hace el controlador), este nodo se suscribe al tópico estándar /joint_states.
+
+- ¿Por qué? Porque en ROS, la verdad sobre la posición del robot siempre viaja por ese canal. Así, este nodo funciona independientemente de si estás moviendo el robot con tu script de terminal, con una GUI o incluso manualmente con la mano (si los motores tuvieran torque off).
+
+2. El Callback de Procesamiento (joint_state_callback)
+Cada vez que el robot publica un mensaje (que suele ser muchas veces por segundo), se activa esta función:
+
+- Mapeo de Datos: El mensaje JointState trae dos listas separadas: nombres (name) y posiciones (position). Utilizo la función zip para emparejarlas correctamente.
+
+- Conversión Matemática: ROS habla nativamente en radianes, pero para depurar errores visualmente preferimos grados. Por eso, convierto cada valor usando math.degrees() antes de guardarlo.
+
+3. Visualización Limpia
+En lugar de imprimir líneas infinitas de datos crudos, construyo una cadena de texto formateada (f-string) que muestra las 5 articulaciones en una sola línea horizontal. Esto permite ver los cambios de manera fluida en la consola sin que el texto se desplace tan rápido que sea imposible de leer.
+
+#### Diagrama de flujo
+
+```mermaid
+graph TD;
+    %% Inicio
+    Start((Inicio)) --> Init[Inicializar Nodo JointStatePrinter];
+    Init --> Subscribe["Suscribirse al Tópico<br/>/joint_states"];
+    
+    %% Estado de Espera (Event Loop)
+    Subscribe --> Wait{Esperando Mensaje...};
+    
+    %% Flujo cuando llega un mensaje
+    Wait -- "Llega Msg (JointState)" --> Callback[Ejecutar joint_state_callback];
+    Callback --> Extract[Emparejar Nombres y Posiciones];
+    
+    %% Procesamiento
+    Extract --> LoopNodes{Para cada articulación};
+    LoopNodes -- "Convertir" --> Math["Radianes -> Grados (math.degrees)"];
+    Math --> Store[Actualizar Diccionario Interno];
+    Store --> LoopNodes;
+    
+    %% Salida
+    LoopNodes -- "Fin del ciclo" --> Format[Formatear Texto de Salida];
+    Format --> Print[Imprimir en Consola / Logger];
+    
+    %% Retorno al ciclo
+    Print --> Wait;
+    
+    %% Finalización
+    Wait -- "Ctrl+C" --> Shutdown[Destruir Nodo y Salir];
+    Shutdown --> End((Fin));
+```
+
 ## Robotic Toolbox
 Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [toolbox.py](phantom_ws/src/pincher_control/pincher_control/toolbox.py).
 
