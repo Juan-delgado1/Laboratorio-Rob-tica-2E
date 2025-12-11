@@ -117,10 +117,9 @@ phantom_ws/
 
 ```
 
-A grandes rasgos, el paquete
 
 ## Ciclo Home - Posición objetivo
-
+Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [Lab5_P1.py](Lab05/phantom_ws/src/pincher_control/pincher_control/Lab5_P1.py).
 El objetivo principal es generar un bucle infinito que alterna entre una posición de reposo (Home) y una pose objetivo definida por cinemática directa (ángulos específicos), moviendo cada articulación de forma secuencial.
 
 A continuación detallo cómo estructuré la lógica:
