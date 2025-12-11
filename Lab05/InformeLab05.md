@@ -403,6 +403,199 @@ Esta interfaz tiene las siguientes pestañas:
   <img src="Images/rviz.png" alt="Ejes" width="400">
 </p>
 
+## Funciones principales del código `HMI_RVIZ`
+
+### 1. Modelo del robot
+
+#### `build_pincher_robot()`
+- Crea el modelo DH del PhantomX Pincher usando `roboticstoolbox`.
+- Convierte las longitudes de mm a m.
+- Define los `RevoluteDH` con sus parámetros (d, a, alpha, offset).
+- Configura la herramienta (tool) con una rotación en Z y luego en X.
+- Devuelve un objeto `DHRobot` que se usa para cinemática directa e inversa.
+
+
+
+### 2. Inicialización de la HMI
+
+#### `class PincherHMI(QMainWindow).__init__`
+- Recibe una instancia de `PincherController` (nodo ROS2).
+- Define:
+  - Límites articulares.
+  - Estado actual de las articulaciones.
+  - Diccionarios para sliders, cajas de texto y labels.
+- Crea toda la interfaz gráfica:
+  - Pestañas (sliders, control numérico, XYZ, sliders XYZ, RViz).
+  - Panel de información (XYZ, RPY, ángulos).
+  - Gráfica 3D con `matplotlib`.
+- Carga el modelo DH con `build_pincher_robot()`.
+- Llama a `update_robot_plot()` para dibujar la pose inicial.
+- Ajusta la velocidad por defecto del controlador.
+- Aplica estilos con `apply_styles()`.
+
+
+
+### 3. Estilos y apariencia
+
+#### `apply_styles()`
+- Aplica una hoja de estilos (QSS) a la ventana:
+  - Colores oscuros, botones azules, tabs con estilos personalizados.
+- Unifica el tema visual de la HMI.
+
+
+
+### 4. Construcción de pestañas
+
+#### `_build_tab_sliders()`
+- Crea la pestaña de control por sliders articulares.
+- Para cada motor:
+  - Crea un `QSlider` con límites.
+  - Asocia el cambio de valor a `on_slider_changed()`.
+  - Crea una etiqueta con el ángulo actual.
+- Añade botones de poses predefinidas que llaman a `set_pose()`.
+
+#### `_build_tab_numeric()`
+- Crea la pestaña de control numérico.
+- Para cada motor:
+  - Crea una `QLineEdit` para escribir el ángulo.
+  - Un botón “Mover” que llama a `on_numeric_move()`.
+- Crea un botón “Mover todos” que llama a `on_numeric_move_all()`.
+
+#### `_build_tab_xyz()`
+- Crea la pestaña de control cartesiano por texto.
+- Tres `QLineEdit` para X, Y, Z.
+- Botón “Mover a XYZ” que llama a `on_task_move_xyz()`.
+
+#### `_build_tab_xyz_sliders()`
+- Crea la pestaña de control cartesiano con sliders.
+- Sliders para X, Y, Z (en mm) con rangos definidos.
+- Cada slider llama a `on_xyz_slider_changed()` cuando cambia su valor.
+
+#### `_build_tab_rviz()`
+- Crea la pestaña para lanzar y detener RViz.
+- Botón “Lanzar RViz” que llama a `launch_rviz()`.
+- Botón “Detener RViz” que llama a `stop_rviz()`.
+- Label que muestra el estado de RViz.
+
+
+### 5. Lanzar y detener RViz
+
+#### `launch_rviz()`
+- Verifica si ya hay un proceso de RViz corriendo.
+- Si no, ejecuta:
+  - `ros2 launch phantomx_pincher_description display.launch.py`
+  - Usando `subprocess.Popen`.
+- Actualiza los textos de estado y habilita/deshabilita botones.
+
+#### `stop_rviz()`
+- Si el proceso de RViz existe, intenta terminarlo (`terminate()`).
+- Limpia la referencia al proceso y actualiza los labels de estado.
+
+
+
+### 6. Lógica de control articular
+
+#### `on_slider_changed(motor_id, angle_deg)`
+- Se llama cuando se mueve un slider articular.
+- Actualiza:
+  - Label del ángulo.
+  - Valor numérico correspondiente (`QLineEdit`).
+  - Lista `current_angles_deg`.
+- Verifica límites articulares.
+- Convierte grados → radianes → valor Dynamixel.
+- Llama a `self.controller.move_motor(...)`.
+- Llama a `update_robot_plot()` para refrescar la visualización.
+- Actualiza la barra de estado.
+
+#### `on_numeric_move(motor_id)`
+- Toma el valor numérico escrito para un motor.
+- Lo valida, lo recorta a los límites.
+- Actualiza el slider correspondiente (que a su vez llama a `on_slider_changed`).
+
+#### `on_numeric_move_all()`
+- Lee los 5 valores numéricos de las cajas de texto.
+- Valida límites para cada motor.
+- Llama a `set_pose()` con la lista de ángulos.
+
+#### `set_pose(pose_deg_list)`
+- Recorre la lista de ángulos (en grados).
+- Aplica límites y actualiza cada slider.
+- De forma indirecta, esto provoca que se actualicen motores y gráfica.
+- Cambia la barra de estado a “Pose enviada”.
+
+
+
+### 7. Lógica de control cartesiano (XYZ)
+
+#### `on_task_move_xyz()`
+- Lee X, Y, Z de las cajas de texto.
+- Convierte a `float` y revisa errores.
+- Llama a `move_to_xyz(x_mm, y_mm, z_mm)`.
+- Sincroniza los sliders XYZ (si existen).
+
+#### `on_xyz_slider_changed(axis_key, value)`
+- Actualiza el label que muestra el valor del slider (en mm).
+- Actualiza también el `QLineEdit` correspondiente.
+- Lee los 3 sliders (X, Y, Z) y llama a `move_to_xyz(...)`.
+
+#### `move_to_xyz(x_mm, y_mm, z_mm)`
+- Convierte mm → metros.
+- Construye una transformación `SE3(x, y, z)` como objetivo.
+- Toma la configuración actual como `q0`.
+- Llama a `self.robot_model.ikine_LM(...)` con máscara de posición.
+- Verifica:
+  - Que la IK convergió.
+  - Que los ángulos están dentro de los límites.
+- Forma una pose completa (4 articulaciones + la 5 actual).
+- Llama a `set_pose()` con esa pose.
+- Actualiza la barra de estado con la XYZ alcanzada.
+
+
+
+### 8. Visualización con Toolbox
+
+#### `update_robot_plot()`
+- Toma los ángulos actuales de las 4 primeras articulaciones.
+- Calcula:
+  - `fkine_all` → todas las transformaciones de cada eslabón.
+  - `fkine` → transformación del TCP.
+- Extrae:
+  - Posición del TCP (en m → mm).
+  - Orientación RPY en grados.
+- Actualiza los labels de:
+  - XYZ del TCP.
+  - RPY del TCP.
+  - Ángulos articulares.
+- Limpia el `Axes3D` y dibuja el robot (linea con puntos).
+- Ajusta límites de los ejes y la vista de la cámara.
+- Llama a `self.canvas.draw()` para refrescar la figura.
+
+
+
+### 9. Cierre ordenado
+
+#### `closeEvent(self, event)`
+- Se ejecuta cuando se cierra la ventana.
+- Intenta terminar el proceso de RViz, si existe.
+- Llama a `self.controller.close()` (si está implementado).
+- Acepta el evento de cierre.
+
+
+
+### 10. Función principal
+
+#### `main(args=None)`
+- Inicializa ROS2 con `rclpy.init`.
+- Crea el `PincherController`.
+- Lanza un hilo aparte con `rclpy.spin(controller)`.
+- Crea la aplicación Qt (`QApplication`) y configura la paleta oscura.
+- Crea la ventana `PincherHMI` y la muestra.
+- Ejecuta el loop de Qt (`app.exec_()`).
+- Al salir:
+  - Destruye el nodo del controlador.
+  - Llama a `rclpy.shutdown()`.
+
+
 
 
 
