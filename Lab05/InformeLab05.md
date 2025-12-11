@@ -95,32 +95,29 @@ phantom_ws/
 ├── log/
 └── src/
 	├── phantomx_pincher_description/
-	    └── urdf/
-	        ├── phantomx_pincher.urdf
-			├── phantomx_pincher.urdf.xacro
-			└── kit.xacro
-		└── launch/
-			├── display.launch.py
-			└── view.launch.py
-		└── meshes/
+	|    ├── urdf/
+	|    |   ├── phantomx_pincher.urdf
+	|	 |	├── phantomx_pincher.urdf.xacro
+	|	 |	└── kit.xacro
+	|	 ├── launch/
+	|	 |	├── display.launch.py
+	|	 |	└── view.launch.py
+	|	 └── meshes/
 	├── phantomx_pincher_moveit_config/
-	├── pincher_control/
-		└── pincher_control/
-			├── __init__.py
-			├── control_servo.py
-			├── HMI_RVIZ.py
-			├── Lab5_P1.py
-			├── terminal_control.py
-			├── terminal_subscriber.py
-			└── toolbox.py
+	└── pincher_control/
+		├── pincher_control/
+		|	├── __init__.py
+		|	├── control_servo.py
+		|	├── HMI_RVIZ.py
+		|	├── Lab5_P1.py
+		|	├── terminal_control.py
+		|	├── terminal_subscriber.py
+		|	└── toolbox.py
 		└──setup.py
 
-sources/
-├── DH.png
-└── Matlab_vis.gif
-
-DH.mlx
 ```
+
+A grandes rasgos, el paquete
 
 ## Ciclo Home - Posición objetivo
 
