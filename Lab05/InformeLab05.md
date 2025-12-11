@@ -174,6 +174,69 @@ graph TD;
 ## Publisher - Suscriber
 Los scripts para este ejercicio se encuentran en el workspace [phantom_ws](phantom_ws/) como [terminal_control.py](phantom_ws/src/pincher_control/pincher_control/terminal_control.py) y [terminal_suscriber.py](phantom_ws/src/pincher_control/pincher_control/terminal_suscriber.py).
 
+Este punto se compone de dos códigos:
+
+### Terminal_control
+En este código permitimos que el usuario introduzca comandos específicos ("ID + Ángulo") para probar cada articulación individualmente sin necesidad de una interfaz gráfica compleja.
+
+La lógica interna se estructura así:
+
+1. Inicialización Híbrida
+
+Al igual que en mis otros nodos, inicializo PincherController para gestionar el hardware.
+
+- Concurrencia: Vuelvo a usar un threading.Thread para mantener vivo el ecosistema ROS (rclpy.spin). Esto es fundamental: permite que el robot siga publicando su estado (/joint_states) en segundo plano mientras la terminal se queda "congelada" esperando a que tú escribas un comando (input()).
+
+2. Validación de Seguridad (Safety Checks)
+
+Esta es la parte más robusta del código. Como el control es manual, existe riesgo humano (escribir 500 grados por error). Por eso implementé una serie de filtros antes de mover nada:
+- Filtro de ID: Verifico que el ID ingresado (ej: 1, 2, 3...) exista realmente en la lista de motores detectados.
+- Límites Articulares: Creé un bloque de condiciones (if/elif) estricto para cada motor. Por ejemplo, el Hombro (ID 2) está restringido a $\pm 100^\circ$, mientras que la Cintura (ID 1) tiene más libertad ($\pm 150^\circ$). Si te pasas, el código bloquea el comando y te avisa.
+
+3. Traducción y Ejecución
+
+Una vez el comando es validado:
+- Conversión: Paso los grados a radianes.
+- Mapeo: Aplico el signo correcto (joint_sign) según la configuración física del motor.
+- Comando DXL: Transformo el valor flotante a un entero (0-4095 o 0-1023) entendible por el protocolo Dynamixel y ejecuto move_motor.
+
+#### Diagrama de flujo
+
+```mermaid
+graph TD;
+    %% Inicio del sistema
+    Start((Inicio)) --> Init[Inicializar ROS y PincherController];
+    Init --> Thread["Iniciar Hilo de Comunicación<br/>(rclpy.spin en Background)"];
+    
+    %% Bucle de Interacción
+    Thread --> Prompt[/"Mostrar Menú y Esperar Input:<br/>ID Ángulo"/];
+    Prompt --> CheckExit{¿Es 'q' o 'quit'?};
+    
+    %% Rama de Salida
+    CheckExit -- Sí --> Cleanup[Apagar Torque y Cerrar Puerto];
+    Cleanup --> End((Fin));
+    
+    %% Rama de Procesamiento
+    CheckExit -- No --> Parse[Separar ID y Ángulo];
+    Parse --> ValidID{¿ID Existe?};
+    
+    %% Validaciones
+    ValidID -- No --> ErrorID[Mostrar Error de ID];
+    ErrorID --> Prompt;
+    
+    ValidID -- Sí --> ValidLimit{¿Ángulo dentro<br/>de Límites Seguros?};
+    ValidLimit -- No --> ErrorLim[Mostrar Alerta de Límite];
+    ErrorLim --> Prompt;
+    
+    %% Ejecución
+    ValidLimit -- Sí --> Math["Convertir:<br/>Grados -> Radianes -> DXL"];
+    Math --> Send[Enviar Comando a Motor];
+    Send --> Log[Imprimir Confirmación];
+    Log --> Prompt;
+```
+
+### Terminal_suscriber
+
 ## Robotic Toolbox
 Este script se encuentra en el workspace [phantom_ws](phantom_ws/) como [toolbox.py](phantom_ws/src/pincher_control/pincher_control/toolbox.py).
 
