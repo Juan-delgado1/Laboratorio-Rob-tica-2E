@@ -604,3 +604,9 @@ Esta interfaz tiene las siguientes pestañas:
 ## Video de implementación de los scripts
 
 ## Conclusiones
+1. Al trabajar con el modelo DH en MATLAB/Python, el URDF en ROS y el robot real al mismo tiempo, nos dimos cuenta de que cualquier error pequeño en medidas, offsets o frames se ve de inmediato en la punta del robot. Eso nos ayudó a entender que la cinemática no es solo hacer cuentas, sino que tiene un efecto directo en dónde termina realmente el TCP.
+
+2. El uso de /joint_states, del subscriber en terminal_suscriber.py y de la HMI nos enseñó que no basta con enviar comandos a los motores, también hay que mirar siempre qué está reportando el robot. Comparar el ángulo enviado con el ángulo medido nos permitió detectar errores, respetar límites articulares y mover el Pincher con más seguridad.
+
+3. Tener varios “frentes” de control (scripts por terminal, toolbox.py, HMI_RVIZ y RViz) usando el mismo PincherController nos mostró que vale la pena separar el control del hardware de la interfaz de usuario. Gracias a eso pudimos probar distintas formas de manejar el robot sin cambiar la base del código y eso facilita mucho seguir ampliando el proyecto más adelante.
+nes
