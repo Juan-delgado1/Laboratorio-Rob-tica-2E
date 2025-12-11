@@ -1,0 +1,18 @@
+[0.546s] Invoking command in '/home/juan/ros2_ws/phantom_ws/src/pincher_description': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_description build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_description/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_description/install.log --single-version-externally-managed install_data
+[0.736s] running egg_info
+[0.736s] writing ../../build/pincher_description/pincher_description.egg-info/PKG-INFO
+[0.743s] writing dependency_links to ../../build/pincher_description/pincher_description.egg-info/dependency_links.txt
+[0.743s] writing entry points to ../../build/pincher_description/pincher_description.egg-info/entry_points.txt
+[0.743s] writing requirements to ../../build/pincher_description/pincher_description.egg-info/requires.txt
+[0.743s] writing top-level names to ../../build/pincher_description/pincher_description.egg-info/top_level.txt
+[0.743s] reading manifest file '../../build/pincher_description/pincher_description.egg-info/SOURCES.txt'
+[0.743s] writing manifest file '../../build/pincher_description/pincher_description.egg-info/SOURCES.txt'
+[0.743s] running build
+[0.743s] running install
+[0.743s] running install_data
+[0.744s] running install_egg_info
+[0.753s] removing '/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages/pincher_description-0.0.0-py3.10.egg-info' (and everything under it)
+[0.754s] Copying ../../build/pincher_description/pincher_description.egg-info to /home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages/pincher_description-0.0.0-py3.10.egg-info
+[0.754s] running install_scripts
+[0.782s] writing list of installed files to '/home/juan/ros2_ws/phantom_ws/build/pincher_description/install.log'
+[0.803s] Invoked command in '/home/juan/ros2_ws/phantom_ws/src/pincher_description' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_description build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_description/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_description/install.log --single-version-externally-managed install_data

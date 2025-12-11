@@ -1,0 +1,302 @@
+[0.147s] Invoking command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --build /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description -- -j2 -l2
+[0.682s] Invoked command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --build /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description -- -j2 -l2
+[0.716s] Invoking command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --install /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description
+[0.749s] -- Install configuration: ""
+[0.752s] -- Execute custom install script
+[0.752s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/phantomx_pincher_description/xacro2sdf_direct.bash
+[0.755s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/phantomx_pincher_description/xacro2sdf.bash
+[0.756s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/phantomx_pincher_description/xacro2urdf.bash
+[0.756s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/config/initial_joint_positions.yaml
+[0.756s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/launch/display.launch.py
+[0.756s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/launch/view.launch.py
+[0.756s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/launch/view_gz.launch.py
+[0.758s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/CFFFP_elevacionCaneca.dae
+[0.758s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/canecaGrande.dae
+[0.758s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.dae
+[0.758s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/tapaSlide.dae
+[0.758s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/anclajes/CFFFP_anclajeEsquinaCanastilla.dae
+[0.759s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/anclajes/anclajeEsquinaCanastilla.dae
+[0.759s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/anclajes/anclajeEsquinaTapa.dae
+[0.762s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/anclajes/anclajeM10.dae
+[0.763s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/bases/baseElementosFijos.dae
+[0.763s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseArbotixM/base.dae
+[0.763s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseArbotixM/tapa.dae
+[0.763s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseBaseRobot/caseBaseRobot.dae
+[0.763s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseBaseRobot/clipAnclajeNumero.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseBaseRobot/numerosBases.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/casePowerHub/baseCasePowerHub.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseRaspberryPi5/baseCaseRaspberry.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseRaspberryPi5/tapaRaspberry.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseRaspberryPi5/tapaSlide.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseUSB2Dynamixel/acopleGrande.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseUSB2Dynamixel/acoplePequeño.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/caseUSB2Dynamixel/baseUBS2.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/cases/baseMicroAirPump370A.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/cases/caseBaseRobot.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/cases/caseRaspberryPi5/baseCaseRaspberry.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/cases/caseRaspberryPi5/tapaRaspberry.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/cases/tapaMicroAirPump370A.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/microAirpump/caseAirpumpBottom.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/cases/microAirpump/caseAirpumpTop.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/manijas/manija.dae
+[0.764s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/manijas/pataManija.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/objectsToPick/cilinder25Dx25h.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/objectsToPick/cube25x25.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/patas/pataD15mm.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/patas/pataD20mm.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/tubosOvaladosNiquel/Angujo.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/tubosOvaladosNiquel/EncajeABaseTuboCloset.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/DAE/zonasDeRecoleccion/zonaCircular/zonaCircular146mm.dae
+[0.765s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/CFFFP_elevacionCaneca.stl
+[0.773s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/OldVersions/canecaCollision.0002.ipt
+[0.773s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/canecaCollision.ipt
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/canecaCollision.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/canecaGrande.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.ipt
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/ensambleCaneca.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/CanecaGrandeConTapaSlide/tapaSlide.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/OldVersions/escudoUnal.0002.ipt
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/Canecas/escudoUnal.ipt
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/anclajes/CFFFP_anclajeEsquinaCanastilla.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/anclajes/anclajeEsquinaCanastilla.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/anclajes/anclajeEsquinaTapa.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/anclajes/anclajeM10.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/bases/baseElementosFijos.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseArbotixM/base.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseArbotixM/tapa.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseBaseRobot/caseBaseRobot.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseBaseRobot/clipAnclajeNumero.stl
+[0.774s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseBaseRobot/numerosBases.stl
+[0.775s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/casePowerHub/baseCasePowerHub.stl
+[0.777s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseRaspberryPi5/CFFFP_baseCaseRaspberry.3mf
+[0.777s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseRaspberryPi5/baseCaseRaspberry.stl
+[0.777s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseRaspberryPi5/tapaRaspberry.stl
+[0.777s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseRaspberryPi5/tapaSlide.stl
+[0.777s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseUSB2Dynamixel/OldVersions/acopleGrande.0001.ipt
+[0.777s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseUSB2Dynamixel/OldVersions/acoplePequeño.0002.ipt
+[0.781s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseUSB2Dynamixel/OldVersions/baseUBS2.0001.ipt
+[0.781s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseUSB2Dynamixel/acopleGrande.stl
+[0.784s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseUSB2Dynamixel/acoplePequeño.stl
+[0.784s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/caseUSB2Dynamixel/baseUBS2.stl
+[0.784s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/cases/baseMicroAirPump370A.stl
+[0.784s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/cases/caseBaseRobot.stl
+[0.784s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/cases/caseRaspberryPi5/CFFFP_tapaRaspberry.3mf
+[0.784s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/cases/caseRaspberryPi5/baseCaseRaspberry.stl
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/cases/caseRaspberryPi5/tapaRaspberry.stl
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/cases/tapaMicroAirPump370A.stl
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/microAirpump/caseAirpumpBottom.stl
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/microAirpump/caseAirpumpTop.stl
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/cases/microAirpump/ensambleAirpump.stl
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/escudoUnal.dxf
+[0.785s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/manijas/manija.stl
+[0.789s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/manijas/pataManija.stl
+[0.789s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/objectsToPick/cilinder25Dx25h.stl
+[0.789s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/objectsToPick/cube25x25.stl
+[0.789s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/patas/pataD15mm.stl
+[0.789s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/patas/pataD20mm.stl
+[0.789s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/tubosOvaladosNiquel/Angujo.stl
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/tubosOvaladosNiquel/EncajeABaseConTornilloTuboCloset.stl
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/tubosOvaladosNiquel/EncajeABaseTuboCloset.stl
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/STL/zonasDeRecoleccion/zonaCircular/zonaCircular146mm.stl
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/collision/finger.stl
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/collision/task_board.stl
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/ax12.dae
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/f10.dae
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/f2.dae
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/f3.dae
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/f4.dae
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/finger.dae
+[0.790s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/gripper_base.dae
+[0.791s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/phantomx_pincher_mount.dae
+[0.791s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/task_board.dae
+[0.791s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/meshes/visual/task_board_module_phantomx_pincher_mount.dae
+[0.791s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/model.config
+[0.791s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/model.sdf
+[0.791s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/phantomx_pincher/thumbnails/0.png
+[0.796s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/CFFFP_elevacionCaneca.dae
+[0.821s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/canecaGrande.dae
+[0.848s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.dae
+[0.888s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/tapaSlide.dae
+[0.910s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/CFFFP_anclajeEsquinaCanastilla.dae
+[0.920s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/anclajeEsquinaCanastilla.dae
+[0.929s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/anclajeEsquinaTapa.dae
+[0.938s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/anclajeM10.dae
+[0.946s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/bases/baseElementosFijos.dae
+[0.955s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseArbotixM/base.dae
+[0.974s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseArbotixM/tapa.dae
+[0.988s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseBaseRobot/caseBaseRobot.dae
+[0.998s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseBaseRobot/clipAnclajeNumero.dae
+[1.007s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseBaseRobot/numerosBases.dae
+[1.019s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/casePowerHub/baseCasePowerHub.dae
+[1.027s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseRaspberryPi5/baseCaseRaspberry.dae
+[1.037s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseRaspberryPi5/tapaRaspberry.dae
+[1.045s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseRaspberryPi5/tapaSlide.dae
+[1.054s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseUSB2Dynamixel/acopleGrande.dae
+[1.062s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseUSB2Dynamixel/acoplePequeño.dae
+[1.080s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseUSB2Dynamixel/baseUBS2.dae
+[1.087s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/baseMicroAirPump370A.dae
+[1.100s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/caseBaseRobot.dae
+[1.112s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/caseRaspberryPi5/baseCaseRaspberry.dae
+[1.123s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/caseRaspberryPi5/tapaRaspberry.dae
+[1.133s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/tapaMicroAirPump370A.dae
+[1.140s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/microAirpump/caseAirpumpBottom.dae
+[1.156s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/microAirpump/caseAirpumpTop.dae
+[1.184s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/manijas/manija.dae
+[1.199s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/manijas/pataManija.dae
+[1.218s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/objectsToPick/cilinder25Dx25h.dae
+[1.226s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/objectsToPick/cube25x25.dae
+[1.235s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/patas/pataD15mm.dae
+[1.245s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/patas/pataD20mm.dae
+[1.253s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/tubosOvaladosNiquel/Angujo.dae
+[1.262s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/tubosOvaladosNiquel/EncajeABaseTuboCloset.dae
+[1.285s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/zonasDeRecoleccion/zonaCircular/zonaCircular146mm.dae
+[1.297s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/CFFFP_elevacionCaneca.stl
+[1.297s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/OldVersions/canecaCollision.0002.ipt
+[1.297s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/canecaCollision.ipt
+[1.297s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/canecaCollision.stl
+[1.298s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/canecaGrande.stl
+[1.298s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.ipt
+[1.298s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.stl
+[1.298s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/ensambleCaneca.stl
+[1.298s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/CanecaGrandeConTapaSlide/tapaSlide.stl
+[1.298s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/OldVersions/escudoUnal.0002.ipt
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/Canecas/escudoUnal.ipt
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/anclajes/CFFFP_anclajeEsquinaCanastilla.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/anclajes/anclajeEsquinaCanastilla.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/anclajes/anclajeEsquinaTapa.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/anclajes/anclajeM10.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/bases/baseElementosFijos.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseArbotixM/base.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseArbotixM/tapa.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseBaseRobot/caseBaseRobot.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseBaseRobot/clipAnclajeNumero.stl
+[1.305s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseBaseRobot/numerosBases.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/casePowerHub/baseCasePowerHub.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseRaspberryPi5/CFFFP_baseCaseRaspberry.3mf
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseRaspberryPi5/baseCaseRaspberry.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseRaspberryPi5/tapaRaspberry.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseRaspberryPi5/tapaSlide.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseUSB2Dynamixel/OldVersions/acopleGrande.0001.ipt
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseUSB2Dynamixel/OldVersions/acoplePequeño.0002.ipt
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseUSB2Dynamixel/OldVersions/baseUBS2.0001.ipt
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseUSB2Dynamixel/acopleGrande.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseUSB2Dynamixel/acoplePequeño.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/caseUSB2Dynamixel/baseUBS2.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/cases/baseMicroAirPump370A.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/cases/caseBaseRobot.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/cases/caseRaspberryPi5/CFFFP_tapaRaspberry.3mf
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/cases/caseRaspberryPi5/baseCaseRaspberry.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/cases/caseRaspberryPi5/tapaRaspberry.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/cases/tapaMicroAirPump370A.stl
+[1.306s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/microAirpump/caseAirpumpBottom.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/microAirpump/caseAirpumpTop.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/cases/microAirpump/ensambleAirpump.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/escudoUnal.dxf
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/manijas/manija.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/manijas/pataManija.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/objectsToPick/cilinder25Dx25h.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/objectsToPick/cube25x25.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/patas/pataD15mm.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/patas/pataD20mm.stl
+[1.307s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/tubosOvaladosNiquel/Angujo.stl
+[1.315s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/tubosOvaladosNiquel/EncajeABaseConTornilloTuboCloset.stl
+[1.316s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/tubosOvaladosNiquel/EncajeABaseTuboCloset.stl
+[1.316s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/zonasDeRecoleccion/zonaCircular/zonaCircular146mm.stl
+[1.316s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/collision/finger.stl
+[1.316s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/collision/task_board.stl
+[1.322s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/ax12.dae
+[1.333s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f10.dae
+[1.356s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f2.dae
+[1.370s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f3.dae
+[1.387s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f4.dae
+[1.396s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/finger.dae
+[1.406s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/gripper_base.dae
+[1.415s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/phantomx_pincher_mount.dae
+[1.425s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/task_board.dae
+[1.437s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/task_board_module_phantomx_pincher_mount.dae
+[1.445s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/rviz/view.rviz
+[1.445s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/kit.xacro
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher.gazebo
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher.ros2_control
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher.urdf
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher.urdf.xacro
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher_arm.xacro
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher_hardware.xacro
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher_inertial.xacro
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher_mounting.xacro
+[1.446s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/urdf/phantomx_pincher_utils.xacro
+[1.449s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/CFFFP_elevacionCaneca.dae
+[1.459s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/canecaGrande.dae
+[1.466s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/elevacionCaneca.dae
+[1.483s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/Canecas/CanecaGrandeConTapaSlide/tapaSlide.dae
+[1.492s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/CFFFP_anclajeEsquinaCanastilla.dae
+[1.501s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/anclajeEsquinaCanastilla.dae
+[1.511s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/anclajeEsquinaTapa.dae
+[1.523s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/anclajes/anclajeM10.dae
+[1.537s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/bases/baseElementosFijos.dae
+[1.547s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseArbotixM/base.dae
+[1.557s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseArbotixM/tapa.dae
+[1.565s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseBaseRobot/caseBaseRobot.dae
+[1.596s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseBaseRobot/clipAnclajeNumero.dae
+[1.604s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseBaseRobot/numerosBases.dae
+[1.613s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/casePowerHub/baseCasePowerHub.dae
+[1.626s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseRaspberryPi5/baseCaseRaspberry.dae
+[1.637s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseRaspberryPi5/tapaRaspberry.dae
+[1.650s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseRaspberryPi5/tapaSlide.dae
+[1.665s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseUSB2Dynamixel/acopleGrande.dae
+[1.683s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseUSB2Dynamixel/acoplePequeño.dae
+[1.695s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/caseUSB2Dynamixel/baseUBS2.dae
+[1.705s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/baseMicroAirPump370A.dae
+[1.714s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/caseBaseRobot.dae
+[1.726s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/caseRaspberryPi5/baseCaseRaspberry.dae
+[1.735s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/caseRaspberryPi5/tapaRaspberry.dae
+[1.747s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/cases/tapaMicroAirPump370A.dae
+[1.758s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/microAirpump/caseAirpumpBottom.dae
+[1.769s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/cases/microAirpump/caseAirpumpTop.dae
+[1.787s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/manijas/manija.dae
+[1.806s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/manijas/pataManija.dae
+[1.822s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/objectsToPick/cilinder25Dx25h.dae
+[1.833s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/objectsToPick/cube25x25.dae
+[1.846s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/patas/pataD15mm.dae
+[1.853s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/patas/pataD20mm.dae
+[1.862s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/tubosOvaladosNiquel/Angujo.dae
+[1.878s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/tubosOvaladosNiquel/EncajeABaseTuboCloset.dae
+[1.894s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/DAE/zonasDeRecoleccion/zonaCircular/zonaCircular146mm.dae
+[1.907s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/baseElementosFijos.stl
+[1.908s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/canecaGrande.stl
+[1.908s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/caseBaseRobot.stl
+[1.908s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/ensambleAirpump.stl
+[1.909s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/ensambleCaneca.stl
+[1.909s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/manija.stl
+[1.910s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/STL/zonaCircular146mm.stl
+[1.910s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/collision/finger.stl
+[1.918s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/collision/task_board.stl
+[1.926s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/ax12.dae
+[1.936s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f10.dae
+[1.945s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f2.dae
+[1.969s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f3.dae
+[1.985s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/f4.dae
+[1.994s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/finger.dae
+[2.003s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/gripper_base.dae
+[2.011s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/phantomx_pincher_mount.dae
+[2.021s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/task_board.dae
+[2.029s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/meshes/visual/task_board_module_phantomx_pincher_mount.dae
+[2.038s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/environment/phantomx_pincher_description.dsv
+[2.038s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/environment/phantomx_pincher_description.sh
+[2.038s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/ament_index/resource_index/package_run_dependencies/phantomx_pincher_description
+[2.038s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/ament_index/resource_index/parent_prefix_path/phantomx_pincher_description
+[2.038s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/environment/ament_prefix_path.sh
+[2.039s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/environment/ament_prefix_path.dsv
+[2.039s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/environment/path.sh
+[2.041s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/environment/path.dsv
+[2.041s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/local_setup.bash
+[2.041s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/local_setup.sh
+[2.041s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/local_setup.zsh
+[2.041s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/local_setup.dsv
+[2.042s] -- Symlinking: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.dsv
+[2.048s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/ament_index/resource_index/packages/phantomx_pincher_description
+[2.049s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/cmake/phantomx_pincher_descriptionConfig.cmake
+[2.049s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/cmake/phantomx_pincher_descriptionConfig-version.cmake
+[2.050s] -- Up-to-date symlink: /home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.xml
+[2.291s] Invoked command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --install /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description

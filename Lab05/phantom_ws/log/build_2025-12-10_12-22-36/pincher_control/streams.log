@@ -1,0 +1,30 @@
+[0.609s] Invoking command in '/home/juan/ros2_ws/phantom_ws/src/pincher_control': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_control build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_control/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_control/install.log --single-version-externally-managed install_data
+[0.790s] running egg_info
+[0.790s] writing ../../build/pincher_control/pincher_control.egg-info/PKG-INFO
+[0.790s] writing dependency_links to ../../build/pincher_control/pincher_control.egg-info/dependency_links.txt
+[0.791s] writing entry points to ../../build/pincher_control/pincher_control.egg-info/entry_points.txt
+[0.791s] writing requirements to ../../build/pincher_control/pincher_control.egg-info/requires.txt
+[0.791s] writing top-level names to ../../build/pincher_control/pincher_control.egg-info/top_level.txt
+[0.793s] reading manifest file '../../build/pincher_control/pincher_control.egg-info/SOURCES.txt'
+[0.793s] writing manifest file '../../build/pincher_control/pincher_control.egg-info/SOURCES.txt'
+[0.793s] running build
+[0.793s] running build_py
+[0.794s] copying pincher_control/Lab5_P1.py -> /home/juan/ros2_ws/phantom_ws/build/pincher_control/build/lib/pincher_control
+[0.794s] running install
+[0.794s] running install_lib
+[0.795s] copying /home/juan/ros2_ws/phantom_ws/build/pincher_control/build/lib/pincher_control/Lab5_P1.py -> /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control
+[0.795s] byte-compiling /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control/Lab5_P1.py to Lab5_P1.cpython-310.pyc
+[0.796s] running install_data
+[0.796s] running install_egg_info
+[0.797s] removing '/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control-0.0.0-py3.10.egg-info' (and everything under it)
+[0.802s] Copying ../../build/pincher_control/pincher_control.egg-info to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control-0.0.0-py3.10.egg-info
+[0.803s] running install_scripts
+[0.815s] Installing HMI_RVIZ script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.815s] Installing Lab5_P1 script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.816s] Installing control_servo script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.816s] Installing control_servo2 script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.817s] Installing terminal_control script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.817s] Installing terminal_suscriber script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.817s] Installing toolbox script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[0.817s] writing list of installed files to '/home/juan/ros2_ws/phantom_ws/build/pincher_control/install.log'
+[0.839s] Invoked command in '/home/juan/ros2_ws/phantom_ws/src/pincher_control' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_control build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_control/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_control/install.log --single-version-externally-managed install_data

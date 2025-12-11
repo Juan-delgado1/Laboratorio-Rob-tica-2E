@@ -1,0 +1,28 @@
+[1.137s] Invoking command in '/home/juan/ros2_ws/phantom_ws/build/pincher_description': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_description/build --no-deps symlink_data --force
+[1.688s] running develop
+[2.045s] running egg_info
+[2.045s] writing pincher_description.egg-info/PKG-INFO
+[2.046s] writing dependency_links to pincher_description.egg-info/dependency_links.txt
+[2.046s] writing entry points to pincher_description.egg-info/entry_points.txt
+[2.048s] writing requirements to pincher_description.egg-info/requires.txt
+[2.048s] writing top-level names to pincher_description.egg-info/top_level.txt
+[2.053s] reading manifest file 'pincher_description.egg-info/SOURCES.txt'
+[2.053s] writing manifest file 'pincher_description.egg-info/SOURCES.txt'
+[2.056s] running build_ext
+[2.073s] Creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages/pincher-description.egg-link (link to .)
+[2.073s] 
+[2.073s] Installed /home/juan/ros2_ws/phantom_ws/build/pincher_description
+[2.073s] running symlink_data
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/resource/pincher_description -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/ament_index/resource_index/packages
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/package.xml -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/urdf/robot.xacro -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/urdf
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_6_gripper_prop.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_8_gripper_finger.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_1_base.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_2_shoulder.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_3_upper_arm.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_4_forearm.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_5_gripper.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_7_gripper_bar.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[2.073s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/launch/display.launch.py -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/launch
+[2.144s] Invoked command in '/home/juan/ros2_ws/phantom_ws/build/pincher_description' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_description/build --no-deps symlink_data --force

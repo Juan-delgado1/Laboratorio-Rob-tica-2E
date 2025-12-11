@@ -1,0 +1,29 @@
+[1.258s] Invoking command in '/home/juan/ros2_ws/phantom_ws/src/pincher_control': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_control build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_control/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_control/install.log --single-version-externally-managed install_data
+[1.669s] running egg_info
+[1.670s] writing ../../build/pincher_control/pincher_control.egg-info/PKG-INFO
+[1.672s] writing dependency_links to ../../build/pincher_control/pincher_control.egg-info/dependency_links.txt
+[1.673s] writing entry points to ../../build/pincher_control/pincher_control.egg-info/entry_points.txt
+[1.674s] writing requirements to ../../build/pincher_control/pincher_control.egg-info/requires.txt
+[1.675s] writing top-level names to ../../build/pincher_control/pincher_control.egg-info/top_level.txt
+[1.680s] reading manifest file '../../build/pincher_control/pincher_control.egg-info/SOURCES.txt'
+[1.684s] writing manifest file '../../build/pincher_control/pincher_control.egg-info/SOURCES.txt'
+[1.685s] running build
+[1.685s] running build_py
+[1.685s] copying pincher_control/HMI_RVIZ.py -> /home/juan/ros2_ws/phantom_ws/build/pincher_control/build/lib/pincher_control
+[1.691s] running install
+[1.693s] running install_lib
+[1.693s] copying /home/juan/ros2_ws/phantom_ws/build/pincher_control/build/lib/pincher_control/HMI_RVIZ.py -> /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control
+[1.697s] byte-compiling /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control/HMI_RVIZ.py to HMI_RVIZ.cpython-310.pyc
+[1.705s] running install_data
+[1.706s] running install_egg_info
+[1.709s] removing '/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.710s] Copying ../../build/pincher_control/pincher_control.egg-info to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher_control-0.0.0-py3.10.egg-info
+[1.712s] running install_scripts
+[1.744s] Installing HMI_RVIZ script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.745s] Installing Lab5_P1 script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.746s] Installing control_servo script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.747s] Installing terminal_control script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.748s] Installing terminal_suscriber script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.749s] Installing toolbox script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.758s] writing list of installed files to '/home/juan/ros2_ws/phantom_ws/build/pincher_control/install.log'
+[1.799s] Invoked command in '/home/juan/ros2_ws/phantom_ws/src/pincher_control' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_control build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_control/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_control/install.log --single-version-externally-managed install_data

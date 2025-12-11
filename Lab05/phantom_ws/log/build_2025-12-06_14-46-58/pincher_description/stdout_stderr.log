@@ -1,0 +1,35 @@
+running develop
+running egg_info
+creating pincher_description.egg-info
+writing pincher_description.egg-info/PKG-INFO
+writing dependency_links to pincher_description.egg-info/dependency_links.txt
+writing entry points to pincher_description.egg-info/entry_points.txt
+writing requirements to pincher_description.egg-info/requires.txt
+writing top-level names to pincher_description.egg-info/top_level.txt
+writing manifest file 'pincher_description.egg-info/SOURCES.txt'
+reading manifest file 'pincher_description.egg-info/SOURCES.txt'
+writing manifest file 'pincher_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages/pincher-description.egg-link (link to .)
+
+Installed /home/juan/ros2_ws/phantom_ws/build/pincher_description
+running symlink_data
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/ament_index
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/ament_index/resource_index
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/ament_index/resource_index/packages
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/resource/pincher_description -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/ament_index/resource_index/packages
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/package.xml -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/urdf
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/urdf/robot.xacro -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/urdf
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_6_gripper_prop.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_8_gripper_finger.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_1_base.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_2_shoulder.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_3_upper_arm.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_4_forearm.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_5_gripper.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/meshes/px100_7_gripper_bar.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/rviz
+creating /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/launch
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_description/launch/display.launch.py -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/launch

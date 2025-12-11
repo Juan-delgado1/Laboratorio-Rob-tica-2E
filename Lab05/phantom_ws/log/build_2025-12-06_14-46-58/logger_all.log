@@ -1,0 +1,266 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a3f4786add0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a3f478106d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a3f478106d0>>)
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.197s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/juan/ros2_ws/phantom_ws'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/phantomx_pincher_description) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/phantomx_pincher_description' with type 'ros.ament_cmake' and name 'phantomx_pincher_description'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_control) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pincher_control' with type 'ros.ament_python' and name 'pincher_control'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/pincher_description) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pincher_description' with type 'ros.ament_python' and name 'pincher_description'
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.247s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/juan/ros2_ws/phantom_ws/src/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/src/install/pincher_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/src/install/pincher_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/src/install/phantomx_pincher_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/install/pincher_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/install/pincher_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_moveit_config' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_demos' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/juan/ros2_ws/phantom_ws/src/install/phantomx_pincher_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_moveit_config' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_demos' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.248s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/juan/ros2_ws/phantom_ws/install
+[0.249s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 447 installed packages in /opt/ros/humble
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'cmake_target' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'phantomx_pincher_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.287s] DEBUG:colcon.colcon_core.verb:Building package 'phantomx_pincher_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description', 'merge_install': False, 'path': '/home/juan/ros2_ws/phantom_ws/src/phantomx_pincher_description', 'symlink_install': True, 'test_result_base': None}
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'cmake_target' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.288s] DEBUG:colcon.colcon_core.verb:Building package 'pincher_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juan/ros2_ws/phantom_ws/build/pincher_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juan/ros2_ws/phantom_ws/install/pincher_control', 'merge_install': False, 'path': '/home/juan/ros2_ws/phantom_ws/src/pincher_control', 'symlink_install': True, 'test_result_base': None}
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'cmake_target' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'pincher_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.288s] DEBUG:colcon.colcon_core.verb:Building package 'pincher_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juan/ros2_ws/phantom_ws/build/pincher_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juan/ros2_ws/phantom_ws/install/pincher_description', 'merge_install': False, 'path': '/home/juan/ros2_ws/phantom_ws/src/pincher_description', 'symlink_install': True, 'test_result_base': None}
+[0.288s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.289s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/juan/ros2_ws/phantom_ws/src/phantomx_pincher_description' with build type 'ament_cmake'
+[0.289s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/juan/ros2_ws/phantom_ws/src/phantomx_pincher_description'
+[0.291s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.291s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.291s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.294s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/juan/ros2_ws/phantom_ws/src/pincher_control' with build type 'ament_python'
+[0.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('pincher_control', 'ament_prefix_path')
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/hook/ament_prefix_path.ps1'
+[0.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/hook/ament_prefix_path.dsv'
+[0.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/hook/ament_prefix_path.sh'
+[0.296s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.296s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/src/install/pincher_description:/home/juan/ros2_ws/phantom_ws/src/install/pincher_control:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake /home/juan/ros2_ws/phantom_ws/src/phantomx_pincher_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description
+[0.595s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/juan/ros2_ws/phantom_ws/src/pincher_control'
+[0.595s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.595s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/src/install/pincher_description:/home/juan/ros2_ws/phantom_ws/src/install/pincher_control:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake /home/juan/ros2_ws/phantom_ws/src/phantomx_pincher_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/src/install/pincher_description:/home/juan/ros2_ws/phantom_ws/src/install/pincher_control:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --build /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description -- -j2 -l2
+[1.179s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/src/install/pincher_description:/home/juan/ros2_ws/phantom_ws/src/install/pincher_control:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --build /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description -- -j2 -l2
+[1.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/src/install/pincher_description:/home/juan/ros2_ws/phantom_ws/src/install/pincher_control:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --install /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description
+[1.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juan/ros2_ws/phantom_ws/build/pincher_control': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_control/build --no-deps symlink_data
+[2.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('pincher_control', 'pythonpath_develop')
+[2.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/build/pincher_control/share/pincher_control/hook/pythonpath_develop.ps1'
+[2.035s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/build/pincher_control/share/pincher_control/hook/pythonpath_develop.dsv'
+[2.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/build/pincher_control/share/pincher_control/hook/pythonpath_develop.sh'
+[2.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juan/ros2_ws/phantom_ws/build/pincher_control' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_control/build --no-deps symlink_data
+[2.041s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control' for CMake module files
+[2.041s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control' for CMake config files
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control/bin'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pkgconfig/pincher_control.pc'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages'
+[2.046s] Level 1:colcon.colcon_core.shell:create_environment_hook('pincher_control', 'pythonpath')
+[2.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/hook/pythonpath.ps1'
+[2.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/hook/pythonpath.dsv'
+[2.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/hook/pythonpath.sh'
+[2.049s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_control/bin'
+[2.049s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pincher_control)
+[2.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/package.ps1'
+[2.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/package.dsv'
+[2.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/package.sh'
+[2.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/package.bash'
+[2.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control/package.zsh'
+[2.056s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juan/ros2_ws/phantom_ws/install/pincher_control/share/colcon-core/packages/pincher_control)
+[2.056s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/juan/ros2_ws/phantom_ws/src/pincher_description' with build type 'ament_python'
+[2.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('pincher_description', 'ament_prefix_path')
+[2.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/hook/ament_prefix_path.ps1'
+[2.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/hook/ament_prefix_path.dsv'
+[2.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/hook/ament_prefix_path.sh'
+[2.061s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.061s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.492s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/juan/ros2_ws/phantom_ws/src/pincher_description'
+[2.493s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juan/ros2_ws/phantom_ws/build/pincher_description': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_description/build --no-deps symlink_data
+[3.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('pincher_description', 'pythonpath_develop')
+[3.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/build/pincher_description/share/pincher_description/hook/pythonpath_develop.ps1'
+[3.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/build/pincher_description/share/pincher_description/hook/pythonpath_develop.dsv'
+[3.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/build/pincher_description/share/pincher_description/hook/pythonpath_develop.sh'
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description' for CMake module files
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description' for CMake config files
+[3.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juan/ros2_ws/phantom_ws/build/pincher_description' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_description/build --no-deps symlink_data
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib'
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description/bin'
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/pkgconfig/pincher_description.pc'
+[3.750s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages'
+[3.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('pincher_description', 'pythonpath')
+[3.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/hook/pythonpath.ps1'
+[3.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/hook/pythonpath.dsv'
+[3.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/hook/pythonpath.sh'
+[3.753s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/pincher_description/bin'
+[3.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pincher_description)
+[3.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/package.ps1'
+[3.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/package.dsv'
+[3.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/package.sh'
+[3.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/package.bash'
+[3.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/package.zsh'
+[3.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juan/ros2_ws/phantom_ws/install/pincher_description/share/colcon-core/packages/pincher_description)
+[4.622s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(phantomx_pincher_description)
+[4.623s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description' for CMake module files
+[4.623s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description' for CMake config files
+[4.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('phantomx_pincher_description', 'cmake_prefix_path')
+[4.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/hook/cmake_prefix_path.ps1'
+[4.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/hook/cmake_prefix_path.dsv'
+[4.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/juan/ros2_ws/phantom_ws/src/install/pincher_description:/home/juan/ros2_ws/phantom_ws/src/install/pincher_control:/home/juan/ros2_ws/phantom_ws/install/pincher_description:/home/juan/ros2_ws/phantom_ws/install/pincher_control:/opt/ros/humble /usr/bin/cmake --install /home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description
+[4.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/hook/cmake_prefix_path.sh'
+[4.625s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib'
+[4.625s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/bin'
+[4.626s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/pkgconfig/phantomx_pincher_description.pc'
+[4.626s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/python3.10/site-packages'
+[4.626s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/bin'
+[4.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.ps1'
+[4.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.dsv'
+[4.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.sh'
+[4.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.bash'
+[4.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.zsh'
+[4.628s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/colcon-core/packages/phantomx_pincher_description)
+[4.628s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(phantomx_pincher_description)
+[4.628s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description' for CMake module files
+[4.628s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description' for CMake config files
+[4.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('phantomx_pincher_description', 'cmake_prefix_path')
+[4.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/hook/cmake_prefix_path.ps1'
+[4.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/hook/cmake_prefix_path.dsv'
+[4.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/hook/cmake_prefix_path.sh'
+[4.630s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib'
+[4.630s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/bin'
+[4.630s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/pkgconfig/phantomx_pincher_description.pc'
+[4.631s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/lib/python3.10/site-packages'
+[4.631s] Level 1:colcon.colcon_core.environment:checking '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/bin'
+[4.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.ps1'
+[4.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.dsv'
+[4.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.sh'
+[4.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.bash'
+[4.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/phantomx_pincher_description/package.zsh'
+[4.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juan/ros2_ws/phantom_ws/install/phantomx_pincher_description/share/colcon-core/packages/phantomx_pincher_description)
+[4.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.634s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.638s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.638s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.638s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.650s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.650s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juan/ros2_ws/phantom_ws/install/local_setup.ps1'
+[4.651s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/juan/ros2_ws/phantom_ws/install/_local_setup_util_ps1.py'
+[4.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juan/ros2_ws/phantom_ws/install/setup.ps1'
+[4.654s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juan/ros2_ws/phantom_ws/install/local_setup.sh'
+[4.654s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/juan/ros2_ws/phantom_ws/install/_local_setup_util_sh.py'
+[4.658s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juan/ros2_ws/phantom_ws/install/setup.sh'
+[4.659s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juan/ros2_ws/phantom_ws/install/local_setup.bash'
+[4.659s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juan/ros2_ws/phantom_ws/install/setup.bash'
+[4.659s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juan/ros2_ws/phantom_ws/install/local_setup.zsh'
+[4.660s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juan/ros2_ws/phantom_ws/install/setup.zsh'

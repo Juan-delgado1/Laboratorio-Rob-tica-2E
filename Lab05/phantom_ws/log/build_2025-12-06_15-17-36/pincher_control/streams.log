@@ -1,0 +1,24 @@
+[0.548s] Invoking command in '/home/juan/ros2_ws/phantom_ws/build/pincher_control': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_control/build --no-deps symlink_data --force
+[0.829s] running develop
+[1.080s] running egg_info
+[1.080s] writing pincher_control.egg-info/PKG-INFO
+[1.081s] writing dependency_links to pincher_control.egg-info/dependency_links.txt
+[1.081s] writing entry points to pincher_control.egg-info/entry_points.txt
+[1.081s] writing requirements to pincher_control.egg-info/requires.txt
+[1.081s] writing top-level names to pincher_control.egg-info/top_level.txt
+[1.084s] reading manifest file 'pincher_control.egg-info/SOURCES.txt'
+[1.085s] writing manifest file 'pincher_control.egg-info/SOURCES.txt'
+[1.089s] running build_ext
+[1.089s] Creating /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher-control.egg-link (link to .)
+[1.090s] Installing HMI_RVIZ script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.092s] Installing Lab5_P1 script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.092s] Installing control_servo script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.093s] Installing terminal_control script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.093s] Installing terminal_suscriber script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.093s] Installing toolbox script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+[1.093s] 
+[1.093s] Installed /home/juan/ros2_ws/phantom_ws/build/pincher_control
+[1.093s] running symlink_data
+[1.093s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_control/resource/pincher_control -> /home/juan/ros2_ws/phantom_ws/install/pincher_control/share/ament_index/resource_index/packages
+[1.093s] symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_control/package.xml -> /home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control
+[1.336s] Invoked command in '/home/juan/ros2_ws/phantom_ws/build/pincher_control' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_control/build --no-deps symlink_data --force

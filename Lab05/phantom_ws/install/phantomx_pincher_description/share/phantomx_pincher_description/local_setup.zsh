@@ -1,0 +1,1 @@
+/home/juan/ros2_ws/phantom_ws/build/phantomx_pincher_description/ament_cmake_environment_hooks/local_setup.zsh

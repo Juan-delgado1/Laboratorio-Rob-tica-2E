@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing pincher_control.egg-info/PKG-INFO
+writing dependency_links to pincher_control.egg-info/dependency_links.txt
+writing entry points to pincher_control.egg-info/entry_points.txt
+writing requirements to pincher_control.egg-info/requires.txt
+writing top-level names to pincher_control.egg-info/top_level.txt
+reading manifest file 'pincher_control.egg-info/SOURCES.txt'
+writing manifest file 'pincher_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/python3.10/site-packages/pincher-control.egg-link (link to .)
+Installing HMI_RVIZ script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+Installing Lab5_P1 script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+Installing control_servo script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+Installing terminal_control script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+Installing terminal_suscriber script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+Installing toolbox script to /home/juan/ros2_ws/phantom_ws/install/pincher_control/lib/pincher_control
+
+Installed /home/juan/ros2_ws/phantom_ws/build/pincher_control
+running symlink_data
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_control/resource/pincher_control -> /home/juan/ros2_ws/phantom_ws/install/pincher_control/share/ament_index/resource_index/packages
+symbolically linking /home/juan/ros2_ws/phantom_ws/build/pincher_control/package.xml -> /home/juan/ros2_ws/phantom_ws/install/pincher_control/share/pincher_control

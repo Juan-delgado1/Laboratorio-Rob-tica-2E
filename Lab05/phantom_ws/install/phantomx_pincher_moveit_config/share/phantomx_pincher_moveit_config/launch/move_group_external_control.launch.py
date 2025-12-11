@@ -1,0 +1,1 @@
+/home/juan/ros2_ws/phantom_ws/src/phantomx_pincher_moveit_config/launch/move_group_external_control.launch.py

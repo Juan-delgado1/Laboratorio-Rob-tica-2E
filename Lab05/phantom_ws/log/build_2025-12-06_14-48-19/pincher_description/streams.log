@@ -1,0 +1,33 @@
+[0.516s] Invoking command in '/home/juan/ros2_ws/phantom_ws/build/pincher_description': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_description/build
+[0.700s] running develop
+[0.843s] Removing /home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages/pincher-description.egg-link (link to .)
+[0.865s] Invoked command in '/home/juan/ros2_ws/phantom_ws/build/pincher_description' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/juan/ros2_ws/phantom_ws/build/pincher_description/build
+[0.865s] Invoking command in '/home/juan/ros2_ws/phantom_ws/src/pincher_description': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_description build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_description/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_description/install.log --single-version-externally-managed install_data --force
+[1.116s] running egg_info
+[1.116s] writing ../../build/pincher_description/pincher_description.egg-info/PKG-INFO
+[1.116s] writing dependency_links to ../../build/pincher_description/pincher_description.egg-info/dependency_links.txt
+[1.116s] writing entry points to ../../build/pincher_description/pincher_description.egg-info/entry_points.txt
+[1.116s] writing requirements to ../../build/pincher_description/pincher_description.egg-info/requires.txt
+[1.116s] writing top-level names to ../../build/pincher_description/pincher_description.egg-info/top_level.txt
+[1.116s] reading manifest file '../../build/pincher_description/pincher_description.egg-info/SOURCES.txt'
+[1.116s] writing manifest file '../../build/pincher_description/pincher_description.egg-info/SOURCES.txt'
+[1.118s] running build
+[1.118s] running install
+[1.118s] running install_data
+[1.118s] copying resource/pincher_description -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/ament_index/resource_index/packages
+[1.118s] copying package.xml -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description
+[1.118s] copying urdf/robot.xacro -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/urdf
+[1.130s] copying meshes/px100_6_gripper_prop.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.132s] copying meshes/px100_8_gripper_finger.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.135s] copying meshes/px100_1_base.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.136s] copying meshes/px100_2_shoulder.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.137s] copying meshes/px100_3_upper_arm.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.139s] copying meshes/px100_4_forearm.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.143s] copying meshes/px100_5_gripper.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.144s] copying meshes/px100_7_gripper_bar.stl -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/meshes
+[1.145s] copying launch/display.launch.py -> /home/juan/ros2_ws/phantom_ws/install/pincher_description/share/pincher_description/launch
+[1.145s] running install_egg_info
+[1.151s] Copying ../../build/pincher_description/pincher_description.egg-info to /home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages/pincher_description-0.0.0-py3.10.egg-info
+[1.151s] running install_scripts
+[1.179s] writing list of installed files to '/home/juan/ros2_ws/phantom_ws/build/pincher_description/install.log'
+[1.209s] Invoked command in '/home/juan/ros2_ws/phantom_ws/src/pincher_description' returned '0': PYTHONPATH=/home/juan/ros2_ws/phantom_ws/build/pincher_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juan/ros2_ws/phantom_ws/install/pincher_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pincher_description build --build-base /home/juan/ros2_ws/phantom_ws/build/pincher_description/build install --record /home/juan/ros2_ws/phantom_ws/build/pincher_description/install.log --single-version-externally-managed install_data --force
